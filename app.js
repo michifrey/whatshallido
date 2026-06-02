@@ -99,14 +99,73 @@ function berufKarte(b, treffer) {
   `;
 
   const herz = $(".herz", card);
-  herz.addEventListener("click", () => {
+  herz.addEventListener("click", e => {
+    e.stopPropagation();
     merkToggle(b);
     const on = merkliste.has(berufId(b));
     herz.classList.toggle("on", on);
     herz.textContent = on ? "❤️" : "🤍";
   });
 
+  // Klick auf die Karte (ausser Links/Herz) öffnet die Detail-Ansicht
+  card.classList.add("klickbar");
+  card.addEventListener("click", e => {
+    if (e.target.closest("a") || e.target.closest(".herz")) return;
+    openDetail(b);
+  });
+
   return card;
+}
+
+/* ---------- Detail-Ansicht (Modal) ---------- */
+function openDetail(b) {
+  const kat = KATEGORIEN[b.kat] || { emoji: "💼", name: "Beruf", farbe: "#64748b" };
+  const tagHtml = (b.tags || []).filter(t => DIMENSIONEN[t])
+    .map(t => `<span class="tag">${DIMENSIONEN[t].emoji} ${DIMENSIONEN[t].name}</span>`).join("");
+  const gemerkt = merkliste.has(berufId(b));
+  const lehrstelle = b.typ === "weiterfuehrend" ? "" :
+    `<a class="btn btn-lehrstelle" href="${lehrstellenLink(b.name)}" target="_blank" rel="noopener">🔍 Lehrstelle finden</a>`;
+
+  const aehnlich = DATEN.filter(x => x.kat === b.kat && berufId(x) !== berufId(b))
+    .sort(() => Math.random() - 0.5).slice(0, 5);
+  const aehnlichHtml = aehnlich.length
+    ? `<div class="detail-related"><h4>Ähnliche Berufe</h4><div class="related-list">` +
+      aehnlich.map(x => `<button class="related-chip" data-id="${berufId(x)}">${(KATEGORIEN[x.kat] || {}).emoji || ""} ${x.name}</button>`).join("") +
+      `</div></div>` : "";
+
+  $("#detail-content").innerHTML = `
+    <div class="detail-head" style="--kat-farbe:${kat.farbe}">
+      <span class="beruf-emoji" style="font-size:2.6rem">${kat.emoji}</span>
+      <div>
+        <h2 id="d-name">${b.name}</h2>
+        <span class="beruf-kat">${kat.name} · ${b.dauer || ""} ${b.typ === "weiterfuehrend" ? '<span class="typ-badge">📚 weiterführend</span>' : ""}</span>
+      </div>
+    </div>
+    <p class="detail-desc">${b.desc || ""}</p>
+    <div class="detail-tags"><b>Passt zu dir, wenn du das magst:</b><div class="beruf-tags" style="margin-top:.5rem">${tagHtml || "–"}</div></div>
+    <div class="beruf-links detail-links">
+      <a class="btn btn-video" href="${b.video}" target="_blank" rel="noopener">▶ Video ansehen</a>
+      <a class="btn btn-info" href="${b.info}" target="_blank" rel="noopener">ℹ Mehr Infos</a>
+      ${lehrstelle}
+      <button class="btn ${gemerkt ? "btn-primary" : "btn-info"}" id="detail-merk">${gemerkt ? "❤️ Gemerkt" : "🤍 Merken"}</button>
+    </div>
+    ${aehnlichHtml}
+  `;
+
+  $("#detail-merk").addEventListener("click", () => { merkToggle(b); openDetail(b); });
+  $$(".related-chip").forEach(chip => chip.addEventListener("click", () => {
+    const ziel = DATEN.find(x => berufId(x) === chip.dataset.id);
+    if (ziel) openDetail(ziel);
+  }));
+
+  const ov = $("#detail-overlay");
+  ov.hidden = false;
+  document.body.style.overflow = "hidden";
+  ov.scrollTop = 0;
+}
+function closeDetail() {
+  $("#detail-overlay").hidden = true;
+  document.body.style.overflow = "";
 }
 
 /* ---------- Merkliste-Ansicht ---------- */
@@ -388,6 +447,16 @@ document.addEventListener("DOMContentLoaded", () => {
   initQuellen();
   showMeta();
   updateMerkBadge();
+
+  // Detail-Fenster schliessen
+  $("#detail-close").addEventListener("click", closeDetail);
+  $("#detail-overlay").addEventListener("click", e => { if (e.target.id === "detail-overlay") closeDetail(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
+
+  // Zufalls-Beruf
+  $("#zufall").addEventListener("click", () => {
+    if (DATEN.length) openDetail(DATEN[Math.floor(Math.random() * DATEN.length)]);
+  });
 
   // Merkliste-Aktionen
   $("#merk-print").addEventListener("click", () => window.print());

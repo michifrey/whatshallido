@@ -23,6 +23,10 @@ Die Seite hat drei interaktive Werkzeuge:
 Zu jedem Beruf gibt es ausserdem einen Link **«🔍 Lehrstelle finden»** (Lehrstellen-/
 Schnupperlehre-Suche), neben Video und Infos.
 
+Ein Klick auf eine Berufskarte öffnet eine **Detail-Ansicht** mit allen Infos und
+**ähnlichen Berufen** zum Weiterstöbern. Der **«🎲 Überrasch mich»**-Button zeigt
+einen zufälligen Beruf – ideal, um Neues zu entdecken.
+
 ## So benutzt du die Seite
 
 **Variante A – einfach öffnen (offline):**

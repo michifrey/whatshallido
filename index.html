@@ -81,6 +81,7 @@
       </div>
       <div class="toolbar">
         <input id="suche" type="search" placeholder="Beruf suchen … z.B. Koch, Informatik, Pflege">
+        <button id="zufall" class="btn btn-ghost" title="Zeig mir einen zufälligen Beruf">🎲 Überrasch mich</button>
         <span id="explorer-count"></span>
       </div>
       <div id="typ-filter" class="segmented"></div>
@@ -197,6 +198,14 @@
     </section>
 
   </main>
+
+  <!-- ============ Detail-Fenster (Modal) ============ -->
+  <div id="detail-overlay" class="overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="d-name">
+      <button id="detail-close" class="modal-close" aria-label="Schliessen">✕</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
 
   <!-- ============ Footer / Quellen ============ -->
   <footer>
