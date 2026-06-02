@@ -19,6 +19,8 @@
         <button class="nav-btn" data-view="explorer">🔎 Explorer</button>
         <button class="nav-btn" data-view="entdecker">✨ Entdecker</button>
         <button class="nav-btn" data-view="test">🧩 Stärken-Test</button>
+        <button class="nav-btn" data-view="bildung">🎓 Bildungsweg</button>
+        <button class="nav-btn" data-view="merkliste">❤️ Merkliste<span id="merk-badge" class="badge-count"></span></button>
       </nav>
     </div>
   </header>
@@ -124,6 +126,74 @@
         <h3 style="margin:1.6rem 0 1rem">Berufe, die zu dir passen könnten</h3>
         <div id="empfehlungen" class="grid"></div>
       </div>
+    </section>
+
+    <!-- ============ BILDUNGSWEG ============ -->
+    <section id="bildung" class="view">
+      <div class="section-intro">
+        <h2>🎓 Dein Bildungsweg in der Schweiz</h2>
+        <p class="lead">Nach der obligatorischen Schule hast du viele Wege offen – und fast keiner ist eine Sackgasse. Hier siehst du, wie alles zusammenhängt.</p>
+      </div>
+
+      <div class="bildung-stufen">
+        <div class="stufe">
+          <div class="stufe-kopf">1 · Obligatorische Schule</div>
+          <div class="stufe-body">
+            <div class="bk"><b>Volksschule</b><span>Primar- und Sekundarstufe I – für alle, bis ca. 15 Jahre.</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ Berufswahl &amp; Schnupperlehre</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">2 · Sekundarstufe II</div>
+          <div class="stufe-body two">
+            <div class="bk hl"><b>Berufliche Grundbildung 🔧</b><span>Lehre im Betrieb + Berufsfachschule. <b>EFZ</b> (3–4 J.) oder <b>EBA</b> (2 J.). Optional mit <b>Berufsmaturität</b>.</span></div>
+            <div class="bk"><b>Allgemeinbildung 📖</b><span>Gymnasium (Matura), Fachmittelschule (FMS) – als Weg an die Hochschule.</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ mit Lehrabschluss / Maturität geht es weiter</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">3 · Tertiärstufe</div>
+          <div class="stufe-body two">
+            <div class="bk hl"><b>Höhere Berufsbildung 🛠️</b><span>Höhere Fachschule (HF), eidg. Berufs- &amp; höhere Fachprüfungen – praxisnah, baut auf der Lehre auf.</span></div>
+            <div class="bk"><b>Hochschulen 🎓</b><span>Fachhochschule (FH), Universität/ETH, Pädagogische Hochschule (PH).</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ ein Leben lang</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">4 · Weiterbildung</div>
+          <div class="stufe-body">
+            <div class="bk"><b>Lebenslanges Lernen</b><span>Kurse, Nachholbildung, Umschulung – Wechsel sind jederzeit möglich. Das System ist <b>durchlässig</b>.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-callout">
+        💡 <b>Wichtig:</b> Auch mit einer Lehre stehen dir später alle Türen offen – über die Berufsmaturität sogar der Weg an die Fachhochschule. Du musst dich jetzt nicht für immer festlegen.
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://www.berufsberatung.ch/dyn/show/2881" target="_blank" rel="noopener">Mehr zum Bildungssystem ↗</a>
+        <button class="btn btn-primary" data-goto="explorer">🔎 Berufe der Lehre ansehen</button>
+      </div>
+    </section>
+
+    <!-- ============ MERKLISTE ============ -->
+    <section id="merkliste" class="view">
+      <div class="section-intro">
+        <h2>❤️ Meine Merkliste</h2>
+        <p class="lead">Berufe, die dich interessieren – tippe bei jedem Beruf auf das Herz, um ihn hier zu sammeln. Die Liste bleibt auf diesem Gerät gespeichert.</p>
+      </div>
+      <div id="merk-leer" class="hint">Noch keine Berufe gemerkt. Stöbere im <a href="#" data-goto="explorer">Explorer</a> oder mach den <a href="#" data-goto="test">Stärken-Test</a> und tippe auf ❤️.</div>
+      <div class="btn-row" id="merk-actions" style="display:none">
+        <button class="btn btn-info" id="merk-print">🖨️ Drucken / als PDF speichern</button>
+        <button class="btn btn-info" id="merk-clear">🗑️ Liste leeren</button>
+      </div>
+      <div id="merkliste-grid" class="grid"></div>
     </section>
 
   </main>

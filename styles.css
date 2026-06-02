@@ -45,6 +45,9 @@ nav { margin-left: auto; display: flex; gap: .4rem; flex-wrap: wrap; }
 }
 .nav-btn:hover { background: rgba(255,255,255,.3); }
 .nav-btn.active { background: #fff; color: var(--primary); }
+.badge-count { display: none; place-items: center; background: #fff; color: var(--primary);
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; font-size: .72rem; font-weight: 800; margin-left: .35rem; }
+.nav-btn.active .badge-count { background: var(--primary); color: #fff; }
 
 /* ---------- Layout ---------- */
 main { max-width: 1100px; margin: 0 auto; padding: clamp(1.2rem, 4vw, 2.5rem); }
@@ -100,6 +103,8 @@ h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: .4rem; }
 .btn-video:hover { background: #0f172a; }
 .btn-info { background: #f1f5f9; color: var(--ink); }
 .btn-info:hover { background: #e2e8f0; }
+.btn-lehrstelle { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.btn-lehrstelle:hover { background: #d1fae5; }
 .btn-row { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1rem; }
 
 /* ---------- Suche & Filter (Explorer) ---------- */
@@ -144,6 +149,15 @@ h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: .4rem; }
   position: absolute; top: -10px; right: 12px; background: var(--primary); color: #fff;
   font-size: .75rem; font-weight: 800; padding: .25rem .6rem; border-radius: 999px; box-shadow: var(--shadow);
 }
+.herz {
+  position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,.85); border: 0;
+  width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 1.05rem; line-height: 1;
+  box-shadow: var(--shadow); transition: transform .12s; z-index: 2;
+}
+.herz:hover { transform: scale(1.15); }
+.herz.on { background: #fee2e8; }
+.typ-badge { display: inline-block; background: #ede9fe; color: #6d28d9; font-size: .68rem;
+  font-weight: 700; padding: .1rem .4rem; border-radius: 999px; margin-left: .2rem; }
 
 /* ---------- Entdecker (Dimensionen wählen) ---------- */
 .dim-wahl { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); margin-bottom: 2rem; }
@@ -207,6 +221,30 @@ footer h3 { color: #fff; margin-bottom: .8rem; font-size: 1.05rem; }
 .admin-link:hover { text-decoration: underline; }
 
 .leer { color: var(--muted); padding: 2rem; text-align: center; grid-column: 1 / -1; }
+
+/* ---------- Bildungsweg ---------- */
+.bildung-stufen { max-width: 760px; margin: 0 auto; }
+.stufe { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.stufe-kopf { background: var(--primary); color: #fff; font-weight: 800; padding: .7rem 1.2rem; font-size: 1.05rem; }
+.stufe-body { padding: 1.1rem; display: grid; gap: 1rem; }
+.stufe-body.two { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.bk { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; }
+.bk b { display: block; margin-bottom: .3rem; }
+.bk span { color: var(--muted); font-size: .92rem; }
+.bk.hl { background: #fff5f7; border-color: #fecdd3; }
+.pfeil { text-align: center; color: var(--muted); font-weight: 700; padding: .8rem; font-size: .9rem; }
+.info-callout { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; border-radius: 12px;
+  padding: 1.1rem 1.3rem; margin: 1.6rem auto; max-width: 760px; line-height: 1.6; }
+
+/* ---------- Druck (Merkliste als PDF) ---------- */
+@media print {
+  header, footer, nav, .toolbar, .chips, .segmented, #merk-actions, #merk-leer { display: none !important; }
+  .view { display: none !important; }
+  #merkliste.view { display: block !important; }
+  .herz, .match-badge { display: none !important; }
+  .beruf-card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  body { background: #fff; }
+}
 
 /* ---------- Mobile ---------- */
 @media (max-width: 600px) {

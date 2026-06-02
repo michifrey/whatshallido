@@ -15,6 +15,13 @@ Die Seite hat drei interaktive Werkzeuge:
 3. **🧩 Stärken-Schwächen-Test** – 18 kurze Fragen («Was mache ich gern? Was
    kann ich gut? Was nicht?»). Ergebnis: ein persönliches Interessen-Profil
    mit Balken, deine Stärken/Schwächen und konkrete Berufsvorschläge.
+4. **❤️ Merkliste** – interessante Berufe per Herz-Klick sammeln (bleibt auf dem
+   Gerät gespeichert), als PDF drucken oder wieder leeren.
+5. **🎓 Bildungsweg** – verständliche Übersicht über das Schweizer Bildungssystem
+   (Volksschule → Lehre/Gymnasium → HF/FH → Weiterbildung).
+
+Zu jedem Beruf gibt es ausserdem einen Link **«🔍 Lehrstelle finden»** (Lehrstellen-/
+Schnupperlehre-Suche), neben Video und Infos.
 
 ## So benutzt du die Seite
 

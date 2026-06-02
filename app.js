@@ -18,21 +18,51 @@ const DATEN = (window.BERUFE_DATA && window.BERUFE_DATA.length)
   ? window.BERUFE_DATA : BERUFE;
 const META = window.BERUFE_META || null;
 
+/* Eindeutige ID eines Berufs (berufe.js hat .id, data.js-Fallback nutzt Namen) */
+const berufId = b => b.id || b.name;
+
+/* ---------- Merkliste (Favoriten) – im Browser gespeichert ---------- */
+const MERK_KEY = "berufskompass_merkliste";
+let merkliste = new Set();
+try { merkliste = new Set(JSON.parse(localStorage.getItem(MERK_KEY) || "[]")); } catch (_) {}
+function merkSpeichern() {
+  try { localStorage.setItem(MERK_KEY, JSON.stringify([...merkliste])); } catch (_) {}
+}
+function merkToggle(b) {
+  const id = berufId(b);
+  if (merkliste.has(id)) merkliste.delete(id); else merkliste.add(id);
+  merkSpeichern();
+  updateMerkBadge();
+  if ($("#merkliste").classList.contains("active")) renderMerkliste();
+}
+function updateMerkBadge() {
+  const badge = $("#merk-badge");
+  if (!badge) return;
+  badge.textContent = merkliste.size ? merkliste.size : "";
+  badge.style.display = merkliste.size ? "inline-grid" : "none";
+}
+
+/* Link zur Lehrstellensuche (Schnupperlehre / Lehrstelle finden) */
+function lehrstellenLink(name) {
+  return "https://www.yousty.ch/de-CH/lehrstellen?q=" + encodeURIComponent(name);
+}
+
 /* ---------- Navigation zwischen den Ansichten ---------- */
 function showView(id) {
   $$(".view").forEach(v => v.classList.remove("active"));
   $("#" + id).classList.add("active");
   $$(".nav-btn").forEach(b => b.classList.toggle("active", b.dataset.view === id));
+  if (id === "merkliste") renderMerkliste();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 /* ---------- Berufskarte (wiederverwendbar) ---------- */
 function berufKarte(b, treffer) {
-  const kat = KATEGORIEN[b.kat];
+  const kat = KATEGORIEN[b.kat] || { emoji: "💼", name: "Beruf", farbe: "#64748b" };
   const card = el("article", "beruf-card");
   card.style.setProperty("--kat-farbe", kat.farbe);
 
-  const tags = b.tags
+  const tags = (b.tags || [])
     .filter(t => DIMENSIONEN[t])
     .map(t => `<span class="tag">${DIMENSIONEN[t].emoji} ${DIMENSIONEN[t].name.split(" ")[0]}</span>`)
     .join("");
@@ -41,23 +71,61 @@ function berufKarte(b, treffer) {
     ? `<div class="match-badge">${treffer}% Match</div>`
     : "";
 
+  const gemerkt = merkliste.has(berufId(b));
+  const typBadge = b.typ === "weiterfuehrend"
+    ? `<span class="typ-badge">📚 weiterführend</span>` : "";
+
+  // "Lehrstelle finden" nur bei Lehrberufen
+  const lehrstelle = (b.typ === "weiterfuehrend") ? "" :
+    `<a class="btn btn-lehrstelle" href="${lehrstellenLink(b.name)}" target="_blank" rel="noopener">🔍 Lehrstelle</a>`;
+
   card.innerHTML = `
     ${match}
+    <button class="herz ${gemerkt ? "on" : ""}" title="Zur Merkliste hinzufügen" aria-label="Merken">${gemerkt ? "❤️" : "🤍"}</button>
     <div class="beruf-head">
       <span class="beruf-emoji">${kat.emoji}</span>
       <div>
         <h3>${b.name}</h3>
-        <span class="beruf-kat">${kat.name} · ${b.dauer}</span>
+        <span class="beruf-kat">${kat.name} · ${b.dauer || ""} ${typBadge}</span>
       </div>
     </div>
-    <p class="beruf-desc">${b.desc}</p>
+    <p class="beruf-desc">${b.desc || ""}</p>
     <div class="beruf-tags">${tags}</div>
     <div class="beruf-links">
-      <a class="btn btn-video" href="${b.video}" target="_blank" rel="noopener">▶ Video ansehen</a>
-      <a class="btn btn-info" href="${b.info}" target="_blank" rel="noopener">ℹ Mehr Infos</a>
+      <a class="btn btn-video" href="${b.video}" target="_blank" rel="noopener">▶ Video</a>
+      <a class="btn btn-info" href="${b.info}" target="_blank" rel="noopener">ℹ Infos</a>
+      ${lehrstelle}
     </div>
   `;
+
+  const herz = $(".herz", card);
+  herz.addEventListener("click", () => {
+    merkToggle(b);
+    const on = merkliste.has(berufId(b));
+    herz.classList.toggle("on", on);
+    herz.textContent = on ? "❤️" : "🤍";
+  });
+
   return card;
+}
+
+/* ---------- Merkliste-Ansicht ---------- */
+function renderMerkliste() {
+  const grid = $("#merkliste-grid");
+  const leer = $("#merk-leer");
+  const actions = $("#merk-actions");
+  grid.innerHTML = "";
+  const liste = DATEN.filter(b => merkliste.has(berufId(b)))
+    .sort((a, b) => a.name.localeCompare(b.name, "de"));
+
+  if (!liste.length) {
+    leer.style.display = "block";
+    actions.style.display = "none";
+    return;
+  }
+  leer.style.display = "none";
+  actions.style.display = "flex";
+  liste.forEach(b => grid.appendChild(berufKarte(b)));
 }
 
 /* =========================================================================
@@ -313,11 +381,21 @@ function showMeta() {
 
 document.addEventListener("DOMContentLoaded", () => {
   $$(".nav-btn").forEach(b => b.addEventListener("click", () => showView(b.dataset.view)));
-  $$("[data-goto]").forEach(b => b.addEventListener("click", () => showView(b.dataset.goto)));
+  $$("[data-goto]").forEach(b => b.addEventListener("click", e => { e.preventDefault(); showView(b.dataset.goto); }));
   initExplorer();
   initEntdecker();
   initTest();
   initQuellen();
   showMeta();
+  updateMerkBadge();
+
+  // Merkliste-Aktionen
+  $("#merk-print").addEventListener("click", () => window.print());
+  $("#merk-clear").addEventListener("click", () => {
+    if (merkliste.size && confirm("Ganze Merkliste leeren?")) {
+      merkliste.clear(); merkSpeichern(); updateMerkBadge(); renderMerkliste();
+    }
+  });
+
   showView("start");
 });
