@@ -89,7 +89,11 @@ const SEED = {
     "Motorradmechaniker/in EFZ","Fahrradmechaniker/in EFZ","Uhrmacher/in EFZ",
     "Mikromechaniker/in EFZ","Metallbauer/in EFZ","Metallbaukonstrukteur/in EFZ",
     "Schmied/in EFZ","Gusstechnologe/-login EFZ","Oberflächenbeschichter/in EFZ",
-    "Kältesystem-Monteur/in EFZ","Seilbahn-Mechatroniker/in EFZ"
+    "Kältesystem-Monteur/in EFZ","Seilbahn-Mechatroniker/in EFZ",
+    "Multimediaelektroniker/in EFZ","Gebäudeinformatiker/in EFZ",
+    "Chemie- und Pharmatechnologe/-login EFZ","Laborant/in EFZ","Physiklaborant/in EFZ",
+    "Textiltechnologe/-login EFZ","Bootbauer/in EFZ","Hufschmied/in EFZ",
+    "Feinwerkoptiker/in EFZ","Kunststoffverarbeiter/in EBA"
   ],
   it: [
     "Informatiker/in EFZ Applikationsentwicklung","Informatiker/in EFZ Plattformentwicklung",
@@ -100,7 +104,8 @@ const SEED = {
     "Fachmann/-frau Gesundheit EFZ","Assistent/in Gesundheit und Soziales EBA",
     "Medizinische/r Praxisassistent/in EFZ","Dentalassistent/in EFZ","Pharma-Assistent/in EFZ",
     "Drogist/in EFZ","Augenoptiker/in EFZ","Hörsystem-Akustiker/in EFZ","Podologe/-login EFZ",
-    "Orthopädieschuhmacher/in EFZ","Zahntechniker/in EFZ"
+    "Orthopädieschuhmacher/in EFZ","Zahntechniker/in EFZ",
+    "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ","Orthopädist/in EFZ"
   ],
   soziales: [
     "Fachmann/-frau Betreuung EFZ","Fachmann/-frau Betreuung EFZ Kinderbetreuung",
@@ -111,19 +116,25 @@ const SEED = {
     "Grafiker/in EFZ","Polygraf/in EFZ","Drucktechnologe/-login EFZ","Printmedienverarbeiter/in EFZ",
     "Fotograf/in EFZ","Fotofachmann/-frau EFZ","Interactive Media Designer EFZ",
     "Gestalter/in Werbetechnik EFZ","Bekleidungsgestalter/in EFZ","Bekleidungsnäher/in EBA",
-    "Goldschmied/in EFZ","Keramiker/in EFZ","Geigenbauer/in EFZ","Bühnentänzer/in EFZ"
+    "Goldschmied/in EFZ","Keramiker/in EFZ","Geigenbauer/in EFZ","Bühnentänzer/in EFZ",
+    "Veranstaltungsfachmann/-frau EFZ","Theatermaler/in EFZ","Holzbildhauer/in EFZ",
+    "Vergolder/in-Einrahmer/in EFZ","Buchbinder/in EFZ","Sattler/in EFZ",
+    "Schuhmacher/in EFZ","Textilgestalter/in EFZ"
   ],
   wirtschaft: [
     "Kaufmann/-frau EFZ","Büroassistent/in EBA","Detailhandelsfachmann/-frau EFZ",
     "Detailhandelsassistent/in EBA","Fachmann/-frau Kundendialog EFZ","Logistiker/in EFZ",
-    "Logistiker/in EBA","Strassentransportfachmann/-frau EFZ","Buchhändler/in EFZ"
+    "Logistiker/in EBA","Strassentransportfachmann/-frau EFZ","Buchhändler/in EFZ",
+    "Fachmann/-frau öffentlicher Verkehr EFZ","Kaufmann/-frau EFZ Bank",
+    "Kaufmann/-frau EFZ öffentliche Verwaltung","Kaufmann/-frau EFZ Reisebüro"
   ],
   natur: [
     "Landwirt/in EFZ","Agrarpraktiker/in EBA","Winzer/in EFZ","Weintechnologe/-login EFZ",
     "Obstfachmann/-frau EFZ","Gemüsegärtner/in EFZ","Gärtner/in EFZ Garten- und Landschaftsbau",
     "Gärtner/in EFZ Zierpflanzen","Gärtner/in EFZ Baumschule","Florist/in EFZ","Forstwart/in EFZ",
     "Tierpfleger/in EFZ","Pferdefachmann/-frau EFZ","Tiermedizinische/r Praxisassistent/in EFZ",
-    "Recyclist/in EFZ"
+    "Recyclist/in EFZ","Pferdewart/in EBA","Gärtner/in EBA","Weinküfer/in EFZ",
+    "Milchpraktiker/in EBA","Gärtner/in EFZ Stauden","Gärtner/in EFZ Friedhofgärtnerei"
   ],
   gastro: [
     "Koch/Köchin EFZ","Küchenangestellte/r EBA","Systemgastronomiefachmann/-frau EFZ",
@@ -131,7 +142,8 @@ const SEED = {
     "Hotellerieangestellte/r EBA","Hotel-Kommunikationsfachmann/-frau EFZ",
     "Bäcker/in-Konditor/in-Confiseur/in EFZ","Konditor/in-Confiseur/in EFZ",
     "Fleischfachmann/-frau EFZ","Fleischfachassistent/in EBA","Lebensmitteltechnologe/-login EFZ",
-    "Milchtechnologe/-login EFZ"
+    "Milchtechnologe/-login EFZ","Bäckerei-Konditorei-Confiserie-Praktiker/in EBA",
+    "Getränketechnologe/-login EFZ"
   ],
   bau: [
     "Zeichner/in EFZ Architektur","Zeichner/in EFZ Ingenieurbau","Zeichner/in EFZ Innenarchitektur",
@@ -141,7 +153,9 @@ const SEED = {
     "Maler/in EFZ","Schreiner/in EFZ","Schreinerpraktiker/in EBA","Bodenleger/in EFZ",
     "Sanitärinstallateur/in EFZ","Heizungsinstallateur/in EFZ","Lüftungsanlagenbauer/in EFZ",
     "Spengler/in EFZ","Gebäudetechnikplaner/in EFZ","Steinmetz/in EFZ",
-    "Flachglastechnologe/-login EFZ","Fachmann/-frau Betriebsunterhalt EFZ"
+    "Flachglastechnologe/-login EFZ","Fachmann/-frau Betriebsunterhalt EFZ",
+    "Industrie- und Unterlagsbodenbauer/in EFZ","Storenmonteur/in EFZ","Hafner/in EFZ",
+    "Gebäudereiniger/in EFZ","Abdichter/in EFZ","Bauwerktrenner/in EFZ"
   ],
   koerper: [
     "Coiffeur/-euse EFZ","Coiffeur/-euse EBA","Kosmetiker/in EFZ"
@@ -152,8 +166,11 @@ const SEED = {
 const WEITERFUEHREND = {
   gesundheit: ["Pflegefachmann/-frau HF","Dipl. Rettungssanitäter/in HF",
                "Biomedizinische/r Analytiker/in HF","Fachmann/-frau Operationstechnik HF",
-               "Physiotherapeut/in FH","Ergotherapeut/in FH","Hebamme FH","Ernährungsberater/in FH"],
-  soziales:   ["Sozialpädagoge/-gin HF","Kindheitspädagoge/-gin HF","Primarlehrer/in PH","Sekundarlehrer/in PH"],
+               "Physiotherapeut/in FH","Ergotherapeut/in FH","Hebamme FH","Ernährungsberater/in FH",
+               "Fachmann/-frau für medizinisch-technische Radiologie HF","Dentalhygieniker/in HF",
+               "Optometrist/in FH"],
+  soziales:   ["Sozialpädagoge/-gin HF","Kindheitspädagoge/-gin HF","Primarlehrer/in PH",
+               "Sekundarlehrer/in PH","Kindergartenlehrperson PH"],
   technik:    ["Maschineningenieur/in FH","Elektroingenieur/in FH"],
   it:         ["Informatik-Ingenieur/in FH","Wirtschaftsinformatiker/in FH"],
   wirtschaft: ["Betriebsökonom/in FH","Immobilienbewirtschafter/in mit eidg. FA"],

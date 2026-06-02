@@ -1,25 +1,40 @@
 {
   "meta": {
-    "generatedAt": "2026-06-02T20:31:20.010Z",
-    "total": 158,
-    "lehre": 135,
-    "weiterfuehrend": 23,
+    "generatedAt": "2026-06-02T20:39:06.701Z",
+    "total": 200,
+    "lehre": 173,
+    "weiterfuehrend": 27,
     "neuVomLiveAbgleich": 0,
     "proKategorie": {
-      "technik": 34,
+      "technik": 44,
       "it": 8,
-      "gesundheit": 18,
-      "soziales": 9,
-      "gestaltung": 15,
-      "wirtschaft": 11,
-      "natur": 17,
-      "gastro": 14,
-      "bau": 29,
+      "gesundheit": 23,
+      "soziales": 10,
+      "gestaltung": 23,
+      "wirtschaft": 15,
+      "natur": 23,
+      "gastro": 16,
+      "bau": 35,
       "koerper": 3
     },
     "quelle": "Basisliste + berufsberatung.ch"
   },
   "berufe": [
+    {
+      "id": "abdichter-in-efz",
+      "name": "Abdichter/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Abdichter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Abdichter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
     {
       "id": "agrarpraktiker-in-eba",
       "name": "Agrarpraktiker/in EBA",
@@ -201,6 +216,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "baeckerei-konditorei-confiserie-praktiker-in-eba",
+      "name": "Bäckerei-Konditorei-Confiserie-Praktiker/in EBA",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4ckerei-Konditorei-Confiserie-Praktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4ckerei-Konditorei-Confiserie-Praktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "bauingenieur-in-fh",
       "name": "Bauingenieur/in FH",
       "kat": "bau",
@@ -243,6 +273,21 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Baupraktiker%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Baupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bauwerktrenner-in-efz",
+      "name": "Bauwerktrenner/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bauwerktrenner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bauwerktrenner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -322,6 +367,36 @@
       "quelle": "seed"
     },
     {
+      "id": "bootbauer-in-efz",
+      "name": "Bootbauer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bootbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bootbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "buchbinder-in-efz",
+      "name": "Buchbinder/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Buchbinder%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Buchbinder%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "buchhaendler-in-efz",
       "name": "Buchhändler/in EFZ",
       "kat": "wirtschaft",
@@ -397,6 +472,21 @@
       "quelle": "seed"
     },
     {
+      "id": "chemie-und-pharmatechnologe-login-efz",
+      "name": "Chemie- und Pharmatechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chemie-%20und%20Pharmatechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chemie-%20und%20Pharmatechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "coiffeur-euse-eba",
       "name": "Coiffeur/-euse EBA",
       "kat": "koerper",
@@ -440,6 +530,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dentalassistent%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Dentalassistent%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "dentalhygieniker-in-hf",
+      "name": "Dentalhygieniker/in HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dentalhygieniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Dentalhygieniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "detailhandelsassistent-in-eba",
@@ -699,6 +804,36 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-bewegungs-und-gesundheitsfoerderung-efz",
+      "name": "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Bewegungs-%20und%20Gesundheitsf%C3%B6rderung%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Bewegungs-%20und%20Gesundheitsf%C3%B6rderung%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "fachmann-frau-fuer-medizinisch-technische-radiologie-hf",
+      "name": "Fachmann/-frau für medizinisch-technische Radiologie HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20f%C3%BCr%20medizinisch-technische%20Radiologie%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20f%C3%BCr%20medizinisch-technische%20Radiologie%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "fachmann-frau-gesundheit-efz",
       "name": "Fachmann/-frau Gesundheit EFZ",
       "kat": "gesundheit",
@@ -729,6 +864,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "fachmann-frau-oeffentlicher-verkehr-efz",
+      "name": "Fachmann/-frau öffentlicher Verkehr EFZ",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20%C3%B6ffentlicher%20Verkehr%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20%C3%B6ffentlicher%20Verkehr%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "fachmann-frau-operationstechnik-hf",
       "name": "Fachmann/-frau Operationstechnik HF",
       "kat": "gesundheit",
@@ -756,6 +906,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fahrradmechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fahrradmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "feinwerkoptiker-in-efz",
+      "name": "Feinwerkoptiker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Feinwerkoptiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Feinwerkoptiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -880,6 +1045,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "gaertner-in-eba",
+      "name": "Gärtner/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtner%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtner%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "gaertner-in-efz-baumschule",
       "name": "Gärtner/in EFZ Baumschule",
       "kat": "natur",
@@ -892,6 +1072,21 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtner%2Fin%20EFZ%20Baumschule",
       "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtner%2Fin%20EFZ%20Baumschule%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gaertner-in-efz-friedhofgaertnerei",
+      "name": "Gärtner/in EFZ Friedhofgärtnerei",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtner%2Fin%20EFZ%20Friedhofg%C3%A4rtnerei",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtner%2Fin%20EFZ%20Friedhofg%C3%A4rtnerei%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -910,6 +1105,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "gaertner-in-efz-stauden",
+      "name": "Gärtner/in EFZ Stauden",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtner%2Fin%20EFZ%20Stauden",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtner%2Fin%20EFZ%20Stauden%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "gaertner-in-efz-zierpflanzen",
       "name": "Gärtner/in EFZ Zierpflanzen",
       "kat": "natur",
@@ -922,6 +1132,36 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtner%2Fin%20EFZ%20Zierpflanzen",
       "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtner%2Fin%20EFZ%20Zierpflanzen%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gebaeudeinformatiker-in-efz",
+      "name": "Gebäudeinformatiker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%C3%A4udeinformatiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%C3%A4udeinformatiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gebaeudereiniger-in-efz",
+      "name": "Gebäudereiniger/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%C3%A4udereiniger%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%C3%A4udereiniger%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1016,6 +1256,22 @@
       "quelle": "seed"
     },
     {
+      "id": "getraenketechnologe-login-efz",
+      "name": "Getränketechnologe/-login EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Getr%C3%A4nketechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Getr%C3%A4nketechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "gipser-in-trockenbauer-in-efz",
       "name": "Gipser/in-Trockenbauer/in EFZ",
       "kat": "bau",
@@ -1091,6 +1347,21 @@
       "quelle": "seed"
     },
     {
+      "id": "hafner-in-efz",
+      "name": "Hafner/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hafner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Hafner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "hebamme-fh",
       "name": "Hebamme FH",
       "kat": "gesundheit",
@@ -1133,6 +1404,21 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbearbeiter%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbearbeiter%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "holzbildhauer-in-efz",
+      "name": "Holzbildhauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbildhauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbildhauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1199,6 +1485,21 @@
       "quelle": "seed"
     },
     {
+      "id": "hufschmied-in-efz",
+      "name": "Hufschmied/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hufschmied%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Hufschmied%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "ict-fachmann-frau-efz",
       "name": "ICT-Fachmann/-frau EFZ",
       "kat": "it",
@@ -1226,6 +1527,21 @@
       "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Immobilienbewirtschafter%2Fin%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Immobilienbewirtschafter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "industrie-und-unterlagsbodenbauer-in-efz",
+      "name": "Industrie- und Unterlagsbodenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industrie-%20und%20Unterlagsbodenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industrie-%20und%20Unterlagsbodenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1334,6 +1650,52 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "kaufmann-frau-efz-bank",
+      "name": "Kaufmann/-frau EFZ Bank",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EFZ%20Bank",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EFZ%20Bank%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kaufmann-frau-efz-oeffentliche-verwaltung",
+      "name": "Kaufmann/-frau EFZ öffentliche Verwaltung",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EFZ%20%C3%B6ffentliche%20Verwaltung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EFZ%20%C3%B6ffentliche%20Verwaltung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kaufmann-frau-efz-reisebuero",
+      "name": "Kaufmann/-frau EFZ Reisebüro",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EFZ%20Reiseb%C3%BCro",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EFZ%20Reiseb%C3%BCro%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "keramiker-in-efz",
       "name": "Keramiker/in EFZ",
       "kat": "gestaltung",
@@ -1346,6 +1708,22 @@
       "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Keramiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Keramiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kindergartenlehrperson-ph",
+      "name": "Kindergartenlehrperson PH",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend",
+        "kreativ"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kindergartenlehrperson%20PH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kindergartenlehrperson%20PH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1467,6 +1845,36 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kunststofftechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Kunststofftechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kunststoffverarbeiter-in-eba",
+      "name": "Kunststoffverarbeiter/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kunststoffverarbeiter%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kunststoffverarbeiter%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "laborant-in-efz",
+      "name": "Laborant/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Laborant%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Laborant%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1697,6 +2105,21 @@
       "quelle": "seed"
     },
     {
+      "id": "milchpraktiker-in-eba",
+      "name": "Milchpraktiker/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Milchpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Milchpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "milchtechnologe-login-efz",
       "name": "Milchtechnologe/-login EFZ",
       "kat": "gastro",
@@ -1740,6 +2163,22 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Motorradmechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Motorradmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "multimediaelektroniker-in-efz",
+      "name": "Multimediaelektroniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch",
+        "kreativ"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Multimediaelektroniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Multimediaelektroniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1788,6 +2227,21 @@
       "quelle": "seed"
     },
     {
+      "id": "optometrist-in-fh",
+      "name": "Optometrist/in FH",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Optometrist%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Optometrist%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "orthopaedieschuhmacher-in-efz",
       "name": "Orthopädieschuhmacher/in EFZ",
       "kat": "gesundheit",
@@ -1803,6 +2257,21 @@
       "quelle": "seed"
     },
     {
+      "id": "orthopaedist-in-efz",
+      "name": "Orthopädist/in EFZ",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orthop%C3%A4dist%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Orthop%C3%A4dist%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "pferdefachmann-frau-efz",
       "name": "Pferdefachmann/-frau EFZ",
       "kat": "natur",
@@ -1815,6 +2284,21 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pferdefachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Pferdefachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "pferdewart-in-eba",
+      "name": "Pferdewart/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pferdewart%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Pferdewart%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1861,6 +2345,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pharma-Assistent%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Pharma-Assistent%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "physiklaborant-in-efz",
+      "name": "Physiklaborant/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Physiklaborant%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Physiklaborant%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "physiotherapeut-in-fh",
@@ -2060,6 +2559,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "sattler-in-efz",
+      "name": "Sattler/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sattler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sattler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "schmied-in-efz",
       "name": "Schmied/in EFZ",
       "kat": "technik",
@@ -2102,6 +2616,21 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schreinerpraktiker%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Schreinerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "schuhmacher-in-efz",
+      "name": "Schuhmacher/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schuhmacher%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Schuhmacher%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2182,6 +2711,21 @@
       "quelle": "seed"
     },
     {
+      "id": "storenmonteur-in-efz",
+      "name": "Storenmonteur/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Storenmonteur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Storenmonteur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "strassenbauer-in-efz",
       "name": "Strassenbauer/in EFZ",
       "kat": "bau",
@@ -2225,6 +2769,51 @@
       "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Systemgastronomiefachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Systemgastronomiefachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "textilgestalter-in-efz",
+      "name": "Textilgestalter/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Textilgestalter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Textilgestalter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "textiltechnologe-login-efz",
+      "name": "Textiltechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Textiltechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Textiltechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "theatermaler-in-efz",
+      "name": "Theatermaler/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Theatermaler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Theatermaler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2285,6 +2874,51 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Umweltingenieur%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Umweltingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "veranstaltungsfachmann-frau-efz",
+      "name": "Veranstaltungsfachmann/-frau EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Veranstaltungsfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Veranstaltungsfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "vergolder-in-einrahmer-in-efz",
+      "name": "Vergolder/in-Einrahmer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Vergolder%2Fin-Einrahmer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Vergolder%2Fin-Einrahmer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "weinkuefer-in-efz",
+      "name": "Weinküfer/in EFZ",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weink%C3%BCfer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Weink%C3%BCfer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
