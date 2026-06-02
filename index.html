@@ -32,6 +32,7 @@
         <h1>Welcher Beruf passt zu dir?</h1>
         <p class="lead">
           Über 500 Lehrberufe gibt es in der Schweiz – da den Überblick zu behalten ist gar nicht so einfach.
+          Hier kannst du <b><span id="anzahl-berufe">viele</span> Berufe</b> entdecken.
           Dieser Berufs-Kompass hilft dir, deine Stärken zu entdecken und Berufe zu finden,
           die wirklich zu dir passen. Mit Videos und Infos zum Weiterklicken.
         </p>
@@ -80,6 +81,7 @@
         <input id="suche" type="search" placeholder="Beruf suchen … z.B. Koch, Informatik, Pflege">
         <span id="explorer-count"></span>
       </div>
+      <div id="typ-filter" class="segmented"></div>
       <div id="kat-filter" class="chips"></div>
       <div id="explorer-grid" class="grid"></div>
     </section>
@@ -131,16 +133,19 @@
     <div class="footer-inner">
       <h3>Hier geht's weiter – offizielle Quellen</h3>
       <div id="quellen-liste"></div>
+      <p id="meta-info" class="meta-info"></p>
       <p class="footer-note">
         Dieser Berufs-Kompass ist ein privates, kostenloses Hilfsmittel für die Berufswahl und
         ersetzt keine professionelle Berufsberatung. Die gezeigte Berufsauswahl ist nur ein Ausschnitt –
         die vollständige Liste mit allen Details findest du auf berufsberatung.ch.
         Für eine persönliche Beratung wende dich an die Berufsberatung deines Kantons (z.B. ask! im Aargau).
+        <br><a class="admin-link" href="admin.html">⚙️ Admin / Berufe verwalten</a>
       </p>
     </div>
   </footer>
 
   <script src="data.js"></script>
+  <script src="berufe.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

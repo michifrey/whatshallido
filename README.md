@@ -34,20 +34,52 @@ Die Seite hat drei interaktive Werkzeuge:
 |-------|--------|
 | `index.html` | Struktur der Seite (Start, Explorer, Entdecker, Test) |
 | `styles.css` | Gestaltung, responsiv für Handy & Desktop |
-| `data.js` | Alle Berufe, Kategorien und Test-Fragen (hier leicht erweiterbar) |
 | `app.js` | Logik für Suche, Filter, Entdecker und Test-Auswertung |
+| `data.js` | Kategorien, Interessens-Dimensionen, Test-Fragen + kuratierte Basis-Berufe (Fallback) |
+| **`berufe.json`** | **Kanonische Berufsdaten** (vom Crawler erzeugt) – für Abgleich/Diff |
+| **`berufe.js`** | Dieselben Daten als Browser-Script (`window.BERUFE_DATA`) – lädt auch offline |
+| `admin.html` / `admin.js` / `admin.css` | **Admin-Seite** zum Verwalten & Abgleichen |
+| `tools/crawler.mjs` | **Crawler / Auto-Abgleich** (Node) – baut `berufe.json` + `berufe.js` |
+| `.github/workflows/berufe-sync.yml` | **GitHub Action** – führt den Crawler automatisch aus |
 
-### Berufe ergänzen
-In `data.js` im Array `BERUFE` einen Eintrag hinzufügen:
+Die Seite lädt bevorzugt `berufe.js` (alle erfassten Berufe). Fehlt diese Datei,
+greift automatisch die kuratierte Basisliste aus `data.js`.
 
-```js
-{ name: "Neuer Beruf EFZ", kat: "technik", dauer: "4 Jahre",
-  tags: ["praktisch","forschend"],
-  desc: "Kurze Beschreibung des Berufs." }
+## 🔄 Crawler / Auto-Abgleich
+
+Aktuell sind **~160 echte Schweizer Berufe** erfasst (Lehrberufe + weiterführende).
+Der Crawler hält sie aktuell und ergänzt neue:
+
+```bash
+node tools/crawler.mjs        # erzeugt berufe.json + berufe.js neu
 ```
 
-`kat` muss einer der Schlüssel aus `KATEGORIEN` sein, `tags` einer oder mehrere
-aus `DIMENSIONEN`. Video- und Info-Links werden automatisch erzeugt.
+Der Crawler hat eine grosse, eingebaute Basisliste (funktioniert **immer**, auch
+ohne Internet) und versucht zusätzlich, `berufsberatung.ch` live abzugleichen, um
+neue Berufe zu ergänzen. Ist die Live-Quelle nicht erreichbar, wird sauber auf die
+Basisliste zurückgefallen.
+
+**Automatik:** Die GitHub Action `Berufe Auto-Abgleich` läuft jeden Montag (und auf
+Knopfdruck im *Actions*-Tab → *Run workflow*), führt den Crawler aus und committet
+Änderungen automatisch. Dafür muss in den Repo-*Settings → Actions → General →
+Workflow permissions* die Option **„Read and write permissions"** aktiviert sein.
+
+## ⚙️ Admin-Seite (`admin.html`)
+
+Erreichbar über den Link im Footer. Damit kannst du:
+
+- alle Berufe in einer Tabelle **bearbeiten** (Name, Kategorie, Typ, Dauer, Tags, Beschreibung),
+- neue Berufe **hinzufügen** oder löschen,
+- eine frische `berufe.json` **einspielen und abgleichen** (zeigt neu/geändert/entfernt),
+- die aktualisierten Dateien **exportieren** (`berufe.json` / `berufe.js`) zum Committen.
+
+> Da die Seite ohne Server läuft, werden Änderungen **im Browser** gemacht und am
+> Schluss als Datei exportiert. Diese Dateien dann ins Repo committen.
+
+### Berufe von Hand ergänzen
+Am einfachsten über die Admin-Seite. Alternativ in `tools/crawler.mjs` in der
+`SEED`-Liste einen Namen ergänzen und den Crawler neu laufen lassen. Kategorie
+und Tags werden automatisch zugeordnet (Heuristik), Video-/Info-Links erzeugt.
 
 ## Quellen & Inspiration
 

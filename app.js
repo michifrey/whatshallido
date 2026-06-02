@@ -12,6 +12,12 @@ function el(tag, cls, html) {
   return e;
 }
 
+/* Datenquelle: bevorzugt die vom Crawler erzeugte Liste (berufe.js),
+   sonst die kuratierte Basisliste aus data.js. */
+const DATEN = (window.BERUFE_DATA && window.BERUFE_DATA.length)
+  ? window.BERUFE_DATA : BERUFE;
+const META = window.BERUFE_META || null;
+
 /* ---------- Navigation zwischen den Ansichten ---------- */
 function showView(id) {
   $$(".view").forEach(v => v.classList.remove("active"));
@@ -58,8 +64,28 @@ function berufKarte(b, treffer) {
    1) BERUFS-EXPLORER  (A–Z, Suche + Filter)
    ========================================================================= */
 let aktiveKategorie = "alle";
+let aktiverTyp = "alle";
 
 function initExplorer() {
+  // Typ-Filter (Lehre / weiterführend), nur wenn die Daten typ enthalten
+  const hatTyp = DATEN.some(b => b.typ);
+  if (hatTyp) {
+    const typBox = $("#typ-filter");
+    [["alle", "Alle"], ["lehre", "🎓 Lehre (EFZ/EBA)"], ["weiterfuehrend", "📚 Weiterführend"]]
+      .forEach(([val, label], i) => {
+        const b = el("button", "seg" + (i === 0 ? " active" : ""), label);
+        b.dataset.typ = val;
+        typBox.appendChild(b);
+      });
+    typBox.addEventListener("click", e => {
+      const seg = e.target.closest(".seg");
+      if (!seg) return;
+      aktiverTyp = seg.dataset.typ;
+      $$(".seg", typBox).forEach(s => s.classList.toggle("active", s === seg));
+      renderExplorer();
+    });
+  }
+
   const filterBox = $("#kat-filter");
   // "Alle"-Button
   const alle = el("button", "chip active", "🔎 Alle Berufe");
@@ -90,7 +116,8 @@ function renderExplorer() {
   const grid = $("#explorer-grid");
   grid.innerHTML = "";
 
-  let liste = BERUFE.slice().sort((a, b) => a.name.localeCompare(b.name, "de"));
+  let liste = DATEN.slice().sort((a, b) => a.name.localeCompare(b.name, "de"));
+  if (aktiverTyp !== "alle") liste = liste.filter(b => (b.typ || "lehre") === aktiverTyp);
   if (aktiveKategorie !== "alle") liste = liste.filter(b => b.kat === aktiveKategorie);
   if (q) liste = liste.filter(b =>
     b.name.toLowerCase().includes(q) ||
@@ -146,7 +173,7 @@ function renderEntdecker() {
   }
   hint.style.display = "none";
 
-  const treffer = BERUFE
+  const treffer = DATEN
     .map(b => {
       const score = b.tags.filter(t => gewaehlteDims.has(t)).length;
       return { b, score };
@@ -243,7 +270,7 @@ function werteTestAus() {
     : "Spannend: Dich sprechen viele verschiedene Bereiche an! Du darfst ruhig breit ausprobieren.";
 
   // Berufs-Empfehlungen anhand der Top-Dimensionen
-  const empf = BERUFE
+  const empf = DATEN
     .map(b => ({ b, score: b.tags.filter(t => topDims.includes(t)).length }))
     .filter(x => x.score > 0)
     .sort((a, b) => b.score - a.score || a.b.name.localeCompare(b.b.name, "de"))
@@ -271,6 +298,19 @@ function initQuellen() {
   });
 }
 
+function showMeta() {
+  // Anzahl Berufe auf der Startseite dynamisch einsetzen
+  const span = $("#anzahl-berufe");
+  if (span) span.textContent = DATEN.length;
+  // Stand des letzten Abgleichs im Footer
+  const box = $("#meta-info");
+  if (box && META && META.generatedAt) {
+    const d = new Date(META.generatedAt);
+    box.textContent = `📊 ${META.total} Berufe erfasst · letzter Abgleich: ` +
+      d.toLocaleDateString("de-CH") + ` ${d.toLocaleTimeString("de-CH", {hour:"2-digit",minute:"2-digit"})}`;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   $$(".nav-btn").forEach(b => b.addEventListener("click", () => showView(b.dataset.view)));
   $$("[data-goto]").forEach(b => b.addEventListener("click", () => showView(b.dataset.goto)));
@@ -278,5 +318,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initEntdecker();
   initTest();
   initQuellen();
+  showMeta();
   showView("start");
 });
