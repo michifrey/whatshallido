@@ -28,10 +28,17 @@ export function ensureSchema(): void {
       video_url TEXT,
       lehrstelle_url TEXT,
       image_url TEXT,
+      zukunft TEXT,
       source TEXT DEFAULT 'seed',
       updated_at INTEGER
     );
   `);
+
+  // Leichte Migration: Spalte 'zukunft' bei bestehenden Datenbanken ergänzen.
+  const cols = sqlite.prepare("PRAGMA table_info(professions)").all() as { name: string }[];
+  if (!cols.some((c) => c.name === "zukunft")) {
+    sqlite.exec("ALTER TABLE professions ADD COLUMN zukunft TEXT");
+  }
 }
 
 export const db = drizzle(sqlite, { schema });

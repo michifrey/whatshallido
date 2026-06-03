@@ -18,6 +18,11 @@ export const professions = sqliteTable("professions", {
   videoUrl: text("video_url"),
   lehrstelleUrl: text("lehrstelle_url"),
   imageUrl: text("image_url"),
+  zukunft: text("zukunft", { mode: "json" }).$type<{
+    score: number;
+    label: string;
+    note: string;
+  } | null>(),
   source: text("source").default("seed"),
   updatedAt: integer("updated_at", { mode: "timestamp_ms" }),
 });

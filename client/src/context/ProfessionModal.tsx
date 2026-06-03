@@ -6,6 +6,7 @@ import { api } from "../api";
 import { useMerkliste } from "../hooks/useMerkliste";
 import type { Profession } from "../types";
 import { ProfessionImage } from "../components/ProfessionImage";
+import { ZukunftDetail } from "../components/ZukunftBadge";
 import { useTaxonomy } from "./TaxonomyContext";
 
 interface ModalValue {
@@ -106,6 +107,12 @@ function ProfessionModal({
               })}
             </div>
           </div>
+
+          {profession.zukunft && (
+            <div className="mt-4">
+              <ZukunftDetail zukunft={profession.zukunft} />
+            </div>
+          )}
 
           <div className="mt-5 flex flex-wrap gap-2">
             {profession.videoUrl && (

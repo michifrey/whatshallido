@@ -34,6 +34,7 @@ export interface Profession {
   videoUrl: string | null;
   lehrstelleUrl: string | null;
   imageUrl: string | null;
+  zukunft: { score: number; label: string; note: string } | null;
   source: string | null;
   updatedAt: number | null;
 }

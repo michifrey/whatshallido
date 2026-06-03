@@ -28,6 +28,9 @@ const professionSchema = z.object({
     .array(z.string().refine((v) => (dimensionKeys as readonly string[]).includes(v), "Unbekanntes Tag"))
     .min(1, "Mindestens ein Tag"),
   description: z.string().nullish(),
+  zukunft: z
+    .object({ score: z.number().int().min(1).max(5), label: z.string(), note: z.string() })
+    .nullish(),
   imageUrl: z.string().url().nullish().or(z.literal("")),
   infoUrl: z.string().url().nullish(),
   videoUrl: z.string().url().nullish(),

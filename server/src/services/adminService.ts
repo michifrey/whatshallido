@@ -2,6 +2,7 @@ import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { professions, type NewProfession, type Profession } from "../db/schema.js";
 import { infoUrl, lehrstelleUrl, slug, videoUrl } from "../domain/links.js";
+import { computeZukunft, type Zukunft } from "../domain/zukunft.js";
 import { getProfession } from "./professionService.js";
 
 export interface ProfessionInput {
@@ -16,6 +17,7 @@ export interface ProfessionInput {
   infoUrl?: string | null;
   videoUrl?: string | null;
   lehrstelleUrl?: string | null;
+  zukunft?: Zukunft | null;
 }
 
 function toRow(input: ProfessionInput, id: string): NewProfession {
@@ -31,6 +33,7 @@ function toRow(input: ProfessionInput, id: string): NewProfession {
     infoUrl: input.infoUrl ?? infoUrl(input.name),
     videoUrl: input.videoUrl ?? videoUrl(input.name),
     lehrstelleUrl: input.lehrstelleUrl ?? lehrstelleUrl(input.name),
+    zukunft: input.zukunft ?? computeZukunft(input.name, input.category),
     source: "admin",
     updatedAt: new Date(),
   };

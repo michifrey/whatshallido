@@ -1,5 +1,6 @@
 import seedJson from "../data/berufe.seed.json";
 import { lehrstelleUrl } from "../domain/links.js";
+import { computeZukunft } from "../domain/zukunft.js";
 import { db, ensureSchema, sqlite } from "./index.js";
 import { professions, type NewProfession } from "./schema.js";
 
@@ -33,6 +34,7 @@ export function seedDatabase(): number {
     videoUrl: b.video ?? null,
     lehrstelleUrl: lehrstelleUrl(b.name),
     imageUrl: b.imageUrl ?? null,
+    zukunft: computeZukunft(b.name, b.kat),
     source: b.quelle ?? "seed",
     updatedAt: new Date(),
   }));

@@ -4,6 +4,7 @@ import { useMerkliste } from "../hooks/useMerkliste";
 import { useProfessionModal } from "../context/ProfessionModal";
 import type { Profession, RecommendedProfession } from "../types";
 import { ProfessionImage } from "./ProfessionImage";
+import { ZukunftBadge } from "./ZukunftBadge";
 
 interface Props {
   profession: Profession | RecommendedProfession;
@@ -73,6 +74,12 @@ export function ProfessionCard({ profession }: Props) {
             );
           })}
         </div>
+
+        {profession.zukunft && (
+          <div className="mt-2">
+            <ZukunftBadge zukunft={profession.zukunft} />
+          </div>
+        )}
 
         <div className="mt-3 flex flex-wrap gap-2" onClick={(e) => e.stopPropagation()}>
           {profession.videoUrl && (
