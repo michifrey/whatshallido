@@ -101,9 +101,9 @@ Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
   für Lehrstellen gibt, führt der Finder zuverlässig zu den offiziellen Portalen.
 - **Bewerbungs-Helfer** (`/bewerbung`): Formular für Schnupperlehre **und** Lehrstelle,
   erzeugt live einen vollständigen Bewerbungsbrief im Schweizer Stil – Kopieren,
-  als Datei speichern oder als PDF drucken. Läuft ohne KI/Schlüssel; alle Daten
-  bleiben im Browser. Optional **«✨ mit KI verbessern»** (Claude API), wenn ein
-  `ANTHROPIC_API_KEY` gesetzt ist.
+  als **echtes PDF** (jsPDF, A4, auswählbarer Text), als Textdatei oder per Druckdialog.
+  Läuft ohne KI/Schlüssel; alle Daten bleiben im Browser. Optional
+  **«✨ mit KI verbessern»** (Claude API), wenn ein `ANTHROPIC_API_KEY` gesetzt ist.
 - **Bewerbungs-Tracker** (`/tracker`): Behalte den Überblick über deine Bewerbungen
   (Firma, Beruf, Status: geplant/beworben/Schnuppern/Gespräch/Zusage/Absage). Wird
   gerätelokal im Browser gespeichert.

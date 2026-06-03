@@ -1,10 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import { BookmarkPlus, Check, Copy, Download, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
+import { BookmarkPlus, Check, Copy, Download, FileDown, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api";
 import { useBewerbungen } from "../hooks/useBewerbungen";
 import { buildLetter, type LetterData, type LetterMode } from "../lib/letter";
+import { downloadLetterPdf } from "../lib/pdf";
 
 const emptyData: LetterData = {
   vorname: "", nachname: "", strasse: "", plz: "", ort: "", telefon: "", email: "",
@@ -102,13 +103,15 @@ export function Bewerbung() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+  const fileBase = `Bewerbung_${(data.beruf || "Beruf").replace(/[^\wäöü]+/gi, "_")}`;
   const download = () => {
     const blob = new Blob([displayed], { type: "text/plain;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `Bewerbung_${(data.beruf || "Beruf").replace(/[^\wäöü]+/gi, "_")}.txt`;
+    a.download = `${fileBase}.txt`;
     a.click();
   };
+  const pdf = () => downloadLetterPdf(displayed, `${fileBase}.pdf`);
 
   return (
     <div className="animate-fade space-y-5">
@@ -185,8 +188,9 @@ export function Bewerbung() {
             <button onClick={copy} className="btn-soft">
               {copied ? <Check size={16} /> : <Copy size={16} />} {copied ? "Kopiert!" : "Kopieren"}
             </button>
-            <button onClick={download} className="btn-soft"><Download size={16} /> Als Datei</button>
-            <button onClick={() => window.print()} className="btn-soft"><Printer size={16} /> Drucken / PDF</button>
+            <button onClick={pdf} className="btn-soft"><FileDown size={16} /> Als PDF</button>
+            <button onClick={download} className="btn-soft"><Download size={16} /> Als Textdatei</button>
+            <button onClick={() => window.print()} className="btn-soft"><Printer size={16} /> Drucken</button>
             <button onClick={trackApplication} className="btn-soft">
               {tracked ? <Check size={16} /> : <BookmarkPlus size={16} />} {tracked ? "Gemerkt!" : "Zur Bewerbungsliste"}
             </button>
