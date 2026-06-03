@@ -128,11 +128,35 @@ docker run -p 3000:3000 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs
 | `ADMIN_TOKEN` | `dev-admin-token` | Token für den Admin-Bereich (**in Produktion setzen!**) |
 | `UNSPLASH_ACCESS_KEY` | – | optional, für die Foto-Suche |
 
+## 🧪 Tests & CI
+
+```bash
+npm test            # alle Tests (server + client) via Vitest
+```
+
+- **Backend** (`server/test/`): Service-Logik (Filter, Empfehlungen, Meta) und
+  API-Integrationstests (öffentliche Endpoints + Admin-CRUD, Auth, Validierung)
+  gegen eine isolierte SQLite-Test-DB.
+- **Frontend** (`client/test/`): Komponenten- und Hook-Tests
+  (Vitest + Testing Library, jsdom).
+- **GitHub Action** `.github/workflows/ci.yml` führt bei jedem Push/PR
+  Typecheck, Tests und Build aus.
+
 ## 🖼️ Bilder
 
 Kombiniertes Konzept: Jeder Beruf hat ein optionales Foto-Feld (`imageUrl`).
 Ist keines gesetzt, rendert das Frontend eine generierte **SVG-Illustration** mit
 dem Kategorie-Farbverlauf und Emoji – funktioniert offline und überall.
+
+Fotos lassen sich einzeln im Admin setzen oder automatisch befüllen:
+
+```bash
+npm run fill-images -- --dry-run   # zeigt, welche Fotos gewählt würden
+npm run fill-images                # weist allen Berufen ohne Bild ein Foto zu
+npm run fill-images -- --force     # überschreibt auch vorhandene Bilder
+```
+
+Benötigt `UNSPLASH_ACCESS_KEY`; das Script schont das Unsplash-Rate-Limit.
 
 ## 🗄️ Datenbank & Seed
 
