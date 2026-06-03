@@ -18,7 +18,8 @@ Schweizer Berufen, Videos, Bildern und Lehrstellen-Links.
 .
 ├── client/            # React-Frontend (Vite + Tailwind)
 │   └── src/
-│       ├── pages/         Start, Explorer, Entdecker, Test, Bildungsweg, Merkliste
+│       ├── pages/         Start, Explorer, Entdecker, Test, Bildungsweg,
+│       │                  Lehrstellen-Finder, Bewerbungs-Helfer, Merkliste, Admin
 │       ├── components/     Karten, Modal, Bild (SVG/Foto), Header, Layout
 │       ├── context/        Taxonomie- & Modal-Provider
 │       ├── hooks/          Merkliste, Theme (Dark Mode)
@@ -80,6 +81,8 @@ Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
 | GET  | `/api/categories` | Kategorien inkl. Anzahl |
 | GET  | `/api/taxonomy` | Kategorien & Interessens-Dimensionen |
 | GET  | `/api/test` | Fragen & Skalen für den Stärken-Test |
+| GET  | `/api/cantons` | Liste der 26 Kantone |
+| GET  | `/api/professions/:id/placements?canton=&mode=` | Such-Links zu Lehrstellen-Portalen |
 | GET  | `/api/meta` | Statistik (Anzahl Berufe etc.) |
 | GET  | `/api/health` | Health-Check |
 | GET  | `/api/admin/check` | Token prüfen (Login) 🔒 |
@@ -89,6 +92,17 @@ Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
 | GET  | `/api/admin/images?q=` | Foto-Vorschläge (Unsplash) 🔒 |
 
 🔒 = erfordert Header `x-admin-token` (siehe Admin-Bereich).
+
+## 📍 Lehrstellen-Finder & 📄 Bewerbungs-Helfer
+
+- **Lehrstellen-/Schnupperstellen-Finder** (`/lehrstellen`): Beruf + Kanton wählen →
+  gezielte, vorausgefüllte Links zu Yousty, Lehrstellennachweis (LENA), Gateway und
+  einer Websuche, plus Tipps fürs Schnupperlehre-Finden. Da es keine offene Live-API
+  für Lehrstellen gibt, führt der Finder zuverlässig zu den offiziellen Portalen.
+- **Bewerbungs-Helfer** (`/bewerbung`): Formular für Schnupperlehre **und** Lehrstelle,
+  erzeugt live einen vollständigen Bewerbungsbrief im Schweizer Stil – Kopieren,
+  als Datei speichern oder als PDF drucken. Läuft ohne KI/Schlüssel; alle Daten
+  bleiben im Browser.
 
 ## 🔐 Admin-Bereich
 

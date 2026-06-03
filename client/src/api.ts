@@ -1,6 +1,9 @@
 import type {
+  Canton,
   CategoryWithCount,
   Meta,
+  PlacementLink,
+  PlacementMode,
   Profession,
   RecommendedProfession,
   Taxonomy,
@@ -47,4 +50,10 @@ export const api = {
   profession: (id: string) => getJson<Profession>(`/professions/${id}`),
   recommend: (dimensions: string[], limit?: number) =>
     postJson<RecommendedProfession[]>("/professions/recommend", { dimensions, limit }),
+  cantons: () => getJson<Canton[]>("/cantons"),
+  placements: (id: string, canton: string | undefined, mode: PlacementMode) => {
+    const qs = new URLSearchParams({ mode });
+    if (canton) qs.set("canton", canton);
+    return getJson<PlacementLink[]>(`/professions/${id}/placements?${qs.toString()}`);
+  },
 };

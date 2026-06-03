@@ -8,6 +8,8 @@ const links = [
   { to: "/explorer", label: "🔎 Explorer" },
   { to: "/entdecker", label: "✨ Entdecker" },
   { to: "/test", label: "🧩 Test" },
+  { to: "/lehrstellen", label: "📍 Lehrstellen" },
+  { to: "/bewerbung", label: "📄 Bewerbung" },
   { to: "/bildungsweg", label: "🎓 Bildungsweg" },
 ];
 

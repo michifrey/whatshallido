@@ -71,3 +71,17 @@ export interface Taxonomy {
   categories: Category[];
   dimensions: Dimension[];
 }
+
+export interface Canton {
+  code: string;
+  name: string;
+}
+
+export type PlacementMode = "lehrstelle" | "schnupperlehre";
+
+export interface PlacementLink {
+  provider: string;
+  label: string;
+  description: string;
+  url: string;
+}

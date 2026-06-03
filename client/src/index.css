@@ -33,7 +33,14 @@
   }
 }
 
-/* Druck: nur die Merkliste zeigen */
+/* Druck */
 @media print {
   .no-print { display: none !important; }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    background: white !important;
+    color: black !important;
+  }
 }

@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import { Heart, Info, PlaySquare, Search, X } from "lucide-react";
+import { FileText, Heart, Info, MapPin, PlaySquare, X } from "lucide-react";
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { Link } from "react-router-dom";
 import { api } from "../api";
 import { useMerkliste } from "../hooks/useMerkliste";
 import type { Profession } from "../types";
@@ -117,11 +118,6 @@ function ProfessionModal({
                 <Info size={16} /> Mehr Infos
               </a>
             )}
-            {profession.type !== "weiterfuehrend" && profession.lehrstelleUrl && (
-              <a href={profession.lehrstelleUrl} target="_blank" rel="noopener noreferrer" className="btn flex-1 border border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950/50 dark:text-emerald-300">
-                <Search size={16} /> Lehrstelle finden
-              </a>
-            )}
             <button
               onClick={() => toggle(profession.id)}
               className={gemerkt ? "btn-primary flex-1" : "btn-soft flex-1"}
@@ -130,6 +126,17 @@ function ProfessionModal({
               {gemerkt ? "Gemerkt" : "Merken"}
             </button>
           </div>
+
+          {profession.type !== "weiterfuehrend" && (
+            <div className="mt-2 flex flex-wrap gap-2">
+              <Link to={`/lehrstellen?beruf=${profession.id}`} onClick={onClose} className="btn flex-1 border border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950/50 dark:text-emerald-300">
+                <MapPin size={16} /> Lehrstelle finden
+              </Link>
+              <Link to={`/bewerbung?beruf=${profession.id}`} onClick={onClose} className="btn-soft flex-1">
+                <FileText size={16} /> Bewerbung schreiben
+              </Link>
+            </div>
+          )}
 
           {similar.length > 0 && (
             <div className="mt-6">

@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { cantons } from "../domain/cantons.js";
 import {
   abilityQuestions,
   abilityScale,
@@ -13,6 +14,10 @@ export const taxonomyRouter = Router();
 
 taxonomyRouter.get("/taxonomy", (_req, res) => {
   res.json({ categories, dimensions });
+});
+
+taxonomyRouter.get("/cantons", (_req, res) => {
+  res.json(cantons);
 });
 
 taxonomyRouter.get("/categories", (_req, res) => {

@@ -62,6 +62,21 @@ describe("öffentliche API", () => {
     expect(test.interestQuestions.length).toBe(18);
     expect(test.abilityQuestions.length).toBe(6);
   });
+
+  it("GET /api/cantons liefert 26 Kantone", async () => {
+    const data = await (await fetch(`${base}/api/cantons`)).json();
+    expect(data.length).toBe(26);
+  });
+
+  it("GET /api/professions/:id/placements liefert Such-Links", async () => {
+    const first = (await (await fetch(`${base}/api/professions`)).json())[0];
+    const res = await fetch(`${base}/api/professions/${first.id}/placements?canton=ZH&mode=schnupperlehre`);
+    expect(res.status).toBe(200);
+    const links = await res.json();
+    expect(Array.isArray(links)).toBe(true);
+    expect(links.length).toBeGreaterThanOrEqual(3);
+    expect(links.every((l: { url: string }) => l.url.startsWith("http"))).toBe(true);
+  });
 });
 
 describe("Admin-API (geschützt)", () => {
