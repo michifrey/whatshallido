@@ -148,6 +148,38 @@ docker run -p 3001:3001 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs
 | `ANTHROPIC_API_KEY` | – | optional, für «mit KI verbessern» im Bewerbungs-Helfer |
 | `ANTHROPIC_MODEL` | `claude-opus-4-8` | optional, überschreibt das KI-Modell |
 
+## ☁️ Öffentlich deployen (eigene URL)
+
+Damit die App von überall (Handy der Tochter, Kalender-Abo der Berufsmessen)
+erreichbar ist, braucht es eine öffentliche URL. Der Server liefert Frontend
+**und** API in einem Container aus – ideal für einen einfachen Cloud-Dienst.
+
+### Variante A – Render.com (empfohlen, kostenlos, in ~5 Min.)
+1. Repo zu GitHub pushen (ist bereits der Fall).
+2. Auf [render.com](https://render.com) mit GitHub anmelden.
+3. **New → Blueprint** wählen und dieses Repo angeben – Render liest
+   `render.yaml`, baut das `Dockerfile` und vergibt eine HTTPS-URL.
+4. Fertig. Bei jedem Push auf den Branch deployt Render automatisch neu.
+   Das `ADMIN_TOKEN` wird sicher generiert (im Dashboard einsehbar).
+
+### Variante B – Fly.io
+```bash
+fly launch --no-deploy --copy-config   # übernimmt fly.toml
+fly secrets set ADMIN_TOKEN=<geheim>
+fly deploy
+```
+
+### Gut zu wissen
+- **Datenbank:** Auf Gratis-Plänen ist der Speicher flüchtig. Das ist hier
+  unkritisch – der Server befüllt die DB bei jedem Start automatisch aus den
+  Seed-Daten (405 Berufe). Für dauerhafte Admin-Änderungen einen Plan mit
+  Disk/Volume an `/app/server/data` hängen (siehe `render.yaml` / `fly.toml`).
+- **Persönliche Daten** (Merkliste, Bewerbungs-Tracker) liegen im Browser
+  (localStorage) – pro Gerät, nichts wird hochgeladen.
+- **Kalender-Abo:** Nach dem Deployment funktioniert auf der Messen-Seite
+  „Kalender abonnieren" (Feed `https://DEINE-URL/api/messen.ics`) auch auf
+  fremden Geräten.
+
 ## 🧪 Tests & CI
 
 ```bash

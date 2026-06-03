@@ -1,0 +1,29 @@
+# Render.com Blueprint – ein Klick-Deployment für den Berufs-Kompass.
+# Anleitung: render.com -> New -> Blueprint -> dieses Repo wählen.
+# Render baut das Dockerfile, vergibt eine öffentliche HTTPS-URL und
+# deployt bei jedem Push auf den verbundenen Branch automatisch neu.
+services:
+  - type: web
+    name: berufs-kompass
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /app/server/data/berufe.db
+      # Admin-Token wird automatisch generiert (sicher). Wert im Dashboard einsehbar.
+      - key: ADMIN_TOKEN
+        generateValue: true
+      # Optionale Keys – im Dashboard eintragen (leer lassen = Funktion deaktiviert).
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: UNSPLASH_ACCESS_KEY
+        sync: false
+    # Hinweis: Der Free-Plan hat keinen persistenten Datenträger. Die SQLite-DB
+    # wird bei jedem Start automatisch aus den Seed-Daten neu befüllt (405 Berufe).
+    # Für dauerhafte Admin-Änderungen einen kostenpflichtigen Plan + Disk an
+    # /app/server/data hängen.
