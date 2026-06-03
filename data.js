@@ -196,6 +196,23 @@ const SKALA = [
   { wert: 3, label: "Voll und ganz" }
 ];
 
+/* Teil 2: «Was kann ich gut?» – eine Selbsteinschätzung pro Dimension */
+const KOENNEN_FRAGEN = [
+  { dim: "praktisch", text: "Mit den Händen arbeiten, bauen oder reparieren" },
+  { dim: "forschend", text: "Logisch denken, rechnen und Probleme lösen" },
+  { dim: "kreativ",   text: "Gestalten, zeichnen und kreative Ideen umsetzen" },
+  { dim: "sozial",    text: "Mit Menschen umgehen, zuhören und helfen" },
+  { dim: "fuehrend",  text: "Andere überzeugen, organisieren und präsentieren" },
+  { dim: "ordnend",   text: "Genau, ordentlich und strukturiert arbeiten" }
+];
+
+const KOENNEN_SKALA = [
+  { wert: 0, label: "Noch nicht" },
+  { wert: 1, label: "Ein wenig" },
+  { wert: 2, label: "Recht gut" },
+  { wert: 3, label: "Sehr gut" }
+];
+
 /* Quellen für die Seite */
 const QUELLEN = [
   { name: "Lehre in der Schweiz – Berufe A–Z entdecken", url: "https://www.lehre-in-der-schweiz.ch/" },

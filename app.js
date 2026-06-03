@@ -317,9 +317,12 @@ function renderEntdecker() {
 /* =========================================================================
    3) STÄRKEN-SCHWÄCHEN-TEST
    ========================================================================= */
-const antworten = {}; // index -> wert
+const antworten = {}; // Teil 1 Interesse: index -> wert
+const koennen = {};    // Teil 2 Können:   index -> wert
+const TEST_TOTAL = FRAGEN.length + KOENNEN_FRAGEN.length;
 
 function initTest() {
+  // Teil 1 – «Das mache ich gern»
   const box = $("#test-fragen");
   FRAGEN.forEach((f, i) => {
     const row = el("div", "frage");
@@ -334,71 +337,107 @@ function initTest() {
     box.appendChild(row);
   });
 
+  // Teil 2 – «Das kann ich gut» (Selbsteinschätzung pro Dimension)
+  const kbox = $("#test-koennen");
+  KOENNEN_FRAGEN.forEach((f, i) => {
+    const row = el("div", "frage");
+    const skala = KOENNEN_SKALA.map(s => `
+      <label class="skala-opt">
+        <input type="radio" name="k${i}" value="${s.wert}">
+        <span>${s.label}</span>
+      </label>`).join("");
+    row.innerHTML = `
+      <p class="frage-text"><span class="frage-nr">${DIMENSIONEN[f.dim].emoji}</span>${f.text}</p>
+      <div class="skala">${skala}</div>`;
+    kbox.appendChild(row);
+  });
+
+  function fortschritt() {
+    const n = Object.keys(antworten).length + Object.keys(koennen).length;
+    $("#test-fortschritt").style.width = Math.round((n / TEST_TOTAL) * 100) + "%";
+    $("#test-status").textContent = n + " / " + TEST_TOTAL + " beantwortet";
+  }
+
   box.addEventListener("change", e => {
-    if (e.target.name && e.target.name.startsWith("f")) {
-      antworten[+e.target.name.slice(1)] = +e.target.value;
-      const beantwortet = Object.keys(antworten).length;
-      $("#test-fortschritt").style.width =
-        Math.round((beantwortet / FRAGEN.length) * 100) + "%";
-      $("#test-status").textContent = beantwortet + " / " + FRAGEN.length + " beantwortet";
-    }
+    if (e.target.name && e.target.name[0] === "f") { antworten[+e.target.name.slice(1)] = +e.target.value; fortschritt(); }
+  });
+  kbox.addEventListener("change", e => {
+    if (e.target.name && e.target.name[0] === "k") { koennen[+e.target.name.slice(1)] = +e.target.value; fortschritt(); }
   });
 
   $("#test-auswerten").addEventListener("click", werteTestAus);
   $("#test-reset").addEventListener("click", () => {
     Object.keys(antworten).forEach(k => delete antworten[k]);
+    Object.keys(koennen).forEach(k => delete koennen[k]);
     $$('input[type=radio]', box).forEach(r => (r.checked = false));
+    $$('input[type=radio]', kbox).forEach(r => (r.checked = false));
     $("#test-fortschritt").style.width = "0%";
-    $("#test-status").textContent = "0 / " + FRAGEN.length + " beantwortet";
+    $("#test-status").textContent = "0 / " + TEST_TOTAL + " beantwortet";
     $("#test-ergebnis").style.display = "none";
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
-function werteTestAus() {
-  if (Object.keys(antworten).length < FRAGEN.length) {
-    alert("Bitte beantworte zuerst alle Fragen 🙂");
-    return;
-  }
-  // Punkte pro Dimension summieren
-  const punkte = {};
-  Object.keys(DIMENSIONEN).forEach(d => (punkte[d] = 0));
-  FRAGEN.forEach((f, i) => (punkte[f.dim] += antworten[i] || 0));
-
-  const maxProDim = 9; // 3 Fragen * max 3
-  const sortiert = Object.entries(punkte).sort((a, b) => b[1] - a[1]);
-
-  // Profil-Balken (Stärken & Schwächen sichtbar)
-  const profil = $("#profil");
-  profil.innerHTML = "";
-  sortiert.forEach(([d, p]) => {
+/* Profil-Balken rendern (target = Container, werte = {dim: prozent}) */
+function renderProfil(target, werte) {
+  target.innerHTML = "";
+  Object.entries(werte).sort((a, b) => b[1] - a[1]).forEach(([d, pct]) => {
     const dim = DIMENSIONEN[d];
-    const pct = Math.round((p / maxProDim) * 100);
     const bar = el("div", "profil-row");
     bar.innerHTML = `
       <span class="profil-label">${dim.emoji} ${dim.name}</span>
       <div class="profil-bar"><div class="profil-fill" style="width:${pct}%;background:${dim.farbe}"></div></div>
       <span class="profil-pct">${pct}%</span>`;
-    profil.appendChild(bar);
+    target.appendChild(bar);
   });
+}
 
-  // Stärken (Top 2) und Schwächen (unterste, < 40%)
-  const topDims = sortiert.slice(0, 2).map(x => x[0]);
-  const staerkenTxt = topDims.map(d => `${DIMENSIONEN[d].emoji} <b>${DIMENSIONEN[d].name}</b>`).join(" und ");
-  $("#staerken-text").innerHTML =
-    `Deine grössten Stärken liegen im Bereich ${staerkenTxt}. ` +
-    `Das sind die Dinge, die du gern machst und gut kannst – super, darauf kannst du aufbauen!`;
+function werteTestAus() {
+  if (Object.keys(antworten).length < FRAGEN.length || Object.keys(koennen).length < KOENNEN_FRAGEN.length) {
+    alert("Bitte beantworte zuerst beide Teile 🙂");
+    return;
+  }
+  // Interesse pro Dimension (max 9 -> Prozent)
+  const iPct = {}; Object.keys(DIMENSIONEN).forEach(d => iPct[d] = 0);
+  const iSum = {}; Object.keys(DIMENSIONEN).forEach(d => iSum[d] = 0);
+  FRAGEN.forEach((f, i) => (iSum[f.dim] += antworten[i] || 0));
+  Object.keys(iSum).forEach(d => iPct[d] = Math.round((iSum[d] / 9) * 100));
 
-  const schwach = sortiert.filter(x => Math.round((x[1] / maxProDim) * 100) < 40);
+  // Können pro Dimension (max 3 -> Prozent)
+  const kPct = {}; Object.keys(DIMENSIONEN).forEach(d => kPct[d] = 0);
+  KOENNEN_FRAGEN.forEach((f, i) => kPct[f.dim] = Math.round(((koennen[i] || 0) / 3) * 100));
+
+  renderProfil($("#profil"), iPct);
+  renderProfil($("#profil-koennen"), kPct);
+
+  // Kombiniert: Interesse 60 % + Können 40 %
+  const combo = {}; Object.keys(DIMENSIONEN).forEach(d => combo[d] = Math.round(iPct[d] * 0.6 + kPct[d] * 0.4));
+  const topDims = Object.entries(combo).sort((a, b) => b[1] - a[1]).slice(0, 2).map(x => x[0]);
+
+  // «Hier passt beides zusammen»: Interesse UND Können hoch
+  const beides = Object.keys(DIMENSIONEN)
+    .filter(d => iPct[d] >= 50 && kPct[d] >= 50)
+    .sort((a, b) => combo[b] - combo[a]);
+  $("#combo-text").innerHTML = beides.length
+    ? beides.map(d => `${DIMENSIONEN[d].emoji} <b>${DIMENSIONEN[d].name}</b>`).join(", ") +
+      " – das machst du gern <i>und</i> kannst es gut. Hier kannst du richtig aufblühen!"
+    : "Noch keine klare Überschneidung – schau dir die Berufe unten trotzdem an und probiere in einer Schnupperlehre aus, was dir liegt.";
+
+  // Stärken / Schwächen (nach Interesse)
+  const iSort = Object.entries(iPct).sort((a, b) => b[1] - a[1]);
+  const topI = iSort.slice(0, 2).map(x => x[0]);
+  $("#staerken-text").innerHTML = "Du machst besonders gern: " +
+    topI.map(d => `${DIMENSIONEN[d].emoji} <b>${DIMENSIONEN[d].name}</b>`).join(" und ") + ".";
+
+  const schwach = iSort.filter(x => x[1] < 40);
   $("#schwaechen-text").innerHTML = schwach.length
-    ? "Weniger angesprochen fühlst du dich von: " +
-      schwach.map(x => DIMENSIONEN[x[0]].name).join(", ") +
-      ". Das ist völlig okay – niemand muss alles gleich gern mögen."
-    : "Spannend: Dich sprechen viele verschiedene Bereiche an! Du darfst ruhig breit ausprobieren.";
+    ? "Weniger reizt dich: " + schwach.map(x => DIMENSIONEN[x[0]].name).join(", ") +
+      ". Das ist völlig okay – niemand muss alles mögen."
+    : "Spannend: Dich sprechen viele Bereiche an! Du darfst ruhig breit ausprobieren.";
 
-  // Berufs-Empfehlungen anhand der Top-Dimensionen
+  // Empfehlungen nach kombinierten Top-Dimensionen
   const empf = DATEN
-    .map(b => ({ b, score: b.tags.filter(t => topDims.includes(t)).length }))
+    .map(b => ({ b, score: (b.tags || []).filter(t => topDims.includes(t)).length }))
     .filter(x => x.score > 0)
     .sort((a, b) => b.score - a.score || a.b.name.localeCompare(b.b.name, "de"))
     .slice(0, 9);
@@ -456,6 +495,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Zufalls-Beruf
   $("#zufall").addEventListener("click", () => {
     if (DATEN.length) openDetail(DATEN[Math.floor(Math.random() * DATEN.length)]);
+  });
+
+  // Dark Mode
+  const themeBtn = $("#theme-toggle");
+  const istDunkel = () => document.documentElement.getAttribute("data-theme") === "dark";
+  themeBtn.textContent = istDunkel() ? "☀️" : "🌙";
+  themeBtn.addEventListener("click", () => {
+    const dunkel = !istDunkel();
+    document.documentElement.setAttribute("data-theme", dunkel ? "dark" : "light");
+    try { localStorage.setItem("berufskompass_theme", dunkel ? "dark" : "light"); } catch (_) {}
+    themeBtn.textContent = dunkel ? "☀️" : "🌙";
   });
 
   // Merkliste-Aktionen

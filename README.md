@@ -12,9 +12,11 @@ Die Seite hat drei interaktive Werkzeuge:
    Beruf gibt es einen **Video-Link** (Berufsfilm) und einen **Info-Link**.
 2. **✨ Berufsentdecker** – Interessen anklicken («Was macht mir Spass?») und
    sofort passende Berufe vorgeschlagen bekommen, inkl. Match-Anzeige in %.
-3. **🧩 Stärken-Schwächen-Test** – 18 kurze Fragen («Was mache ich gern? Was
-   kann ich gut? Was nicht?»). Ergebnis: ein persönliches Interessen-Profil
-   mit Balken, deine Stärken/Schwächen und konkrete Berufsvorschläge.
+3. **🧩 Stärken-Schwächen-Test** – zwei Teile: zuerst «Was mache ich **gern**?»
+   (18 Aussagen), dann «Was kann ich **gut**?» (6 Selbsteinschätzungen).
+   Ergebnis: zwei Profile (Interessen + Stärken), eine Hervorhebung «Hier passt
+   beides zusammen» und konkrete Berufsvorschläge.
+   Dazu gibt es einen **🌙 Dark Mode** (oben rechts, bleibt gespeichert).
 4. **❤️ Merkliste** – interessante Berufe per Herz-Klick sammeln (bleibt auf dem
    Gerät gespeichert), als PDF drucken oder wieder leeren.
 5. **🎓 Bildungsweg** – verständliche Übersicht über das Schweizer Bildungssystem

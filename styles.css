@@ -13,6 +13,30 @@
   --shadow-lg: 0 12px 32px rgba(15, 23, 42, .14);
 }
 
+/* ---------- Dark Mode ---------- */
+[data-theme="dark"] {
+  --bg: #0f172a; --card: #1e293b; --ink: #e2e8f0; --muted: #94a3b8;
+  --shadow: 0 4px 16px rgba(0,0,0,.4); --shadow-lg: 0 12px 32px rgba(0,0,0,.55);
+}
+[data-theme="dark"] .hero { background: linear-gradient(135deg, #1e293b, #2a1a22); border-color: #3f2a32; }
+[data-theme="dark"] .chip, [data-theme="dark"] #suche, [data-theme="dark"] #admin-suche,
+[data-theme="dark"] .related-chip { background: #0f172a; color: var(--ink); border-color: #334155; }
+[data-theme="dark"] .tag, [data-theme="dark"] .btn-info, [data-theme="dark"] .modal-close,
+[data-theme="dark"] .detail-tags, [data-theme="dark"] .bk { background: #0f172a; color: var(--ink); }
+[data-theme="dark"] .segmented { background: #334155; }
+[data-theme="dark"] .seg { color: var(--ink); }
+[data-theme="dark"] .seg.active { background: #1e293b; color: #fff; }
+[data-theme="dark"] .skala-opt { border-color: #334155; }
+[data-theme="dark"] .profil-bar, [data-theme="dark"] .progress { background: #334155; }
+[data-theme="dark"] .herz { background: rgba(30,41,59,.9); }
+[data-theme="dark"] .beruf-desc, [data-theme="dark"] .detail-desc { color: #cbd5e1; }
+[data-theme="dark"] .bk.hl { background: #2a1a22; border-color: #7f1d3a; }
+[data-theme="dark"] .info-callout { background: #16233b; border-color: #1e3a5f; color: #bfdbfe; }
+[data-theme="dark"] .staerken { background: #10241a; }
+[data-theme="dark"] .schwaechen { background: #2a1f10; }
+[data-theme="dark"] .combo { background: #1e1430; }
+[data-theme="dark"] .progress-wrap { background: var(--bg); }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -208,6 +232,9 @@ h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: .4rem; }
 .profil-pct { font-weight: 700; font-size: .85rem; text-align: right; }
 .staerken { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 1rem 1.2rem; border-radius: 10px; margin-bottom: 1rem; }
 .schwaechen { background: #fff7ed; border-left: 4px solid #f97316; padding: 1rem 1.2rem; border-radius: 10px; }
+.combo { background: #faf5ff; border-left: 4px solid #a855f7; padding: 1rem 1.2rem; border-radius: 10px; margin-bottom: 1rem; }
+.teil-titel { margin: 1.6rem 0 .9rem; font-size: 1.15rem; color: var(--primary); border-bottom: 2px solid #fee2e8; padding-bottom: .4rem; }
+.theme-toggle { min-width: 40px; }
 
 /* ---------- Quellen / Footer ---------- */
 footer { background: #0f172a; color: #cbd5e1; margin-top: 3rem; padding: 2rem clamp(1rem,4vw,3rem); }

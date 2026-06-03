@@ -7,6 +7,11 @@
   <meta name="description" content="Interaktiver Berufs-Explorer, Berufsentdecker und Stärken-Schwächen-Test für die Berufswahl in der Schweiz. Mit Videos und Infos zu vielen Lehrberufen.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <script>
+    /* Dark Mode früh setzen, damit es nicht flackert */
+    try { if (localStorage.getItem("berufskompass_theme") === "dark")
+      document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
+  </script>
 </head>
 <body>
 
@@ -21,6 +26,7 @@
         <button class="nav-btn" data-view="test">🧩 Stärken-Test</button>
         <button class="nav-btn" data-view="bildung">🎓 Bildungsweg</button>
         <button class="nav-btn" data-view="merkliste">❤️ Merkliste<span id="merk-badge" class="badge-count"></span></button>
+        <button id="theme-toggle" class="nav-btn theme-toggle" title="Hell / Dunkel umschalten" aria-label="Dark Mode umschalten">🌙</button>
       </nav>
     </div>
   </header>
@@ -104,13 +110,17 @@
     <section id="test" class="view">
       <div class="section-intro">
         <h2>🧩 Stärken-Schwächen-Test</h2>
-        <p class="lead">Wie sehr trifft jede Aussage auf dich zu? Es gibt keine richtigen oder falschen Antworten – antworte einfach ehrlich.</p>
+        <p class="lead">Zwei kurze Teile: Zuerst <b>was du gern machst</b>, dann <b>was du gut kannst</b>. Es gibt keine richtigen oder falschen Antworten – antworte einfach ehrlich.</p>
       </div>
       <div class="progress-wrap">
         <div class="progress"><div id="test-fortschritt"></div></div>
-        <span id="test-status">0 / 18 beantwortet</span>
+        <span id="test-status">0 / 24 beantwortet</span>
       </div>
+      <h3 class="teil-titel">😊 Teil 1 · Das mache ich gern</h3>
       <div id="test-fragen"></div>
+      <h3 class="teil-titel">💪 Teil 2 · Das kann ich gut</h3>
+      <p class="lead" style="font-size:.95rem;margin-bottom:1rem">Wie gut kannst du das deiner Meinung nach schon?</p>
+      <div id="test-koennen"></div>
       <div class="btn-row">
         <button id="test-auswerten" class="btn btn-primary">✅ Auswerten</button>
         <button id="test-reset" class="btn btn-info">↺ Zurücksetzen</button>
@@ -119,10 +129,15 @@
       <div id="test-ergebnis">
         <h2 style="margin-top:2rem">🎉 Dein Ergebnis</h2>
         <div class="ergebnis-box">
-          <h3 style="margin-bottom:1rem">Dein Interessen-Profil</h3>
+          <h3 style="margin-bottom:1rem">😊 Was du gern machst (Interessen)</h3>
           <div id="profil"></div>
         </div>
-        <div class="staerken"><b>💪 Deine Stärken:</b> <span id="staerken-text"></span></div>
+        <div class="ergebnis-box">
+          <h3 style="margin-bottom:1rem">💪 Was du gut kannst (Stärken)</h3>
+          <div id="profil-koennen"></div>
+        </div>
+        <div class="combo"><b>💎 Hier passt beides zusammen:</b> <span id="combo-text"></span></div>
+        <div class="staerken"><b>🌟 Deine grössten Stärken:</b> <span id="staerken-text"></span></div>
         <div class="schwaechen"><b>🌱 Weniger dein Ding:</b> <span id="schwaechen-text"></span></div>
         <h3 style="margin:1.6rem 0 1rem">Berufe, die zu dir passen könnten</h3>
         <div id="empfehlungen" class="grid"></div>
