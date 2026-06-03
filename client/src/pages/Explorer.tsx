@@ -6,6 +6,7 @@ import { ProfessionGrid } from "../components/ProfessionGrid";
 import { ProfessionMap } from "../components/ProfessionMap";
 import { useProfessionModal } from "../context/ProfessionModal";
 import { useTaxonomy } from "../context/TaxonomyContext";
+import { ZONES, assignZone } from "../lib/mapZones";
 import type { ProfessionType } from "../types";
 
 const typFilter: { value: "" | ProfessionType; label: string }[] = [
@@ -18,16 +19,22 @@ export function Explorer() {
   const { categories } = useTaxonomy();
   const { open } = useProfessionModal();
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState(""); // Liste: serverseitiger Kategorie-Filter
+  const [zone, setZone] = useState(""); // Karte: clientseitiger Themen-Pin
   const [type, setType] = useState<"" | ProfessionType>("");
   const [view, setView] = useState<"karte" | "liste">("karte");
 
+  // In der Kartenansicht alle Berufe (des Typs) laden und nach Zone clientseitig filtern.
+  const serverCategory = view === "liste" ? category : "";
+
   const { data: categoryCounts = [] } = useQuery({ queryKey: ["categories"], queryFn: api.categories });
   const { data: professions = [], isLoading } = useQuery({
-    queryKey: ["professions", { search, category, type }],
-    queryFn: () => api.professions({ search: search || undefined, category: category || undefined, type: type || undefined }),
+    queryKey: ["professions", { search, category: serverCategory, type }],
+    queryFn: () => api.professions({ search: search || undefined, category: serverCategory || undefined, type: type || undefined }),
   });
 
+  const shown = view === "karte" && zone ? professions.filter((p) => assignZone(p) === zone) : professions;
+  const activeZone = ZONES.find((z) => z.key === zone);
   const countFor = (key: string) => categoryCounts.find((c) => c.key === key)?.count ?? 0;
 
   const surprise = () => {
@@ -88,7 +95,7 @@ export function Explorer() {
       </div>
 
       {view === "karte" ? (
-        <ProfessionMap categories={categoryCounts} selected={category} onSelect={setCategory} />
+        <ProfessionMap professions={professions} selected={zone} onSelect={setZone} />
       ) : (
         <div className="flex flex-wrap gap-2">
           <button onClick={() => setCategory("")} className={`chip ${category === "" ? "chip-active" : ""}`}>
@@ -106,7 +113,15 @@ export function Explorer() {
         </div>
       )}
 
-      {category && (
+      {view === "karte" && activeZone && (
+        <h3 className="font-bold">
+          {activeZone.emoji} {activeZone.short}{" "}
+          <button onClick={() => setZone("")} className="ml-1 text-sm font-semibold text-brand-600 hover:underline">
+            · alle Orte
+          </button>
+        </h3>
+      )}
+      {view === "liste" && category && (
         <h3 className="font-bold">
           {categories.find((c) => c.key === category)?.emoji}{" "}
           {categories.find((c) => c.key === category)?.name}{" "}
@@ -118,10 +133,10 @@ export function Explorer() {
 
       {isLoading ? (
         <p className="py-12 text-center text-slate-400">Lädt …</p>
-      ) : view === "karte" && !category && !search ? (
+      ) : view === "karte" && !zone && !search ? (
         <p className="py-8 text-center text-slate-400">Wähle oben ein Feld auf der Karte 🗺️</p>
       ) : (
-        <ProfessionGrid professions={professions} empty="Keine Berufe gefunden. Versuch einen anderen Suchbegriff." />
+        <ProfessionGrid professions={shown} empty="Keine Berufe gefunden. Versuch einen anderen Suchbegriff." />
       )}
     </div>
   );
