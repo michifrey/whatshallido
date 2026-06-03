@@ -1,18 +1,18 @@
 {
   "meta": {
     "generatedAt": "2026-06-03T05:07:28.914Z",
-    "total": 396,
+    "total": 405,
     "lehre": 234,
-    "weiterfuehrend": 162,
+    "weiterfuehrend": 171,
     "neuVomLiveAbgleich": 0,
     "proKategorie": {
-      "technik": 75,
+      "technik": 77,
       "it": 15,
       "gesundheit": 38,
-      "soziales": 19,
-      "gestaltung": 39,
-      "wirtschaft": 50,
-      "natur": 42,
+      "soziales": 21,
+      "gestaltung": 41,
+      "wirtschaft": 52,
+      "natur": 43,
       "gastro": 34,
       "bau": 77,
       "koerper": 7
@@ -6004,6 +6004,141 @@
       "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "polizist-in-mit-eidg-fachausweis",
+      "name": "Polizist/in mit eidg. Fachausweis",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Für Sicherheit und Ordnung sorgen, Menschen helfen und schützen. Ausbildung an der Polizeischule nach einer Grundbildung.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Polizist/in%20mit%20eidg.%20Fachausweis",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Polizist/in%20mit%20eidg.%20Fachausweis%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "berufsfeuerwehrmann-frau",
+      "name": "Berufsfeuerwehrmann/-frau",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Brände löschen, bei Unfällen retten und in Notlagen helfen. Zusatzausbildung nach einer Lehre.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Berufsfeuerwehrmann/-frau",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Berufsfeuerwehrmann/-frau%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "flugbegleiter-in-flight-attendant",
+      "name": "Flugbegleiter/in (Flight Attendant)",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Fluggäste an Bord betreuen und für ihre Sicherheit sorgen. Ausbildung bei einer Fluggesellschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Flugbegleiter/in%20%28Flight%20Attendant%29",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Flugbegleiter/in%20%28Flight%20Attendant%29%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "berufspilot-in",
+      "name": "Berufspilot/in",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "ordnend"
+      ],
+      "desc": "Flugzeuge sicher steuern und navigieren. Anspruchsvolle Ausbildung an einer Flugschule.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Berufspilot/in",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Berufspilot/in%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "flugverkehrsleiter-in",
+      "name": "Flugverkehrsleiter/in",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "forschend"
+      ],
+      "desc": "Den Flugverkehr vom Tower aus überwachen und Flugzeuge sicher lotsen. Ausbildung bei Skyguide.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Flugverkehrsleiter/in",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Flugverkehrsleiter/in%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "berufschauffeur-in-personentransport",
+      "name": "Berufschauffeur/in Personentransport",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Bus oder Car sicher fahren und Fahrgäste ans Ziel bringen. Mit Führerausweis Kat. D und Weiterbildung.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Berufschauffeur/in%20Personentransport",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Berufschauffeur/in%20Personentransport%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bergfuehrer-in-mit-eidg-diplom",
+      "name": "Bergführer/in mit eidg. Diplom",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Menschen sicher auf Berge, Kletter- und Skitouren führen. Anspruchsvolle Zusatzausbildung in den Bergen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bergf%C3%BChrer/in%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bergf%C3%BChrer/in%20mit%20eidg.%20Diplom%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "schauspieler-in",
+      "name": "Schauspieler/in",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "In Theater, Film und TV in verschiedene Rollen schlüpfen. Ausbildung an einer Schauspiel-Hochschule.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schauspieler/in",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Schauspieler/in%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "musical-darsteller-in",
+      "name": "Musical-Darsteller/in",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "Singen, tanzen und schauspielern auf der Bühne. Ausbildung an einer Musical- oder Theaterschule.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Musical-Darsteller/in",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Musical-Darsteller/in%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     }
   ]
