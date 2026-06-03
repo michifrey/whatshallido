@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    image: berufs-kompass
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DATABASE_PATH: /app/server/data/berufe.db
+      # Token für den /admin-Bereich – in Produktion unbedingt setzen!
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-dev-admin-token}
+      # Optional: Unsplash-Key für die Bildersuche im Admin
+      UNSPLASH_ACCESS_KEY: ${UNSPLASH_ACCESS_KEY:-}
+    volumes:
+      - bk-data:/app/server/data
+    restart: unless-stopped
+
+volumes:
+  bk-data:

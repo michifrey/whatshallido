@@ -1,10 +1,5 @@
-/**
- * Seed-Script: importiert die Berufe aus der JSON-Datei in die SQLite-DB.
- * Aufruf:  npm run seed
- */
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import seedJson from "../data/berufe.seed.json";
+import { lehrstelleUrl } from "../domain/links.js";
 import { db, ensureSchema, sqlite } from "./index.js";
 import { professions, type NewProfession } from "./schema.js";
 
@@ -22,18 +17,11 @@ interface SeedRecord {
   quelle?: string;
 }
 
-const here = dirname(fileURLToPath(import.meta.url));
-const seedPath = join(here, "..", "data", "berufe.seed.json");
-
-function lehrstelleUrl(name: string): string {
-  return "https://www.yousty.ch/de-CH/lehrstellen?q=" + encodeURIComponent(name);
-}
-
-function main(): void {
-  const raw = JSON.parse(readFileSync(seedPath, "utf8")) as { berufe: SeedRecord[] };
+/** Importiert die Berufe aus der gebündelten JSON in die Datenbank (idempotent). */
+export function seedDatabase(): number {
   ensureSchema();
-
-  const rows: NewProfession[] = raw.berufe.map((b) => ({
+  const data = seedJson as unknown as { berufe: SeedRecord[] };
+  const rows: NewProfession[] = data.berufe.map((b) => ({
     id: b.id,
     name: b.name,
     category: b.kat,
@@ -49,17 +37,17 @@ function main(): void {
     updatedAt: new Date(),
   }));
 
-  // Idempotent: Tabelle leeren, dann neu befüllen (in einer Transaktion).
-  const insertAll = sqlite.transaction(() => {
+  const tx = sqlite.transaction(() => {
     db.delete(professions).run();
-    for (const row of rows) {
-      db.insert(professions).values(row).run();
-    }
+    for (const row of rows) db.insert(professions).values(row).run();
   });
-  insertAll();
-
-  console.log(`✅ Seed abgeschlossen: ${rows.length} Berufe in die Datenbank geschrieben.`);
-  sqlite.close();
+  tx();
+  return rows.length;
 }
 
-main();
+/** Anzahl der Berufe in der DB (für Auto-Seed-Entscheidung). */
+export function countProfessions(): number {
+  ensureSchema();
+  const row = sqlite.prepare("SELECT COUNT(*) AS c FROM professions").get() as { c: number };
+  return row.c;
+}

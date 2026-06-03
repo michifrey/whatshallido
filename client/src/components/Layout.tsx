@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import { api } from "../api";
 import { Header } from "./Header";
 
@@ -35,7 +36,8 @@ export function Layout({ children }: { children: ReactNode }) {
           <p className="mt-3 border-t border-slate-800 pt-3 text-xs text-slate-500">
             Privates, kostenloses Hilfsmittel für die Berufswahl – ersetzt keine professionelle
             Berufsberatung. Für eine persönliche Beratung wende dich an die Berufsberatung deines
-            Kantons (z.B. ask! im Aargau).
+            Kantons (z.B. ask! im Aargau).{" "}
+            <Link to="/admin" className="text-slate-500 hover:text-sky-300">⚙️ Admin</Link>
           </p>
         </div>
       </footer>

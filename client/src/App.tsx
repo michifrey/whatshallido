@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
+import { Admin } from "./pages/Admin";
 import { Bildungsweg } from "./pages/Bildungsweg";
 import { Discover } from "./pages/Discover";
 import { Explorer } from "./pages/Explorer";
@@ -17,6 +18,7 @@ export function App() {
         <Route path="/test" element={<Test />} />
         <Route path="/bildungsweg" element={<Bildungsweg />} />
         <Route path="/merkliste" element={<Merkliste />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Layout>

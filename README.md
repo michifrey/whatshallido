@@ -82,6 +82,51 @@ Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
 | GET  | `/api/test` | Fragen & Skalen für den Stärken-Test |
 | GET  | `/api/meta` | Statistik (Anzahl Berufe etc.) |
 | GET  | `/api/health` | Health-Check |
+| GET  | `/api/admin/check` | Token prüfen (Login) 🔒 |
+| POST | `/api/admin/professions` | Beruf anlegen 🔒 |
+| PUT  | `/api/admin/professions/:id` | Beruf bearbeiten 🔒 |
+| DELETE | `/api/admin/professions/:id` | Beruf löschen 🔒 |
+| GET  | `/api/admin/images?q=` | Foto-Vorschläge (Unsplash) 🔒 |
+
+🔒 = erfordert Header `x-admin-token` (siehe Admin-Bereich).
+
+## 🔐 Admin-Bereich
+
+Erreichbar unter **`/admin`** (Link im Footer). Login per Token aus der
+Env-Variable `ADMIN_TOKEN`. Damit lassen sich Berufe **anlegen, bearbeiten und
+löschen** sowie **Bilder zuweisen** – per URL oder über die integrierte
+**Unsplash-Bildersuche**.
+
+Die Bildersuche braucht einen kostenlosen **Unsplash Access Key**
+(`UNSPLASH_ACCESS_KEY`, von <https://unsplash.com/developers>). Ohne Key bleibt
+die App voll funktionsfähig, nur die Foto-Suche meldet, dass sie nicht
+konfiguriert ist (Bild-URLs lassen sich weiterhin von Hand setzen).
+
+## 🐳 Deployment (Docker)
+
+```bash
+# Image bauen und starten (Server + Frontend in einem Container)
+cp .env.example .env        # ADMIN_TOKEN setzen, optional UNSPLASH_ACCESS_KEY
+docker compose up --build
+```
+
+Die App läuft dann auf **http://localhost:3000**. Der Container **seedet die
+Datenbank beim ersten Start automatisch** und legt sie auf einem Volume ab
+(`bk-data`), sodass Admin-Änderungen Neustarts überleben.
+
+Ohne Compose:
+```bash
+docker build -t berufs-kompass .
+docker run -p 3000:3000 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs-kompass
+```
+
+### Wichtige Env-Variablen
+| Variable | Standard | Zweck |
+|----------|----------|-------|
+| `PORT` | `3000` | Server-Port |
+| `DATABASE_PATH` | `./data/berufe.db` | Pfad zur SQLite-DB |
+| `ADMIN_TOKEN` | `dev-admin-token` | Token für den Admin-Bereich (**in Produktion setzen!**) |
+| `UNSPLASH_ACCESS_KEY` | – | optional, für die Foto-Suche |
 
 ## 🖼️ Bilder
 
