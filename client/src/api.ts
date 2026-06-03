@@ -1,6 +1,7 @@
 import type {
   Canton,
   CategoryWithCount,
+  Messe,
   Meta,
   PlacementLink,
   PlacementMode,
@@ -53,6 +54,7 @@ export const api = {
   improveLetter: (letter: string, mode: "lehrstelle" | "schnupperlehre") =>
     postJson<{ improved: string }>("/letter/improve", { letter, mode }),
   cantons: () => getJson<Canton[]>("/cantons"),
+  messen: () => getJson<Messe[]>("/messen"),
   placements: (id: string, canton: string | undefined, mode: PlacementMode) => {
     const qs = new URLSearchParams({ mode });
     if (canton) qs.set("canton", canton);

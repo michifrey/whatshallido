@@ -10,6 +10,7 @@ const mainLinks = [
   { to: "/entdecker", label: "✨ Entdecker" },
   { to: "/test", label: "🧩 Test" },
   { to: "/bildungsweg", label: "🎓 Bildungsweg" },
+  { to: "/messen", label: "📅 Messen" },
 ];
 
 const bewerbenLinks = [

@@ -8,6 +8,7 @@ import { Explorer } from "./pages/Explorer";
 import { Home } from "./pages/Home";
 import { LehrstellenFinder } from "./pages/LehrstellenFinder";
 import { Merkliste } from "./pages/Merkliste";
+import { Messen } from "./pages/Messen";
 import { Test } from "./pages/Test";
 import { Tracker } from "./pages/Tracker";
 
@@ -20,6 +21,7 @@ export function App() {
         <Route path="/entdecker" element={<Discover />} />
         <Route path="/test" element={<Test />} />
         <Route path="/bildungsweg" element={<Bildungsweg />} />
+        <Route path="/messen" element={<Messen />} />
         <Route path="/lehrstellen" element={<LehrstellenFinder />} />
         <Route path="/bewerbung" element={<Bewerbung />} />
         <Route path="/tracker" element={<Tracker />} />

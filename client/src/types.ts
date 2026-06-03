@@ -78,6 +78,19 @@ export interface Canton {
   name: string;
 }
 
+export interface Messe {
+  id: string;
+  name: string;
+  city: string;
+  venue: string;
+  canton: string;
+  region: string;
+  start: string; // YYYY-MM-DD
+  end: string; // YYYY-MM-DD (inklusive)
+  url: string;
+  note?: string;
+}
+
 export type PlacementMode = "lehrstelle" | "schnupperlehre";
 
 export interface PlacementLink {

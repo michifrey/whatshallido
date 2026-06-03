@@ -4,6 +4,7 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { adminRouter } from "./routes/admin.js";
 import { letterRouter } from "./routes/letter.js";
+import { messenRouter } from "./routes/messen.js";
 import { professionsRouter } from "./routes/professions.js";
 import { taxonomyRouter } from "./routes/taxonomy.js";
 
@@ -18,6 +19,7 @@ export function createApp(): Express {
   app.use("/api/professions", professionsRouter);
   app.use("/api/admin", adminRouter);
   app.use("/api/letter", letterRouter);
+  app.use("/api", messenRouter);
   app.use("/api", taxonomyRouter);
 
   // In Produktion: das gebaute Frontend ausliefern (falls vorhanden).
