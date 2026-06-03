@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { Check, Copy, Download, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
+import { BookmarkPlus, Check, Copy, Download, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api";
+import { useBewerbungen } from "../hooks/useBewerbungen";
 import { buildLetter, type LetterData, type LetterMode } from "../lib/letter";
 
 const emptyData: LetterData = {
@@ -63,6 +64,21 @@ export function Bewerbung() {
   const [aiText, setAiText] = useState<string | null>(null);
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
+  const { add } = useBewerbungen();
+  const [tracked, setTracked] = useState(false);
+
+  const trackApplication = () => {
+    add({
+      firma: data.firma,
+      beruf: data.beruf,
+      typ: mode,
+      status: "beworben",
+      datum: new Date().toISOString().slice(0, 10),
+      kontakt: data.ansprechperson,
+    });
+    setTracked(true);
+    setTimeout(() => setTracked(false), 2500);
+  };
 
   const set = (key: keyof LetterData) => (v: string) => setData((d) => ({ ...d, [key]: v }));
   const letter = buildLetter(data, mode);
@@ -171,6 +187,9 @@ export function Bewerbung() {
             </button>
             <button onClick={download} className="btn-soft"><Download size={16} /> Als Datei</button>
             <button onClick={() => window.print()} className="btn-soft"><Printer size={16} /> Drucken / PDF</button>
+            <button onClick={trackApplication} className="btn-soft">
+              {tracked ? <Check size={16} /> : <BookmarkPlus size={16} />} {tracked ? "Gemerkt!" : "Zur Bewerbungsliste"}
+            </button>
             <button onClick={improve} disabled={aiLoading} className="btn-primary">
               {aiLoading ? <Loader2 size={16} className="animate-spin" /> : <Sparkles size={16} />}
               {aiLoading ? "Verbessert …" : "Mit KI verbessern"}

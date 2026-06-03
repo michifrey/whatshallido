@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { ExternalLink, FileText, MapPin, Search } from "lucide-react";
+import { BookmarkPlus, ExternalLink, FileText, MapPin, Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { api } from "../api";
+import { useBewerbungen } from "../hooks/useBewerbungen";
 import { useTaxonomy } from "../context/TaxonomyContext";
 import type { PlacementMode } from "../types";
 
@@ -15,6 +16,8 @@ const tipps = [
 
 export function LehrstellenFinder() {
   const { getCategory } = useTaxonomy();
+  const { add } = useBewerbungen();
+  const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
   const { data: professions = [] } = useQuery({ queryKey: ["professions", "all"], queryFn: () => api.professions() });
   const { data: cantons = [] } = useQuery({ queryKey: ["cantons"], queryFn: api.cantons });
@@ -162,9 +165,20 @@ export function LehrstellenFinder() {
               ))}
             </div>
           )}
-          <Link to={`/bewerbung?beruf=${selected.id}&mode=${mode}`} className="btn-primary mt-2 inline-flex">
-            <FileText size={16} /> Bewerbung für diesen Beruf schreiben
-          </Link>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Link to={`/bewerbung?beruf=${selected.id}&mode=${mode}`} className="btn-primary">
+              <FileText size={16} /> Bewerbung schreiben
+            </Link>
+            <button
+              onClick={() => {
+                add({ firma: "", beruf: selected.name, typ: mode, status: "geplant", datum: new Date().toISOString().slice(0, 10) });
+                navigate("/tracker");
+              }}
+              className="btn-ghost"
+            >
+              <BookmarkPlus size={16} /> Als Bewerbung vormerken
+            </button>
+          </div>
         </div>
       )}
 
