@@ -1,0 +1,40 @@
+name: Berufe Auto-Abgleich
+
+# Hält berufe.json / berufe.js automatisch aktuell.
+# - läuft jeden Montag um 04:00 UTC
+# - kann jederzeit von Hand gestartet werden (Actions-Tab -> "Run workflow")
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Crawler / Abgleich ausführen
+        run: node tools/crawler.mjs
+
+      - name: Änderungen committen (falls vorhanden)
+        run: |
+          git config user.name "berufe-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add berufe.json berufe.js
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen – berufe.json ist aktuell."
+          else
+            git commit -m "chore: Berufe-Abgleich ($(date +%F))"
+            git push
+            echo "Berufe aktualisiert und gepusht."
+          fi

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berufs-Kompass Schweiz – Berufe entdecken für Jugendliche</title>
+  <meta name="description" content="Interaktiver Berufs-Explorer, Berufsentdecker und Stärken-Schwächen-Test für die Berufswahl in der Schweiz. Mit Videos und Infos zu vielen Lehrberufen.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+</head>
+<body>
+
+  <!-- ============ Kopf / Navigation ============ -->
+  <header>
+    <div class="header-inner">
+      <div class="logo" data-goto="start"><span>🧭</span> Berufs-Kompass</div>
+      <nav>
+        <button class="nav-btn" data-view="start">Start</button>
+        <button class="nav-btn" data-view="explorer">🔎 Explorer</button>
+        <button class="nav-btn" data-view="entdecker">✨ Entdecker</button>
+        <button class="nav-btn" data-view="test">🧩 Stärken-Test</button>
+        <button class="nav-btn" data-view="bildung">🎓 Bildungsweg</button>
+        <button class="nav-btn" data-view="merkliste">❤️ Merkliste<span id="merk-badge" class="badge-count"></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ START ============ -->
+    <section id="start" class="view">
+      <div class="hero">
+        <span class="badge">Für Jugendliche in der Schweiz 🇨🇭</span>
+        <h1>Welcher Beruf passt zu dir?</h1>
+        <p class="lead">
+          Über 500 Lehrberufe gibt es in der Schweiz – da den Überblick zu behalten ist gar nicht so einfach.
+          Hier kannst du <b><span id="anzahl-berufe">viele</span> Berufe</b> entdecken.
+          Dieser Berufs-Kompass hilft dir, deine Stärken zu entdecken und Berufe zu finden,
+          die wirklich zu dir passen. Mit Videos und Infos zum Weiterklicken.
+        </p>
+        <div class="btn-row">
+          <button class="btn btn-primary" data-goto="test">🧩 Stärken-Test starten</button>
+          <button class="btn btn-ghost" data-goto="explorer">🔎 Berufe durchstöbern</button>
+        </div>
+      </div>
+
+      <div class="cards3">
+        <button class="feature" data-goto="explorer">
+          <span class="f-emoji">🔎</span>
+          <h3>Berufs-Explorer</h3>
+          <p>Stöbere durch viele Berufe von A–Z. Suche, filtere nach Bereichen und schau dir zu jedem Beruf ein Video an.</p>
+          <span class="f-go">Jetzt entdecken →</span>
+        </button>
+        <button class="feature" data-goto="entdecker">
+          <span class="f-emoji">✨</span>
+          <h3>Berufsentdecker</h3>
+          <p>Klick an, was dir Spass macht – und bekomme sofort Berufe vorgeschlagen, die dazu passen.</p>
+          <span class="f-go">Loslegen →</span>
+        </button>
+        <button class="feature" data-goto="test">
+          <span class="f-emoji">🧩</span>
+          <h3>Stärken-Schwächen-Test</h3>
+          <p>«Was mache ich gern? Was kann ich gut?» Finde es heraus – mit deinem persönlichen Profil und Berufstipps.</p>
+          <span class="f-go">Test machen →</span>
+        </button>
+      </div>
+
+      <div class="steps">
+        <div class="step"><div class="num">1</div><b>Test machen</b><p class="lead" style="font-size:.9rem;margin:0">Beantworte ein paar Fragen zu dir.</p></div>
+        <div class="step"><div class="num">2</div><b>Profil ansehen</b><p class="lead" style="font-size:.9rem;margin:0">Entdecke deine Stärken und Interessen.</p></div>
+        <div class="step"><div class="num">3</div><b>Berufe erkunden</b><p class="lead" style="font-size:.9rem;margin:0">Schau dir passende Berufe und Videos an.</p></div>
+        <div class="step"><div class="num">4</div><b>Schnuppern</b><p class="lead" style="font-size:.9rem;margin:0">Frag nach einer Schnupperlehre in deiner Region.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPLORER ============ -->
+    <section id="explorer" class="view">
+      <div class="section-intro">
+        <h2>🔎 Berufs-Explorer</h2>
+        <p class="lead">Such einen Beruf oder filtere nach einem Bereich. Klick auf «Video», um den Beruf in Bewegung zu sehen.</p>
+      </div>
+      <div class="toolbar">
+        <input id="suche" type="search" placeholder="Beruf suchen … z.B. Koch, Informatik, Pflege">
+        <button id="zufall" class="btn btn-ghost" title="Zeig mir einen zufälligen Beruf">🎲 Überrasch mich</button>
+        <span id="explorer-count"></span>
+      </div>
+      <div id="typ-filter" class="segmented"></div>
+      <div id="kat-filter" class="chips"></div>
+      <div id="explorer-grid" class="grid"></div>
+    </section>
+
+    <!-- ============ ENTDECKER ============ -->
+    <section id="entdecker" class="view">
+      <div class="section-intro">
+        <h2>✨ Berufsentdecker</h2>
+        <p class="lead">Was macht dir Spass? Klick alles an, was auf dich zutrifft – wir zeigen dir passende Berufe. Du kannst mehrere auswählen.</p>
+      </div>
+      <div id="dim-wahl" class="dim-wahl"></div>
+      <div id="entdecker-hint" class="hint">👆 Wähle oben mindestens einen Bereich aus, der dir gefällt.</div>
+      <div id="entdecker-grid" class="grid"></div>
+    </section>
+
+    <!-- ============ TEST ============ -->
+    <section id="test" class="view">
+      <div class="section-intro">
+        <h2>🧩 Stärken-Schwächen-Test</h2>
+        <p class="lead">Wie sehr trifft jede Aussage auf dich zu? Es gibt keine richtigen oder falschen Antworten – antworte einfach ehrlich.</p>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress"><div id="test-fortschritt"></div></div>
+        <span id="test-status">0 / 18 beantwortet</span>
+      </div>
+      <div id="test-fragen"></div>
+      <div class="btn-row">
+        <button id="test-auswerten" class="btn btn-primary">✅ Auswerten</button>
+        <button id="test-reset" class="btn btn-info">↺ Zurücksetzen</button>
+      </div>
+
+      <div id="test-ergebnis">
+        <h2 style="margin-top:2rem">🎉 Dein Ergebnis</h2>
+        <div class="ergebnis-box">
+          <h3 style="margin-bottom:1rem">Dein Interessen-Profil</h3>
+          <div id="profil"></div>
+        </div>
+        <div class="staerken"><b>💪 Deine Stärken:</b> <span id="staerken-text"></span></div>
+        <div class="schwaechen"><b>🌱 Weniger dein Ding:</b> <span id="schwaechen-text"></span></div>
+        <h3 style="margin:1.6rem 0 1rem">Berufe, die zu dir passen könnten</h3>
+        <div id="empfehlungen" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ BILDUNGSWEG ============ -->
+    <section id="bildung" class="view">
+      <div class="section-intro">
+        <h2>🎓 Dein Bildungsweg in der Schweiz</h2>
+        <p class="lead">Nach der obligatorischen Schule hast du viele Wege offen – und fast keiner ist eine Sackgasse. Hier siehst du, wie alles zusammenhängt.</p>
+      </div>
+
+      <div class="bildung-stufen">
+        <div class="stufe">
+          <div class="stufe-kopf">1 · Obligatorische Schule</div>
+          <div class="stufe-body">
+            <div class="bk"><b>Volksschule</b><span>Primar- und Sekundarstufe I – für alle, bis ca. 15 Jahre.</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ Berufswahl &amp; Schnupperlehre</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">2 · Sekundarstufe II</div>
+          <div class="stufe-body two">
+            <div class="bk hl"><b>Berufliche Grundbildung 🔧</b><span>Lehre im Betrieb + Berufsfachschule. <b>EFZ</b> (3–4 J.) oder <b>EBA</b> (2 J.). Optional mit <b>Berufsmaturität</b>.</span></div>
+            <div class="bk"><b>Allgemeinbildung 📖</b><span>Gymnasium (Matura), Fachmittelschule (FMS) – als Weg an die Hochschule.</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ mit Lehrabschluss / Maturität geht es weiter</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">3 · Tertiärstufe</div>
+          <div class="stufe-body two">
+            <div class="bk hl"><b>Höhere Berufsbildung 🛠️</b><span>Höhere Fachschule (HF), eidg. Berufs- &amp; höhere Fachprüfungen – praxisnah, baut auf der Lehre auf.</span></div>
+            <div class="bk"><b>Hochschulen 🎓</b><span>Fachhochschule (FH), Universität/ETH, Pädagogische Hochschule (PH).</span></div>
+          </div>
+        </div>
+
+        <div class="pfeil">▼ ein Leben lang</div>
+
+        <div class="stufe">
+          <div class="stufe-kopf">4 · Weiterbildung</div>
+          <div class="stufe-body">
+            <div class="bk"><b>Lebenslanges Lernen</b><span>Kurse, Nachholbildung, Umschulung – Wechsel sind jederzeit möglich. Das System ist <b>durchlässig</b>.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-callout">
+        💡 <b>Wichtig:</b> Auch mit einer Lehre stehen dir später alle Türen offen – über die Berufsmaturität sogar der Weg an die Fachhochschule. Du musst dich jetzt nicht für immer festlegen.
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://www.berufsberatung.ch/dyn/show/2881" target="_blank" rel="noopener">Mehr zum Bildungssystem ↗</a>
+        <button class="btn btn-primary" data-goto="explorer">🔎 Berufe der Lehre ansehen</button>
+      </div>
+    </section>
+
+    <!-- ============ MERKLISTE ============ -->
+    <section id="merkliste" class="view">
+      <div class="section-intro">
+        <h2>❤️ Meine Merkliste</h2>
+        <p class="lead">Berufe, die dich interessieren – tippe bei jedem Beruf auf das Herz, um ihn hier zu sammeln. Die Liste bleibt auf diesem Gerät gespeichert.</p>
+      </div>
+      <div id="merk-leer" class="hint">Noch keine Berufe gemerkt. Stöbere im <a href="#" data-goto="explorer">Explorer</a> oder mach den <a href="#" data-goto="test">Stärken-Test</a> und tippe auf ❤️.</div>
+      <div class="btn-row" id="merk-actions" style="display:none">
+        <button class="btn btn-info" id="merk-print">🖨️ Drucken / als PDF speichern</button>
+        <button class="btn btn-info" id="merk-clear">🗑️ Liste leeren</button>
+      </div>
+      <div id="merkliste-grid" class="grid"></div>
+    </section>
+
+  </main>
+
+  <!-- ============ Detail-Fenster (Modal) ============ -->
+  <div id="detail-overlay" class="overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="d-name">
+      <button id="detail-close" class="modal-close" aria-label="Schliessen">✕</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <!-- ============ Footer / Quellen ============ -->
+  <footer>
+    <div class="footer-inner">
+      <h3>Hier geht's weiter – offizielle Quellen</h3>
+      <div id="quellen-liste"></div>
+      <p id="meta-info" class="meta-info"></p>
+      <p class="footer-note">
+        Dieser Berufs-Kompass ist ein privates, kostenloses Hilfsmittel für die Berufswahl und
+        ersetzt keine professionelle Berufsberatung. Die gezeigte Berufsauswahl ist nur ein Ausschnitt –
+        die vollständige Liste mit allen Details findest du auf berufsberatung.ch.
+        Für eine persönliche Beratung wende dich an die Berufsberatung deines Kantons (z.B. ask! im Aargau).
+        <br><a class="admin-link" href="admin.html">⚙️ Admin / Berufe verwalten</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="berufe.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

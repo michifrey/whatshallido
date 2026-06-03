@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · Berufs-Kompass</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo"><span>⚙️</span> Berufs-Kompass · Admin</div>
+      <nav><a class="nav-btn" href="index.html">← Zur Seite</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Berufe verwalten &amp; abgleichen</h1>
+    <p class="lead">
+      Hier siehst du alle erfassten Berufe, kannst sie bearbeiten, neue ergänzen und
+      einen frischen Abgleich (vom Crawler) einspielen. Änderungen passieren in deinem Browser –
+      am Schluss exportierst du die Dateien und committest sie.
+    </p>
+
+    <!-- Statistik -->
+    <section class="admin-card">
+      <h2>📊 Übersicht</h2>
+      <div id="stats" class="stats-grid"></div>
+      <div id="kat-stats" class="kat-stats"></div>
+    </section>
+
+    <!-- Aktionen -->
+    <section class="admin-card">
+      <h2>🔄 Abgleich &amp; Export</h2>
+      <p class="hint-text">
+        <b>So funktioniert der Auto-Abgleich:</b> Die GitHub Action <code>berufe-sync</code> führt den
+        Crawler aus und aktualisiert <code>berufe.json</code> automatisch. Hier kannst du eine
+        <code>berufe.json</code> auch von Hand einspielen und vergleichen.
+      </p>
+      <div class="action-row">
+        <label class="btn btn-primary">
+          📥 berufe.json einspielen / abgleichen
+          <input id="import-file" type="file" accept=".json,application/json" hidden>
+        </label>
+        <button id="export-json" class="btn btn-ghost">💾 berufe.json exportieren</button>
+        <button id="export-js" class="btn btn-ghost">💾 berufe.js exportieren</button>
+        <button id="add-beruf" class="btn btn-info">➕ Beruf hinzufügen</button>
+      </div>
+      <div id="diff-result" class="diff-result"></div>
+    </section>
+
+    <!-- Tabelle -->
+    <section class="admin-card">
+      <h2>📋 Alle Berufe (<span id="row-count">0</span>)</h2>
+      <input id="admin-suche" type="search" placeholder="Filtern … Name oder Kategorie">
+      <div class="table-wrap">
+        <table id="berufe-table">
+          <thead>
+            <tr>
+              <th>Name</th><th>Kategorie</th><th>Typ</th><th>Dauer</th>
+              <th>Tags (Interessen)</th><th>Beschreibung</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="berufe-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="berufe.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
