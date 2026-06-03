@@ -19,7 +19,7 @@ Schweizer Berufen, Videos, Bildern und Lehrstellen-Links.
 ├── client/            # React-Frontend (Vite + Tailwind)
 │   └── src/
 │       ├── pages/         Start, Explorer, Entdecker, Test, Bildungsweg,
-│       │                  Lehrstellen-Finder, Bewerbungs-Helfer, Merkliste, Admin
+│       │                  Lehrstellen-Finder, Bewerbungs-Helfer, Tracker, Merkliste, Admin
 │       ├── components/     Karten, Modal, Bild (SVG/Foto), Header, Layout
 │       ├── context/        Taxonomie- & Modal-Provider
 │       ├── hooks/          Merkliste, Theme (Dark Mode)
@@ -102,7 +102,11 @@ Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
 - **Bewerbungs-Helfer** (`/bewerbung`): Formular für Schnupperlehre **und** Lehrstelle,
   erzeugt live einen vollständigen Bewerbungsbrief im Schweizer Stil – Kopieren,
   als Datei speichern oder als PDF drucken. Läuft ohne KI/Schlüssel; alle Daten
-  bleiben im Browser.
+  bleiben im Browser. Optional **«✨ mit KI verbessern»** (Claude API), wenn ein
+  `ANTHROPIC_API_KEY` gesetzt ist.
+- **Bewerbungs-Tracker** (`/tracker`): Behalte den Überblick über deine Bewerbungen
+  (Firma, Beruf, Status: geplant/beworben/Schnuppern/Gespräch/Zusage/Absage). Wird
+  gerätelokal im Browser gespeichert.
 
 ## 🔐 Admin-Bereich
 
@@ -141,6 +145,8 @@ docker run -p 3000:3000 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs
 | `DATABASE_PATH` | `./data/berufe.db` | Pfad zur SQLite-DB |
 | `ADMIN_TOKEN` | `dev-admin-token` | Token für den Admin-Bereich (**in Produktion setzen!**) |
 | `UNSPLASH_ACCESS_KEY` | – | optional, für die Foto-Suche |
+| `ANTHROPIC_API_KEY` | – | optional, für «mit KI verbessern» im Bewerbungs-Helfer |
+| `ANTHROPIC_MODEL` | `claude-opus-4-8` | optional, überschreibt das KI-Modell |
 
 ## 🧪 Tests & CI
 

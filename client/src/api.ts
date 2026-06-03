@@ -50,6 +50,8 @@ export const api = {
   profession: (id: string) => getJson<Profession>(`/professions/${id}`),
   recommend: (dimensions: string[], limit?: number) =>
     postJson<RecommendedProfession[]>("/professions/recommend", { dimensions, limit }),
+  improveLetter: (letter: string, mode: "lehrstelle" | "schnupperlehre") =>
+    postJson<{ improved: string }>("/letter/improve", { letter, mode }),
   cantons: () => getJson<Canton[]>("/cantons"),
   placements: (id: string, canton: string | undefined, mode: PlacementMode) => {
     const qs = new URLSearchParams({ mode });

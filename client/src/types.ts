@@ -85,3 +85,17 @@ export interface PlacementLink {
   description: string;
   url: string;
 }
+
+export type BewerbungStatus =
+  | "geplant" | "beworben" | "schnuppern" | "gespraech" | "zusage" | "absage";
+
+export interface Bewerbung {
+  id: string;
+  firma: string;
+  beruf: string;
+  typ: PlacementMode;
+  status: BewerbungStatus;
+  datum: string; // ISO (YYYY-MM-DD)
+  kontakt?: string;
+  notiz?: string;
+}

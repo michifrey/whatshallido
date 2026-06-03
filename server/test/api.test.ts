@@ -137,3 +137,24 @@ describe("Admin-API (geschützt)", () => {
     expect(res.status).toBe(503);
   });
 });
+
+describe("KI-Brief-Verbesserung", () => {
+  it("ohne ANTHROPIC_API_KEY -> 503", async () => {
+    delete process.env.ANTHROPIC_API_KEY;
+    const res = await fetch(`${base}/api/letter/improve`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ letter: "Sehr geehrte Damen und Herren, ich bewerbe mich…", mode: "lehrstelle" }),
+    });
+    expect(res.status).toBe(503);
+  });
+
+  it("zu kurzer Brief -> 400", async () => {
+    const res = await fetch(`${base}/api/letter/improve`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ letter: "zu kurz", mode: "lehrstelle" }),
+    });
+    expect(res.status).toBe(400);
+  });
+});

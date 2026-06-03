@@ -9,6 +9,7 @@ import { Home } from "./pages/Home";
 import { LehrstellenFinder } from "./pages/LehrstellenFinder";
 import { Merkliste } from "./pages/Merkliste";
 import { Test } from "./pages/Test";
+import { Tracker } from "./pages/Tracker";
 
 export function App() {
   return (
@@ -21,6 +22,7 @@ export function App() {
         <Route path="/bildungsweg" element={<Bildungsweg />} />
         <Route path="/lehrstellen" element={<LehrstellenFinder />} />
         <Route path="/bewerbung" element={<Bewerbung />} />
+        <Route path="/tracker" element={<Tracker />} />
         <Route path="/merkliste" element={<Merkliste />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Home />} />

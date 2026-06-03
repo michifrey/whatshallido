@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Check, Copy, Download, Printer } from "lucide-react";
+import { Check, Copy, Download, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api";
@@ -60,16 +60,34 @@ export function Bewerbung() {
     }
   }, [prefillId, professions]);
 
+  const [aiText, setAiText] = useState<string | null>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState<string | null>(null);
+
   const set = (key: keyof LetterData) => (v: string) => setData((d) => ({ ...d, [key]: v }));
   const letter = buildLetter(data, mode);
+  const displayed = aiText ?? letter;
+
+  const improve = async () => {
+    setAiLoading(true);
+    setAiError(null);
+    try {
+      const { improved } = await api.improveLetter(letter, mode);
+      setAiText(improved);
+    } catch (e) {
+      setAiError(e instanceof Error ? e.message : "KI-Verbesserung fehlgeschlagen.");
+    } finally {
+      setAiLoading(false);
+    }
+  };
 
   const copy = async () => {
-    await navigator.clipboard.writeText(letter);
+    await navigator.clipboard.writeText(displayed);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
   const download = () => {
-    const blob = new Blob([letter], { type: "text/plain;charset=utf-8" });
+    const blob = new Blob([displayed], { type: "text/plain;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
     a.download = `Bewerbung_${(data.beruf || "Beruf").replace(/[^\wäöü]+/gi, "_")}.txt`;
@@ -153,9 +171,29 @@ export function Bewerbung() {
             </button>
             <button onClick={download} className="btn-soft"><Download size={16} /> Als Datei</button>
             <button onClick={() => window.print()} className="btn-soft"><Printer size={16} /> Drucken / PDF</button>
+            <button onClick={improve} disabled={aiLoading} className="btn-primary">
+              {aiLoading ? <Loader2 size={16} className="animate-spin" /> : <Sparkles size={16} />}
+              {aiLoading ? "Verbessert …" : "Mit KI verbessern"}
+            </button>
+            {aiText && (
+              <button onClick={() => { setAiText(null); setAiError(null); }} className="btn-soft">
+                <RotateCcw size={16} /> Original
+              </button>
+            )}
           </div>
+
+          {aiError && (
+            <p className="mb-2 rounded-lg bg-amber-50 p-2 text-xs text-amber-800 no-print dark:bg-amber-950/40 dark:text-amber-300">
+              {aiError}
+            </p>
+          )}
+          {aiText && (
+            <p className="mb-2 inline-flex items-center gap-1 rounded-full bg-violet-100 px-2.5 py-1 text-xs font-bold text-violet-700 no-print dark:bg-violet-950 dark:text-violet-300">
+              <Sparkles size={12} /> KI-verbessert – bitte vor dem Senden durchlesen
+            </p>
+          )}
           <pre className="print-area card whitespace-pre-wrap p-6 font-sans text-sm leading-relaxed text-slate-800 dark:text-slate-100">
-            {letter}
+            {displayed}
           </pre>
         </div>
       </div>
