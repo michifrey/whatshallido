@@ -2,7 +2,7 @@ import { createApp } from "./app.js";
 import { ensureSchema } from "./db/index.js";
 import { countProfessions, seedDatabase } from "./db/seed.js";
 
-const PORT = Number(process.env.PORT ?? 3000);
+const PORT = Number(process.env.PORT ?? 3001);
 
 if (!process.env.ADMIN_TOKEN) {
   console.warn(

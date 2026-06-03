@@ -45,12 +45,12 @@ npm install
 # 2. Datenbank befüllen (importiert die ~400 Berufe in SQLite)
 npm run seed
 
-# 3. Entwicklung starten (API auf :3000, Frontend auf :5173)
+# 3. Entwicklung starten (API auf :3001, Frontend auf :5173)
 npm run dev
 ```
 
 Dann **http://localhost:5173** öffnen. Das Frontend spricht über einen Vite-Proxy
-mit der API auf Port 3000.
+mit der API auf Port 3001.
 
 ### Einzeln starten
 ```bash
@@ -68,7 +68,7 @@ node server/dist/index.js
 
 Der Server liefert in Produktion automatisch das gebaute Frontend aus
 `client/dist` aus (inkl. SPA-Routing) – ein einziger Prozess genügt also.
-Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
+Konfiguration über Env-Variablen: `PORT` (Standard 3001), `DATABASE_PATH`
 (Standard `server/data/berufe.db`).
 
 ## 🔌 API-Überblick
@@ -128,20 +128,20 @@ cp .env.example .env        # ADMIN_TOKEN setzen, optional UNSPLASH_ACCESS_KEY
 docker compose up --build
 ```
 
-Die App läuft dann auf **http://localhost:3000**. Der Container **seedet die
+Die App läuft dann auf **http://localhost:3001**. Der Container **seedet die
 Datenbank beim ersten Start automatisch** und legt sie auf einem Volume ab
 (`bk-data`), sodass Admin-Änderungen Neustarts überleben.
 
 Ohne Compose:
 ```bash
 docker build -t berufs-kompass .
-docker run -p 3000:3000 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs-kompass
+docker run -p 3001:3001 -e ADMIN_TOKEN=geheim -v bk-data:/app/server/data berufs-kompass
 ```
 
 ### Wichtige Env-Variablen
 | Variable | Standard | Zweck |
 |----------|----------|-------|
-| `PORT` | `3000` | Server-Port |
+| `PORT` | `3001` | Server-Port |
 | `DATABASE_PATH` | `./data/berufe.db` | Pfad zur SQLite-DB |
 | `ADMIN_TOKEN` | `dev-admin-token` | Token für den Admin-Bereich (**in Produktion setzen!**) |
 | `UNSPLASH_ACCESS_KEY` | – | optional, für die Foto-Suche |
