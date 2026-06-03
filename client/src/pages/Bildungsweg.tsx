@@ -1,71 +1,109 @@
 import { Link } from "react-router-dom";
 
-function Stufe({ num, title, children }: { num: string; title: string; children: React.ReactNode }) {
+/** Ein Stück Strasse (Asphalt mit gestrichelter Mittellinie). */
+function Road({ height = 44 }: { height?: number }) {
   return (
-    <div className="overflow-hidden rounded-2xl bg-white shadow-card dark:bg-slate-900">
-      <div className="bg-brand-600 px-5 py-2.5 font-extrabold text-white">{num} · {title}</div>
-      <div className="grid gap-4 p-5">{children}</div>
+    <div className="mx-auto w-12 bg-slate-600 dark:bg-slate-700" style={{ height }}>
+      <div
+        className="mx-auto h-full w-[3px]"
+        style={{ backgroundImage: "repeating-linear-gradient(#fbbf24 0 9px, transparent 9px 20px)" }}
+      />
     </div>
   );
 }
 
-function Box({ title, text, highlight }: { title: string; text: string; highlight?: boolean }) {
+/** Y-Abzweigung der Strasse (gedreht für die Zusammenführung). */
+function Fork({ flip = false }: { flip?: boolean }) {
+  return (
+    <svg
+      viewBox="0 0 200 60"
+      preserveAspectRatio="none"
+      className={`mx-auto block h-14 w-full max-w-md ${flip ? "rotate-180" : ""}`}
+    >
+      <g fill="none" strokeLinecap="round">
+        <path d="M100 0 C100 36 50 24 50 60" stroke="#475569" strokeWidth="22" />
+        <path d="M100 0 C100 36 150 24 150 60" stroke="#475569" strokeWidth="22" />
+        <path d="M100 0 C100 36 50 24 50 60" stroke="#fbbf24" strokeWidth="2.5" strokeDasharray="6 8" />
+        <path d="M100 0 C100 36 150 24 150 60" stroke="#fbbf24" strokeWidth="2.5" strokeDasharray="6 8" />
+      </g>
+    </svg>
+  );
+}
+
+/** Meilenstein-Marke auf der Strasse. */
+function Milestone({ emoji, title, text }: { emoji: string; title: string; text: string }) {
+  return (
+    <div className="text-center">
+      <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-brand-600 text-3xl shadow-cardlg">
+        {emoji}
+      </div>
+      <p className="mt-2 font-extrabold">{title}</p>
+      <p className="text-sm text-slate-500 dark:text-slate-400">{text}</p>
+    </div>
+  );
+}
+
+/** Wegweiser-Schild an einer Abzweigung. */
+function Sign({ emoji, title, text, highlight }: { emoji: string; title: string; text: string; highlight?: boolean }) {
   return (
     <div
-      className={`rounded-xl border p-4 ${
+      className={`rounded-2xl border-2 p-4 text-center shadow-card ${
         highlight
-          ? "border-brand-200 bg-brand-50 dark:border-brand-900/60 dark:bg-brand-950/30"
-          : "border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800/60"
+          ? "border-brand-300 bg-brand-50 dark:border-brand-900/60 dark:bg-brand-950/30"
+          : "border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"
       }`}
     >
-      <b className="mb-1 block">{title}</b>
-      <span className="text-sm text-slate-500 dark:text-slate-400">{text}</span>
+      <div className="text-3xl">{emoji}</div>
+      <p className="mt-1 font-extrabold leading-tight">{title}</p>
+      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{text}</p>
     </div>
   );
 }
 
-const Pfeil = ({ children }: { children: React.ReactNode }) => (
-  <p className="py-2 text-center text-sm font-bold text-slate-400">▼ {children}</p>
-);
+function ForkLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="mx-auto w-fit rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
+      🔀 {children}
+    </p>
+  );
+}
 
 export function Bildungsweg() {
   return (
-    <div className="animate-fade mx-auto max-w-3xl space-y-1">
-      <div className="mb-4">
+    <div className="animate-fade mx-auto max-w-2xl">
+      <div className="mb-6">
         <h2 className="text-2xl font-extrabold">🎓 Dein Bildungsweg in der Schweiz</h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
-          Nach der obligatorischen Schule hast du viele Wege offen – und fast keiner ist eine Sackgasse.
+          Folge der Strasse: Nach jeder Kreuzung kannst du abbiegen – und fast jeder Weg führt weiter.
+          Keiner ist eine Sackgasse.
         </p>
       </div>
 
-      <Stufe num="1" title="Obligatorische Schule">
-        <Box title="Volksschule" text="Primar- und Sekundarstufe I – für alle, bis ca. 15 Jahre." />
-      </Stufe>
-      <Pfeil>Berufswahl &amp; Schnupperlehre</Pfeil>
+      <Milestone emoji="🏫" title="Obligatorische Schule" text="Volksschule – Primar- & Sekundarstufe I" />
+      <Road />
+      <ForkLabel>Berufswahl &amp; Schnupperlehre</ForkLabel>
+      <Fork />
+      <div className="mx-auto grid max-w-md grid-cols-2 gap-4">
+        <Sign highlight emoji="🔧" title="Berufslehre" text="EFZ (3–4 J.) oder EBA (2 J.) im Betrieb + Berufsfachschule. Optional mit Berufsmaturität." />
+        <Sign emoji="📖" title="Gymnasium / FMS" text="Allgemeinbildung mit Matura – der Weg an die Hochschule." />
+      </div>
+      <Fork flip />
 
-      <Stufe num="2" title="Sekundarstufe II">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Box highlight title="Berufliche Grundbildung 🔧" text="Lehre im Betrieb + Berufsfachschule. EFZ (3–4 J.) oder EBA (2 J.). Optional mit Berufsmaturität." />
-          <Box title="Allgemeinbildung 📖" text="Gymnasium (Matura), Fachmittelschule (FMS) – als Weg an die Hochschule." />
-        </div>
-      </Stufe>
-      <Pfeil>mit Lehrabschluss / Maturität geht es weiter</Pfeil>
+      <Road />
+      <ForkLabel>Nach dem Abschluss geht es weiter</ForkLabel>
+      <Fork />
+      <div className="mx-auto grid max-w-md grid-cols-2 gap-4">
+        <Sign highlight emoji="🛠️" title="Höhere Berufsbildung" text="Höhere Fachschule (HF), eidg. Berufs- & höhere Fachprüfungen – baut auf der Lehre auf." />
+        <Sign emoji="🎓" title="Hochschule" text="Fachhochschule (FH), Universität/ETH, Pädagogische Hochschule (PH)." />
+      </div>
+      <Fork flip />
 
-      <Stufe num="3" title="Tertiärstufe">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Box highlight title="Höhere Berufsbildung 🛠️" text="Höhere Fachschule (HF), eidg. Berufs- & höhere Fachprüfungen – praxisnah, baut auf der Lehre auf." />
-          <Box title="Hochschulen 🎓" text="Fachhochschule (FH), Universität/ETH, Pädagogische Hochschule (PH)." />
-        </div>
-      </Stufe>
-      <Pfeil>ein Leben lang</Pfeil>
+      <Road />
+      <Milestone emoji="🏁" title="Weiterbildung" text="Ein Leben lang lernen – Kurse, Nachholbildung, Umschulung" />
 
-      <Stufe num="4" title="Weiterbildung">
-        <Box title="Lebenslanges Lernen" text="Kurse, Nachholbildung, Umschulung – Wechsel sind jederzeit möglich. Das System ist durchlässig." />
-      </Stufe>
-
-      <div className="mt-5 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sky-900 dark:border-sky-900/60 dark:bg-sky-950/40 dark:text-sky-200">
-        💡 <b>Wichtig:</b> Auch mit einer Lehre stehen dir später alle Türen offen – über die
-        Berufsmaturität sogar der Weg an die Fachhochschule. Du musst dich jetzt nicht für immer festlegen.
+      <div className="mt-6 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sky-900 dark:border-sky-900/60 dark:bg-sky-950/40 dark:text-sky-200">
+        💡 <b>Gut zu wissen:</b> Über die Berufsmaturität führt auch die Lehre an die Fachhochschule.
+        Du legst dich jetzt nicht für immer fest – das System ist <b>durchlässig</b>.
       </div>
       <div className="mt-4 flex flex-wrap gap-3">
         <a href="https://www.berufsberatung.ch/dyn/show/2881" target="_blank" rel="noopener noreferrer" className="btn-ghost">
