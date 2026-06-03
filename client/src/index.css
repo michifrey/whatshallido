@@ -4,32 +4,45 @@
 
 @layer base {
   body {
-    @apply bg-slate-100 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+    @apply bg-paper text-ink antialiased dark:bg-slate-950 dark:text-slate-100;
     font-feature-settings: "cv11", "ss01";
+  }
+  /* Kräftige, jugendliche Display-Typografie für alle Überschriften */
+  h1, h2, h3, h4 {
+    @apply font-display font-extrabold tracking-tight;
   }
 }
 
 @layer components {
+  /* kleine Großbuchstaben-Labels ("eyebrow") im Editorial-/Youth-Stil */
+  .eyebrow {
+    @apply font-display text-xs font-extrabold uppercase tracking-[0.18em] text-brand-600 dark:text-brand-400;
+  }
+
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-display font-bold transition active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
   }
   .btn-primary {
     @apply btn bg-brand-600 text-white hover:bg-brand-700;
   }
   .btn-ghost {
-    @apply btn border-2 border-brand-600 text-brand-600 hover:bg-brand-50 dark:hover:bg-brand-950/40;
+    @apply btn border-2 border-ink text-ink hover:bg-ink hover:text-white dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-100 dark:hover:text-ink;
   }
   .btn-soft {
-    @apply btn bg-slate-100 text-slate-800 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
+    @apply btn bg-slate-100 text-ink hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
+  }
+  /* Poster-Variante: harter, versetzter Schatten + Ink-Rahmen */
+  .btn-pop {
+    @apply btn border-2 border-ink bg-sun text-ink shadow-pop hover:-translate-x-px hover:-translate-y-px hover:shadow-[6px_6px_0_0_#17141b] active:translate-x-0 active:translate-y-0 active:shadow-popsm;
   }
   .card {
-    @apply rounded-2xl bg-white shadow-card dark:bg-slate-900;
+    @apply rounded-3xl border border-ink/10 bg-white shadow-card dark:border-white/10 dark:bg-slate-900;
   }
   .chip {
-    @apply cursor-pointer rounded-full border-2 border-slate-200 bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-brand-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200;
+    @apply cursor-pointer rounded-full border-2 border-ink/15 bg-white px-3.5 py-1.5 text-sm font-display font-bold text-ink transition hover:border-ink hover:-translate-y-px dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200;
   }
   .chip-active {
-    @apply border-transparent bg-brand-600 text-white hover:border-transparent;
+    @apply border-ink bg-ink text-white shadow-popsm hover:border-ink dark:border-white dark:bg-white dark:text-ink;
   }
 }
 

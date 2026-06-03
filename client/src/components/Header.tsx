@@ -18,9 +18,9 @@ const bewerbenLinks = [
   { to: "/tracker", label: "📌 Bewerbungs-Tracker" },
 ];
 
-const pillBase = "rounded-full px-3 py-1.5 text-sm font-semibold transition";
-const pillActive = "bg-white text-brand-600";
-const pillIdle = "bg-white/15 hover:bg-white/30";
+const pillBase = "rounded-full px-3 py-1.5 text-sm font-display font-bold transition";
+const pillActive = "bg-brand-500 text-white";
+const pillIdle = "bg-white/10 hover:bg-white/25";
 
 export function Header() {
   const { count } = useMerkliste();
@@ -42,10 +42,13 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 bg-gradient-to-r from-brand-600 to-brand-500 text-white shadow-card no-print">
+    <header className="sticky top-0 z-40 border-b-4 border-brand-500 bg-ink text-white shadow-card no-print">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3 sm:px-6">
-        <NavLink to="/" className="flex items-center gap-2 text-xl font-extrabold">
-          <Compass size={26} /> Berufs-Kompass
+        <NavLink to="/" className="flex items-center gap-2 text-xl font-display font-extrabold uppercase tracking-tight">
+          <span className="grid h-9 w-9 place-items-center rounded-full bg-brand-500 text-white">
+            <Compass size={20} />
+          </span>
+          Berufs-Kompass
         </NavLink>
         <nav className="ml-auto flex flex-wrap items-center gap-1.5">
           {mainLinks.map((l) => (
@@ -78,7 +81,7 @@ export function Header() {
             className={({ isActive }) => `${pillBase} flex items-center gap-1 ${isActive ? pillActive : pillIdle}`}>
             <Heart size={15} /> Merkliste
             {count > 0 && (
-              <span className="grid h-5 min-w-5 place-items-center rounded-full bg-white px-1 text-xs font-extrabold text-brand-600">
+              <span className="grid h-5 min-w-5 place-items-center rounded-full bg-sun px-1 text-xs font-extrabold text-ink">
                 {count}
               </span>
             )}

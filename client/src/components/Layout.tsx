@@ -18,9 +18,9 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-8">{children}</main>
-      <footer className="bg-slate-900 px-4 py-8 text-slate-300 no-print sm:px-6">
+      <footer className="border-t-4 border-brand-500 bg-ink px-4 py-8 text-slate-300 no-print sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <h3 className="mb-3 font-bold text-white">Offizielle Quellen</h3>
+          <h3 className="eyebrow mb-3 text-brand-400">Offizielle Quellen</h3>
           <div className="flex flex-col gap-1.5">
             {quellen.map((q) => (
               <a key={q.url} href={q.url} target="_blank" rel="noopener noreferrer" className="text-sm text-sky-300 hover:underline">

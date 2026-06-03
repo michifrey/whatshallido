@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Compass, Search, Sparkles, Puzzle } from "lucide-react";
+import { Search, Sparkles, Puzzle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
 
@@ -21,23 +21,24 @@ export function Home() {
 
   return (
     <div className="animate-fade space-y-10">
-      <section className="overflow-hidden rounded-3xl border border-brand-100 bg-gradient-to-br from-white to-brand-50 p-8 shadow-card dark:border-slate-800 dark:from-slate-900 dark:to-slate-900 sm:p-12">
-        <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-xs font-bold text-brand-700 dark:bg-brand-950 dark:text-brand-300">
-          Für Jugendliche in der Schweiz 🇨🇭
-        </span>
-        <h1 className="mt-4 flex items-center gap-3 text-3xl font-extrabold sm:text-5xl">
-          <Compass className="hidden text-brand-600 sm:block" size={48} />
-          Welcher Beruf passt zu dir?
+      <section className="relative overflow-hidden rounded-3xl border-2 border-ink bg-ink p-8 text-white shadow-pop sm:p-12">
+        <div className="pointer-events-none absolute -right-12 -top-12 h-48 w-48 rounded-full bg-brand-500/30 blur-2xl" />
+        <div className="pointer-events-none absolute -bottom-16 right-28 h-52 w-52 rounded-full bg-accent/20 blur-3xl" />
+        <span className="eyebrow text-sun">Für Jugendliche in der Schweiz 🇨🇭</span>
+        <h1 className="mt-4 max-w-3xl text-4xl leading-[1.02] sm:text-6xl">
+          Welcher Beruf <span className="text-brand-500">passt zu dir?</span>
         </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+        <p className="mt-5 max-w-2xl text-lg text-slate-300">
           Über 500 Lehrberufe gibt es in der Schweiz. Hier kannst du{" "}
-          <b className="text-brand-600">{meta?.total ?? "viele"} Berufe</b> entdecken – der
+          <b className="text-sun">{meta?.total ?? "viele"} Berufe</b> entdecken – der
           Berufs-Kompass hilft dir, deine Stärken zu finden und Berufe zu entdecken, die wirklich zu
           dir passen. Mit Videos und Infos zum Weiterklicken.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link to="/test" className="btn-primary">🧩 Stärken-Test starten</Link>
-          <Link to="/explorer" className="btn-ghost">🔎 Berufe durchstöbern</Link>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <Link to="/test" className="btn-pop">🧩 Stärken-Test starten</Link>
+          <Link to="/explorer" className="btn-ghost border-white text-white hover:bg-white hover:text-ink">
+            🔎 Berufe durchstöbern
+          </Link>
         </div>
       </section>
 
@@ -46,28 +47,34 @@ export function Home() {
           <Link
             key={f.to}
             to={f.to}
-            className="group rounded-2xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-cardlg dark:bg-slate-900"
+            className="group card p-6 transition hover:-translate-y-1 hover:border-ink hover:shadow-pop dark:hover:border-white"
           >
             <span className="text-4xl">{f.emoji}</span>
-            <h3 className="mt-3 text-xl font-bold">{f.title}</h3>
+            <h3 className="mt-3 text-xl">{f.title}</h3>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{f.text}</p>
-            <span className="mt-3 inline-block font-bold text-brand-600 transition group-hover:translate-x-1">
+            <span className="mt-3 inline-block font-display font-bold text-brand-600 transition group-hover:translate-x-1">
               Los geht's →
             </span>
           </Link>
         ))}
       </section>
 
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl bg-white p-5 shadow-card dark:bg-slate-900">
-            <div className="grid h-8 w-8 place-items-center rounded-full bg-brand-600 font-extrabold text-white">
-              {s.n}
+      <section>
+        <span className="eyebrow">So gehst du vor</span>
+        <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {steps.map((s, i) => (
+            <div key={s.n} className="card p-5">
+              <div
+                className="grid h-9 w-9 place-items-center rounded-full font-display text-base font-extrabold"
+                style={{ background: ["#e11d48", "#2f6df6", "#13c296", "#f7c948"][i], color: i === 3 ? "#17141b" : "#fff" }}
+              >
+                {s.n}
+              </div>
+              <p className="mt-3 font-display font-bold">{s.t}</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">{s.d}</p>
             </div>
-            <p className="mt-3 font-bold">{s.t}</p>
-            <p className="text-sm text-slate-500 dark:text-slate-400">{s.d}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
     </div>
   );
