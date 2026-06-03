@@ -50,7 +50,7 @@ export function ProfessionMap({ categories, selected, onSelect }: Props) {
       <div className="relative hidden w-full overflow-visible sm:block">
         {imgOk ? (
           <img
-            src="/career-map.jpg"
+            src="/karte.png"
             alt="Illustrierte Schweizer Berufe-Landkarte"
             onError={() => setImgOk(false)}
             className="block w-full rounded-3xl shadow-card"
@@ -58,7 +58,7 @@ export function ProfessionMap({ categories, selected, onSelect }: Props) {
         ) : (
           <div className="flex aspect-[3/2] w-full items-center justify-center rounded-3xl bg-gradient-to-br from-sky-200 via-emerald-100 to-emerald-200 text-center text-sm text-slate-500 dark:from-slate-700 dark:via-slate-800 dark:to-slate-700">
             <span className="max-w-xs px-4">
-              Hintergrundbild fehlt noch.<br />Lege es als <code>client/public/career-map.jpg</code> ab.
+              Hintergrundbild fehlt noch.<br />Lege es als <code>client/public/karte.png</code> ab.
             </span>
           </div>
         )}
