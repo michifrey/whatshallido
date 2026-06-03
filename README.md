@@ -1,106 +1,113 @@
 # 🧭 Berufs-Kompass Schweiz
 
-Eine interaktive Webseite, die Jugendlichen bei der **Berufswahl in der Schweiz** hilft.
-Gebaut für meine Tochter – aber für alle nutzbar. 🇨🇭
+Interaktive Berufswahl-Plattform für Jugendliche in der Schweiz – als **professionelle
+Full-Stack-App**: Berufs-Explorer, Berufsentdecker und Stärken-Test mit ~200 echten
+Schweizer Berufen, Videos, Bildern und Lehrstellen-Links.
 
-## Was kann die Seite?
+## 🧱 Tech-Stack
 
-Die Seite hat drei interaktive Werkzeuge:
+| Bereich   | Technologie |
+|-----------|-------------|
+| Frontend  | **React 18** · **Vite** · **TypeScript** · **Tailwind CSS** · TanStack Query · React Router · lucide-react |
+| Backend   | **Node.js** · **TypeScript** · **Express** · **Drizzle ORM** · **SQLite** · Zod |
+| Struktur  | npm-Workspaces-Monorepo (`client/` + `server/`) |
 
-1. **🔎 Berufs-Explorer** – Berufe von A–Z durchstöbern, durchsuchen und nach
-   Bereichen (Technik, Gesundheit, IT, Gestaltung, Natur …) filtern. Zu jedem
-   Beruf gibt es einen **Video-Link** (Berufsfilm) und einen **Info-Link**.
-2. **✨ Berufsentdecker** – Interessen anklicken («Was macht mir Spass?») und
-   sofort passende Berufe vorgeschlagen bekommen, inkl. Match-Anzeige in %.
-3. **🧩 Stärken-Schwächen-Test** – zwei Teile: zuerst «Was mache ich **gern**?»
-   (18 Aussagen), dann «Was kann ich **gut**?» (6 Selbsteinschätzungen).
-   Ergebnis: zwei Profile (Interessen + Stärken), eine Hervorhebung «Hier passt
-   beides zusammen» und konkrete Berufsvorschläge.
-   Dazu gibt es einen **🌙 Dark Mode** (oben rechts, bleibt gespeichert).
-4. **❤️ Merkliste** – interessante Berufe per Herz-Klick sammeln (bleibt auf dem
-   Gerät gespeichert), als PDF drucken oder wieder leeren.
-5. **🎓 Bildungsweg** – verständliche Übersicht über das Schweizer Bildungssystem
-   (Volksschule → Lehre/Gymnasium → HF/FH → Weiterbildung).
+## 📁 Projektstruktur
 
-Zu jedem Beruf gibt es ausserdem einen Link **«🔍 Lehrstelle finden»** (Lehrstellen-/
-Schnupperlehre-Suche), neben Video und Infos.
-
-Ein Klick auf eine Berufskarte öffnet eine **Detail-Ansicht** mit allen Infos und
-**ähnlichen Berufen** zum Weiterstöbern. Der **«🎲 Überrasch mich»**-Button zeigt
-einen zufälligen Beruf – ideal, um Neues zu entdecken.
-
-## So benutzt du die Seite
-
-**Variante A – einfach öffnen (offline):**
-`index.html` doppelklicken. Fertig – läuft direkt im Browser, ohne Internet
-(nur die Video-/Info-Links brauchen Internet).
-
-**Variante B – im Netz veröffentlichen (gratis mit GitHub Pages):**
-1. In den Repo-Einstellungen auf GitHub → **Settings → Pages**
-2. Bei *Branch* den Branch wählen (z.B. `main`) und `/ (root)` → **Save**
-3. Nach ~1 Minute ist die Seite unter
-   `https://<dein-name>.github.io/whatshallido/` erreichbar.
-
-## Aufbau (für Technik-Interessierte)
-
-| Datei | Inhalt |
-|-------|--------|
-| `index.html` | Struktur der Seite (Start, Explorer, Entdecker, Test) |
-| `styles.css` | Gestaltung, responsiv für Handy & Desktop |
-| `app.js` | Logik für Suche, Filter, Entdecker und Test-Auswertung |
-| `data.js` | Kategorien, Interessens-Dimensionen, Test-Fragen + kuratierte Basis-Berufe (Fallback) |
-| **`berufe.json`** | **Kanonische Berufsdaten** (vom Crawler erzeugt) – für Abgleich/Diff |
-| **`berufe.js`** | Dieselben Daten als Browser-Script (`window.BERUFE_DATA`) – lädt auch offline |
-| `admin.html` / `admin.js` / `admin.css` | **Admin-Seite** zum Verwalten & Abgleichen |
-| `tools/crawler.mjs` | **Crawler / Auto-Abgleich** (Node) – baut `berufe.json` + `berufe.js` |
-| `.github/workflows/berufe-sync.yml` | **GitHub Action** – führt den Crawler automatisch aus |
-
-Die Seite lädt bevorzugt `berufe.js` (alle erfassten Berufe). Fehlt diese Datei,
-greift automatisch die kuratierte Basisliste aus `data.js`.
-
-## 🔄 Crawler / Auto-Abgleich
-
-Aktuell sind **~160 echte Schweizer Berufe** erfasst (Lehrberufe + weiterführende).
-Der Crawler hält sie aktuell und ergänzt neue:
-
-```bash
-node tools/crawler.mjs        # erzeugt berufe.json + berufe.js neu
+```
+.
+├── client/            # React-Frontend (Vite + Tailwind)
+│   └── src/
+│       ├── pages/         Start, Explorer, Entdecker, Test, Bildungsweg, Merkliste
+│       ├── components/     Karten, Modal, Bild (SVG/Foto), Header, Layout
+│       ├── context/        Taxonomie- & Modal-Provider
+│       ├── hooks/          Merkliste, Theme (Dark Mode)
+│       └── api.ts          typisierter API-Client
+├── server/            # Express-API (TypeScript)
+│   └── src/
+│       ├── db/             Drizzle-Schema, Verbindung, Seed
+│       ├── domain/         Kategorien, Dimensionen, Testfragen (Single Source of Truth)
+│       ├── routes/         /api/professions, /api/taxonomy …
+│       └── services/       Geschäftslogik (Filter, Empfehlungen)
+├── legacy/            # ursprünglicher statischer Prototyp (Referenz) + Crawler
+└── package.json       # Workspaces & Skripte
 ```
 
-Der Crawler hat eine grosse, eingebaute Basisliste (funktioniert **immer**, auch
-ohne Internet) und versucht zusätzlich, `berufsberatung.ch` live abzugleichen, um
-neue Berufe zu ergänzen. Ist die Live-Quelle nicht erreichbar, wird sauber auf die
-Basisliste zurückgefallen.
+## 🚀 Schnellstart
 
-**Automatik:** Die GitHub Action `Berufe Auto-Abgleich` läuft jeden Montag (und auf
-Knopfdruck im *Actions*-Tab → *Run workflow*), führt den Crawler aus und committet
-Änderungen automatisch. Dafür muss in den Repo-*Settings → Actions → General →
-Workflow permissions* die Option **„Read and write permissions"** aktiviert sein.
+Voraussetzung: **Node.js ≥ 20**.
 
-## ⚙️ Admin-Seite (`admin.html`)
+```bash
+# 1. Abhängigkeiten installieren (alle Workspaces)
+npm install
 
-Erreichbar über den Link im Footer. Damit kannst du:
+# 2. Datenbank befüllen (importiert die ~200 Berufe in SQLite)
+npm run seed
 
-- alle Berufe in einer Tabelle **bearbeiten** (Name, Kategorie, Typ, Dauer, Tags, Beschreibung),
-- neue Berufe **hinzufügen** oder löschen,
-- eine frische `berufe.json` **einspielen und abgleichen** (zeigt neu/geändert/entfernt),
-- die aktualisierten Dateien **exportieren** (`berufe.json` / `berufe.js`) zum Committen.
+# 3. Entwicklung starten (API auf :3000, Frontend auf :5173)
+npm run dev
+```
 
-> Da die Seite ohne Server läuft, werden Änderungen **im Browser** gemacht und am
-> Schluss als Datei exportiert. Diese Dateien dann ins Repo committen.
+Dann **http://localhost:5173** öffnen. Das Frontend spricht über einen Vite-Proxy
+mit der API auf Port 3000.
 
-### Berufe von Hand ergänzen
-Am einfachsten über die Admin-Seite. Alternativ in `tools/crawler.mjs` in der
-`SEED`-Liste einen Namen ergänzen und den Crawler neu laufen lassen. Kategorie
-und Tags werden automatisch zugeordnet (Heuristik), Video-/Info-Links erzeugt.
+### Einzeln starten
+```bash
+npm run dev:server   # nur API
+npm run dev:client   # nur Frontend
+```
 
-## Quellen & Inspiration
+## 📦 Produktion
 
-- [Lehre in der Schweiz – Berufe A–Z](https://www.lehre-in-der-schweiz.ch/)
-- [berufsberatung.ch – Übersicht Berufe](https://www.berufsberatung.ch/dyn/show/1893)
-- [ask! Beratungsdienste für Ausbildung und Beruf, Aargau](https://www.beratungsdienste.ch/)
-- [Bildungssystem Schweiz](https://www.berufsberatung.ch/dyn/show/2881)
+```bash
+npm run build        # baut server (tsup) und client (vite)
+npm run seed         # DB einmalig befüllen
+node server/dist/index.js
+```
 
-> ⚠️ Hinweis: Die Seite ist ein privates, kostenloses Hilfsmittel und ersetzt
-> keine professionelle Berufsberatung. Die Berufsauswahl ist ein Ausschnitt –
-> die vollständige Liste findest du auf berufsberatung.ch.
+Der Server liefert in Produktion automatisch das gebaute Frontend aus
+`client/dist` aus (inkl. SPA-Routing) – ein einziger Prozess genügt also.
+Konfiguration über Env-Variablen: `PORT` (Standard 3000), `DATABASE_PATH`
+(Standard `server/data/berufe.db`).
+
+## 🔌 API-Überblick
+
+| Methode | Pfad | Beschreibung |
+|---------|------|--------------|
+| GET  | `/api/professions?search=&category=&type=` | Berufe (gefiltert) |
+| GET  | `/api/professions/:id` | einzelner Beruf |
+| POST | `/api/professions/recommend` | Empfehlungen zu `{ dimensions: string[] }` |
+| GET  | `/api/categories` | Kategorien inkl. Anzahl |
+| GET  | `/api/taxonomy` | Kategorien & Interessens-Dimensionen |
+| GET  | `/api/test` | Fragen & Skalen für den Stärken-Test |
+| GET  | `/api/meta` | Statistik (Anzahl Berufe etc.) |
+| GET  | `/api/health` | Health-Check |
+
+## 🖼️ Bilder
+
+Kombiniertes Konzept: Jeder Beruf hat ein optionales Foto-Feld (`imageUrl`).
+Ist keines gesetzt, rendert das Frontend eine generierte **SVG-Illustration** mit
+dem Kategorie-Farbverlauf und Emoji – funktioniert offline und überall.
+
+## 🗄️ Datenbank & Seed
+
+- Schema: `server/src/db/schema.ts` (Drizzle, Tabelle `professions`).
+- Seed-Quelle: `server/src/data/berufe.seed.json` (Snapshot der 200 Berufe).
+- Migrationen: `npm run db:generate --workspace server` (drizzle-kit).
+
+Die Seed-Daten stammen aus dem Crawler im Prototyp (`legacy/tools/crawler.mjs`),
+der weiterhin per GitHub Action gepflegt wird (`legacy/berufe.json`). Um neue
+Crawler-Daten zu übernehmen, `legacy/berufe.json` nach
+`server/src/data/berufe.seed.json` kopieren und `npm run seed` ausführen.
+
+## 📜 Legacy-Prototyp
+
+Der ursprüngliche statische Prototyp (reines HTML/CSS/JS) liegt unter `legacy/`
+und bleibt als Referenz lauffähig (`legacy/index.html` im Browser öffnen).
+
+## Quellen
+
+Lehre in der Schweiz · berufsberatung.ch · ask! Beratungsdienste Aargau · Bildungssystem Schweiz.
+
+> Privates, kostenloses Hilfsmittel für die Berufswahl – ersetzt keine
+> professionelle Berufsberatung.

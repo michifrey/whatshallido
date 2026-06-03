@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Builds
+dist/
+client/dist/
+
+# Datenbank (wird per seed erzeugt)
+server/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs & Caches
+*.log
+.DS_Store
+.vite/
+.eslintcache
+
+# Env
+.env
+.env.local

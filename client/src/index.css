@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+    font-feature-settings: "cv11", "ss01";
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-ghost {
+    @apply btn border-2 border-brand-600 text-brand-600 hover:bg-brand-50 dark:hover:bg-brand-950/40;
+  }
+  .btn-soft {
+    @apply btn bg-slate-100 text-slate-800 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-card dark:bg-slate-900;
+  }
+  .chip {
+    @apply cursor-pointer rounded-full border-2 border-slate-200 bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-brand-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200;
+  }
+  .chip-active {
+    @apply border-transparent bg-brand-600 text-white hover:border-transparent;
+  }
+}
+
+/* Druck: nur die Merkliste zeigen */
+@media print {
+  .no-print { display: none !important; }
+}

@@ -24,13 +24,13 @@ jobs:
           node-version: "20"
 
       - name: Crawler / Abgleich ausführen
-        run: node tools/crawler.mjs
+        run: node legacy/tools/crawler.mjs
 
       - name: Änderungen committen (falls vorhanden)
         run: |
           git config user.name "berufe-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add berufe.json berufe.js
+          git add legacy/berufe.json legacy/berufe.js
           if git diff --staged --quiet; then
             echo "Keine Änderungen – berufe.json ist aktuell."
           else
