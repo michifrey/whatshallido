@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { BookmarkPlus, Check, Copy, Download, FileDown, Loader2, Printer, RotateCcw, Sparkles } from "lucide-react";
+import { BookmarkPlus, Building2, Check, Copy, Download, FileDown, FileText, Loader2, PenLine, Printer, RotateCcw, Sparkles, User } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api";
@@ -116,7 +116,9 @@ export function Bewerbung() {
   return (
     <div className="animate-fade space-y-5">
       <div className="no-print">
-        <h2 className="text-2xl font-extrabold">📄 Bewerbungs-Helfer</h2>
+        <h2 className="flex items-center gap-2 text-2xl">
+          <FileText size={24} strokeWidth={1.75} className="text-brand-600" /> Bewerbungs-Helfer
+        </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
           Fülle die Felder aus – rechts entsteht dein Bewerbungsbrief live. Am Schluss kopieren,
           als Datei speichern oder als PDF drucken.
@@ -132,7 +134,7 @@ export function Bewerbung() {
               mode === m ? "bg-white text-brand-600 shadow dark:bg-slate-900" : "text-slate-600 dark:text-slate-300"
             }`}
           >
-            {m === "lehrstelle" ? "🎓 Lehrstelle" : "🌱 Schnupperlehre"}
+            {m === "lehrstelle" ? "Lehrstelle" : "Schnupperlehre"}
           </button>
         ))}
       </div>
@@ -141,7 +143,7 @@ export function Bewerbung() {
         {/* Formular */}
         <div className="space-y-5 no-print">
           <section className="card space-y-3 p-5">
-            <h3 className="font-bold">👤 Über dich</h3>
+            <h3 className="flex items-center gap-2"><User size={18} strokeWidth={1.75} className="text-brand-600" /> Über dich</h3>
             <div className="grid grid-cols-2 gap-3">
               <Field label="Vorname" value={data.vorname} onChange={set("vorname")} />
               <Field label="Nachname" value={data.nachname} onChange={set("nachname")} />
@@ -158,7 +160,7 @@ export function Bewerbung() {
           </section>
 
           <section className="card space-y-3 p-5">
-            <h3 className="font-bold">🏢 Firma / Betrieb</h3>
+            <h3 className="flex items-center gap-2"><Building2 size={18} strokeWidth={1.75} className="text-brand-600" /> Firma / Betrieb</h3>
             <Field label="Firmenname" value={data.firma} onChange={set("firma")} />
             <Field label="Ansprechperson (optional)" value={data.ansprechperson} onChange={set("ansprechperson")} placeholder="z.B. Frau Meier" />
             <Field label="Strasse / Nr. (optional)" value={data.firmaStrasse} onChange={set("firmaStrasse")} />
@@ -169,7 +171,7 @@ export function Bewerbung() {
           </section>
 
           <section className="card space-y-3 p-5">
-            <h3 className="font-bold">✍️ Zur Bewerbung</h3>
+            <h3 className="flex items-center gap-2"><PenLine size={18} strokeWidth={1.75} className="text-brand-600" /> Zur Bewerbung</h3>
             <Field label="Beruf" value={data.beruf} onChange={set("beruf")} placeholder="z.B. Informatikerin EFZ" />
             {mode === "schnupperlehre" && (
               <Field label="Wunsch-Zeitraum" value={data.zeitraum} onChange={set("zeitraum")} placeholder="z.B. in den Frühlingsferien" />

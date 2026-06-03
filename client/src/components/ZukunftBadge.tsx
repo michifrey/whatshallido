@@ -1,3 +1,4 @@
+import { TrendingUp } from "lucide-react";
 import type { Profession } from "../types";
 
 const COLOR: Record<number, string> = {
@@ -16,7 +17,7 @@ export function ZukunftBadge({ zukunft }: { zukunft: Profession["zukunft"] }) {
       className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold ${COLOR[zukunft.score] ?? COLOR[3]}`}
       title="Zukunftssicherheit – grobe Orientierung, keine Garantie"
     >
-      🔮 Zukunft: {zukunft.label}
+      <TrendingUp size={12} strokeWidth={2} /> Zukunft: {zukunft.label}
     </span>
   );
 }
@@ -27,7 +28,7 @@ export function ZukunftDetail({ zukunft }: { zukunft: Profession["zukunft"] }) {
   return (
     <div className="rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
       <div className="flex items-center gap-2">
-        <span className="font-semibold">🔮 Zukunftssicherheit:</span>
+        <span className="flex items-center gap-1.5 font-semibold"><TrendingUp size={16} strokeWidth={1.75} /> Zukunftssicherheit:</span>
         <span className="font-bold">{zukunft.label}</span>
         <span className="ml-auto tracking-widest" aria-hidden>
           {"●".repeat(zukunft.score)}

@@ -40,7 +40,7 @@ export function TaxonomyProvider({ children }: { children: ReactNode }) {
   if (isLoading) {
     return (
       <div className="grid min-h-screen place-items-center text-slate-400">
-        <div className="animate-pulse text-lg">🧭 Lädt …</div>
+        <div className="animate-pulse text-lg">Lädt …</div>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { LogOut, Pencil, Plus, Trash2 } from "lucide-react";
+import { Lock, LogOut, Pencil, Plus, Settings, Trash2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { api } from "../api";
 import { adminApi, type ProfessionInput } from "../api/admin";
@@ -27,7 +27,7 @@ function Login({ onLogin, invalid }: { onLogin: (t: string) => void; invalid: bo
   return (
     <div className="mx-auto max-w-sm animate-fade pt-10">
       <div className="card p-6">
-        <h2 className="text-xl font-extrabold">🔐 Admin-Login</h2>
+        <h2 className="flex items-center gap-2 text-xl"><Lock size={20} strokeWidth={1.75} className="text-brand-600" /> Admin-Login</h2>
         <p className="mt-1 text-sm text-slate-500">Gib den Admin-Token ein (Env-Variable <code>ADMIN_TOKEN</code>).</p>
         <input
           type="password"
@@ -88,7 +88,7 @@ function AdminDashboard({ token, onLogout }: { token: string; onLogout: () => vo
   return (
     <div className="animate-fade space-y-5">
       <div className="flex flex-wrap items-center gap-3">
-        <h2 className="text-2xl font-extrabold">⚙️ Admin – Berufe verwalten</h2>
+        <h2 className="flex items-center gap-2 text-2xl"><Settings size={24} strokeWidth={1.75} className="text-brand-600" /> Admin – Berufe verwalten</h2>
         <button onClick={onLogout} className="btn-soft ml-auto">
           <LogOut size={16} /> Abmelden
         </button>
@@ -144,8 +144,8 @@ function AdminDashboard({ token, onLogout }: { token: string; onLogout: () => vo
                     </div>
                   </td>
                   <td className="p-3 font-semibold">{p.name}</td>
-                  <td className="p-3">{cat.emoji} {cat.name}</td>
-                  <td className="p-3">{p.type === "weiterfuehrend" ? "📚" : "🎓"}</td>
+                  <td className="p-3">{cat.name}</td>
+                  <td className="p-3">{p.type === "weiterfuehrend" ? "weiterf." : "Lehre"}</td>
                   <td className="p-3">
                     <div className="flex justify-end gap-1">
                       <button onClick={() => { setFormError(null); setEditing(p); }}

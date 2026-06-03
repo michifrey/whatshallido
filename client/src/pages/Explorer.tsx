@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Dices, List, Map as MapIcon } from "lucide-react";
+import { Dices, List, Map as MapIcon, Search } from "lucide-react";
 import { useState } from "react";
 import { api } from "../api";
 import { ProfessionGrid } from "../components/ProfessionGrid";
@@ -11,8 +11,8 @@ import type { ProfessionType } from "../types";
 
 const typFilter: { value: "" | ProfessionType; label: string }[] = [
   { value: "", label: "Alle" },
-  { value: "lehre", label: "🎓 Lehre" },
-  { value: "weiterfuehrend", label: "📚 Weiterführend" },
+  { value: "lehre", label: "Lehre" },
+  { value: "weiterfuehrend", label: "Weiterführend" },
 ];
 
 export function Explorer() {
@@ -44,7 +44,9 @@ export function Explorer() {
   return (
     <div className="animate-fade space-y-5">
       <div>
-        <h2 className="text-2xl font-extrabold">🔎 Berufs-Explorer</h2>
+        <h2 className="flex items-center gap-2 text-2xl">
+          <Search size={24} strokeWidth={1.75} className="text-brand-600" /> Berufs-Explorer
+        </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
           Such einen Beruf oder filtere nach einem Bereich. Tipp auf eine Karte für Details.
         </p>
@@ -99,7 +101,7 @@ export function Explorer() {
       ) : (
         <div className="flex flex-wrap gap-2">
           <button onClick={() => setCategory("")} className={`chip ${category === "" ? "chip-active" : ""}`}>
-            🔎 Alle
+            Alle
           </button>
           {categories.map((c) => (
             <button
@@ -134,7 +136,7 @@ export function Explorer() {
       {isLoading ? (
         <p className="py-12 text-center text-slate-400">Lädt …</p>
       ) : view === "karte" && !zone && !search ? (
-        <p className="py-8 text-center text-slate-400">Wähle oben ein Feld auf der Karte 🗺️</p>
+        <p className="py-8 text-center text-slate-400">Wähle oben einen Ort auf der Karte.</p>
       ) : (
         <ProfessionGrid professions={shown} empty="Keine Berufe gefunden. Versuch einen anderen Suchbegriff." />
       )}

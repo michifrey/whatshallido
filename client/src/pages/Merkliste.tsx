@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Printer, Trash2 } from "lucide-react";
+import { Heart, Printer, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
 import { ProfessionGrid } from "../components/ProfessionGrid";
@@ -14,7 +14,9 @@ export function Merkliste() {
   return (
     <div className="animate-fade space-y-5">
       <div>
-        <h2 className="text-2xl font-extrabold">❤️ Meine Merkliste</h2>
+        <h2 className="flex items-center gap-2 text-2xl">
+          <Heart size={24} strokeWidth={1.75} className="text-brand-600" /> Meine Merkliste
+        </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
           Berufe, die dich interessieren – tipp bei jedem Beruf auf das Herz, um ihn hier zu sammeln.
           Die Liste bleibt auf diesem Gerät gespeichert.
@@ -25,7 +27,7 @@ export function Merkliste() {
         <div className="rounded-xl border border-dashed border-amber-300 bg-amber-50 p-6 text-center text-amber-800 dark:border-amber-700/50 dark:bg-amber-950/40 dark:text-amber-300">
           Noch keine Berufe gemerkt. Stöbere im{" "}
           <Link to="/explorer" className="font-bold underline">Explorer</Link> oder mach den{" "}
-          <Link to="/test" className="font-bold underline">Stärken-Test</Link> und tipp auf ❤️.
+          <Link to="/test" className="font-bold underline">Stärken-Test</Link> und tipp auf das Herz.
         </div>
       ) : (
         <>

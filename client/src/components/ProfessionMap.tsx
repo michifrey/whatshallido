@@ -1,3 +1,4 @@
+import { Map as MapIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { Profession } from "../types";
 import { ZONES, zoneCounts } from "../lib/mapZones";
@@ -14,8 +15,8 @@ export function ProfessionMap({ professions, selected, onSelect }: Props) {
 
   return (
     <div>
-      <p className="mb-2 text-center text-sm font-semibold text-slate-600 dark:text-slate-300">
-        🗺️ Fahr über einen Ort für die Beschreibung – klick ihn an, um die Berufe zu öffnen
+      <p className="mb-2 flex items-center justify-center gap-1.5 text-center text-sm font-medium text-slate-600 dark:text-slate-300">
+        <MapIcon size={15} strokeWidth={1.75} /> Fahr über einen Ort für die Beschreibung – klick ihn an, um die Berufe zu öffnen
       </p>
 
       {/* Landkarte mit Pins (ab Tablet) */}

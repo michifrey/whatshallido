@@ -1,4 +1,4 @@
-import { Pencil, Plus, Trash2, X } from "lucide-react";
+import { ListChecks, Pencil, Plus, Trash2, X } from "lucide-react";
 import { useState } from "react";
 import { useBewerbungen } from "../hooks/useBewerbungen";
 import type { Bewerbung, BewerbungStatus } from "../types";
@@ -28,7 +28,9 @@ export function Tracker() {
     <div className="animate-fade space-y-5">
       <div className="flex flex-wrap items-center gap-3">
         <div>
-          <h2 className="text-2xl font-extrabold">📌 Bewerbungs-Tracker</h2>
+          <h2 className="flex items-center gap-2 text-2xl">
+          <ListChecks size={24} strokeWidth={1.75} className="text-brand-600" /> Bewerbungs-Tracker
+        </h2>
           <p className="mt-1 text-slate-500 dark:text-slate-400">
             Behalte den Überblick: wo du dich beworben hast und wie es steht. Bleibt auf diesem Gerät gespeichert.
           </p>
@@ -59,7 +61,7 @@ export function Tracker() {
               <div className="min-w-[160px] flex-1">
                 <p className="font-bold">{b.firma || "—"}</p>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  {b.typ === "schnupperlehre" ? "🌱 Schnupperlehre" : "🎓 Lehrstelle"}
+                  {b.typ === "schnupperlehre" ? "Schnupperlehre" : "Lehrstelle"}
                   {b.beruf ? ` · ${b.beruf}` : ""} · {b.datum}
                 </p>
                 {b.notiz && <p className="mt-1 text-sm text-slate-500">{b.notiz}</p>}

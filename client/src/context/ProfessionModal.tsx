@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useState, type React
 import { Link } from "react-router-dom";
 import { api } from "../api";
 import { useMerkliste } from "../hooks/useMerkliste";
+import { categoryIcon, dimIcon } from "../lib/icons";
 import type { Profession } from "../types";
 import { ProfessionImage } from "../components/ProfessionImage";
 import { ZukunftDetail } from "../components/ZukunftBadge";
@@ -53,6 +54,7 @@ function ProfessionModal({
   const { getCategory, getDimension } = useTaxonomy();
   const { has, toggle } = useMerkliste();
   const category = getCategory(profession.category);
+  const CatIcon = categoryIcon(profession.category);
   const gemerkt = has(profession.id);
 
   const { data: all = [] } = useQuery({
@@ -84,10 +86,10 @@ function ProfessionModal({
         </div>
 
         <div className="p-6">
-          <h2 className="text-2xl font-extrabold leading-tight">{profession.name}</h2>
-          <p className="mt-1 text-sm font-semibold text-slate-500 dark:text-slate-400">
-            {category.emoji} {category.name} · {profession.duration}
-            {profession.type === "weiterfuehrend" && " · 📚 weiterführend"}
+          <h2 className="text-2xl font-semibold leading-tight">{profession.name}</h2>
+          <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm font-semibold text-slate-500 dark:text-slate-400">
+            <CatIcon size={15} strokeWidth={1.75} /> {category.name} · {profession.duration}
+            {profession.type === "weiterfuehrend" && <span>· weiterführend</span>}
           </p>
 
           {profession.description && (
@@ -99,11 +101,13 @@ function ProfessionModal({
             <div className="mt-2 flex flex-wrap gap-2">
               {profession.tags.map((t) => {
                 const d = getDimension(t);
-                return d ? (
-                  <span key={t} className="rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 shadow-sm dark:bg-slate-900 dark:text-slate-300">
-                    {d.emoji} {d.name}
+                if (!d) return null;
+                const DimI = dimIcon(t);
+                return (
+                  <span key={t} className="inline-flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 shadow-sm dark:bg-slate-900 dark:text-slate-300">
+                    <DimI size={13} strokeWidth={2} /> {d.name}
                   </span>
-                ) : null;
+                );
               })}
             </div>
           </div>

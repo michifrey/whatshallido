@@ -2,6 +2,7 @@ import { Heart, Info, PlaySquare, Search } from "lucide-react";
 import { useTaxonomy } from "../context/TaxonomyContext";
 import { useMerkliste } from "../hooks/useMerkliste";
 import { useProfessionModal } from "../context/ProfessionModal";
+import { categoryIcon, dimIcon } from "../lib/icons";
 import type { Profession, RecommendedProfession } from "../types";
 import { ProfessionImage } from "./ProfessionImage";
 import { ZukunftBadge } from "./ZukunftBadge";
@@ -15,6 +16,7 @@ export function ProfessionCard({ profession }: Props) {
   const { has, toggle } = useMerkliste();
   const { open } = useProfessionModal();
   const category = getCategory(profession.category);
+  const CatIcon = categoryIcon(profession.category);
   const gemerkt = has(profession.id);
   const match = "match" in profession ? profession.match : undefined;
 
@@ -47,11 +49,11 @@ export function ProfessionCard({ profession }: Props) {
 
       <div className="flex flex-1 flex-col p-4">
         <h3 className="text-base font-bold leading-tight">{profession.name}</h3>
-        <p className="mt-0.5 text-xs font-semibold text-slate-500 dark:text-slate-400">
-          {category.emoji} {category.name} · {profession.duration}
+        <p className="mt-1 flex flex-wrap items-center gap-x-1 gap-y-1 text-xs font-semibold text-slate-500 dark:text-slate-400">
+          <CatIcon size={13} strokeWidth={1.75} /> {category.name} · {profession.duration}
           {profession.type === "weiterfuehrend" && (
             <span className="ml-1 rounded-full bg-violet-100 px-1.5 py-0.5 text-[10px] font-bold text-violet-700 dark:bg-violet-950 dark:text-violet-300">
-              📚 weiterführend
+              weiterführend
             </span>
           )}
         </p>
@@ -64,12 +66,13 @@ export function ProfessionCard({ profession }: Props) {
           {profession.tags.map((t) => {
             const d = getDimension(t);
             if (!d) return null;
+            const DimI = dimIcon(t);
             return (
               <span
                 key={t}
-                className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300"
+                className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300"
               >
-                {d.emoji} {d.name.split(" ")[0]}
+                <DimI size={11} strokeWidth={2} /> {d.name.split(" ")[0]}
               </span>
             );
           })}

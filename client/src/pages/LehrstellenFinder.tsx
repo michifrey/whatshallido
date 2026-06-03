@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { BookmarkPlus, ExternalLink, FileText, MapPin, Search } from "lucide-react";
+import { BookmarkPlus, ExternalLink, FileText, Lightbulb, MapPin, Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { api } from "../api";
@@ -57,7 +57,9 @@ export function LehrstellenFinder() {
   return (
     <div className="animate-fade space-y-6">
       <div>
-        <h2 className="text-2xl font-extrabold">🔎 Lehrstellen- &amp; Schnupperstellen-Finder</h2>
+        <h2 className="flex items-center gap-2 text-2xl">
+          <MapPin size={24} strokeWidth={1.75} className="text-brand-600" /> Lehrstellen- &amp; Schnupperstellen-Finder
+        </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
           Wähle einen Beruf und deinen Kanton – wir bringen dich direkt zu den passenden
           Such-Portalen mit vorausgefülltem Beruf.
@@ -75,7 +77,7 @@ export function LehrstellenFinder() {
                 mode === m ? "bg-white text-brand-600 shadow dark:bg-slate-900" : "text-slate-600 dark:text-slate-300"
               }`}
             >
-              {m === "lehrstelle" ? "🎓 Lehrstelle" : "🌱 Schnupperlehre"}
+              {m === "lehrstelle" ? "Lehrstelle" : "Schnupperlehre"}
             </button>
           ))}
         </div>
@@ -184,7 +186,9 @@ export function LehrstellenFinder() {
 
       {/* Tipps */}
       <div className="rounded-xl border border-sky-200 bg-sky-50 p-5 dark:border-sky-900/60 dark:bg-sky-950/30">
-        <h3 className="mb-2 font-bold text-sky-900 dark:text-sky-200">💡 So findest du eine Schnupperlehre</h3>
+        <h3 className="mb-2 flex items-center gap-2 font-semibold text-sky-900 dark:text-sky-200">
+          <Lightbulb size={18} strokeWidth={1.75} /> So findest du eine Schnupperlehre
+        </h3>
         <ul className="list-disc space-y-1 pl-5 text-sm text-sky-900/90 dark:text-sky-200/90">
           {tipps.map((t) => (
             <li key={t}>{t}</li>

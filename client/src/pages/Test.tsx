@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { Check, Dumbbell, Gem, Puzzle, RotateCcw, Smile, Star, Trophy } from "lucide-react";
 import { useMemo, useState } from "react";
 import { api } from "../api";
 import { ProfessionGrid } from "../components/ProfessionGrid";
@@ -96,7 +97,7 @@ export function Test() {
   const evaluate = async () => {
     if (!data) return;
     if (answered < total) {
-      alert("Bitte beantworte zuerst beide Teile 🙂");
+      alert("Bitte beantworte zuerst beide Teile.");
       return;
     }
     const dims = [...new Set(data.interestQuestions.map((q) => q.dim))];
@@ -135,7 +136,9 @@ export function Test() {
   return (
     <div className="animate-fade space-y-5">
       <div>
-        <h2 className="text-2xl font-extrabold">🧩 Stärken-Schwächen-Test</h2>
+        <h2 className="flex items-center gap-2 text-2xl">
+          <Puzzle size={24} strokeWidth={1.75} className="text-brand-600" /> Stärken-Schwächen-Test
+        </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
           Zwei kurze Teile: zuerst <b>was du gern machst</b>, dann <b>was du gut kannst</b>. Antworte einfach ehrlich.
         </p>
@@ -148,42 +151,54 @@ export function Test() {
         <span className="mt-1 block text-xs font-semibold text-slate-500">{answered} / {total} beantwortet</span>
       </div>
 
-      <h3 className="border-b-2 border-brand-100 pb-1 text-lg font-bold text-brand-600 dark:border-slate-800">😊 Teil 1 · Das mache ich gern</h3>
+      <h3 className="flex items-center gap-2 border-b border-slate-200 pb-1.5 text-lg text-brand-600 dark:border-slate-800">
+        <Smile size={18} strokeWidth={1.75} /> Teil 1 · Das mache ich gern
+      </h3>
       <QuestionBlock questions={data.interestQuestions} scale={data.interestScale} answers={interest} numbered
         onAnswer={(i, v) => setInterest((p) => ({ ...p, [i]: v }))} />
 
-      <h3 className="border-b-2 border-brand-100 pb-1 text-lg font-bold text-brand-600 dark:border-slate-800">💪 Teil 2 · Das kann ich gut</h3>
+      <h3 className="flex items-center gap-2 border-b border-slate-200 pb-1.5 text-lg text-brand-600 dark:border-slate-800">
+        <Dumbbell size={18} strokeWidth={1.75} /> Teil 2 · Das kann ich gut
+      </h3>
       <p className="text-sm text-slate-500">Wie gut kannst du das deiner Meinung nach schon?</p>
       <QuestionBlock questions={data.abilityQuestions} scale={data.abilityScale} answers={ability}
         onAnswer={(i, v) => setAbility((p) => ({ ...p, [i]: v }))} />
 
       <div className="flex flex-wrap gap-3">
-        <button onClick={evaluate} className="btn-primary">✅ Auswerten</button>
-        <button onClick={reset} className="btn-soft">↺ Zurücksetzen</button>
+        <button onClick={evaluate} className="btn-primary"><Check size={16} /> Auswerten</button>
+        <button onClick={reset} className="btn-soft"><RotateCcw size={15} /> Zurücksetzen</button>
       </div>
 
       {result && (
         <div id="ergebnis" className="space-y-4 pt-4">
-          <h2 className="text-2xl font-extrabold">🎉 Dein Ergebnis</h2>
+          <h2 className="flex items-center gap-2 text-2xl">
+            <Trophy size={24} strokeWidth={1.75} className="text-brand-600" /> Dein Ergebnis
+          </h2>
           <div className="card p-6">
-            <h3 className="mb-4 font-bold">😊 Was du gern machst (Interessen)</h3>
+            <h3 className="mb-4 flex items-center gap-2"><Smile size={18} strokeWidth={1.75} className="text-brand-600" /> Was du gern machst (Interessen)</h3>
             <ProfileBars values={result.iPct} />
           </div>
           <div className="card p-6">
-            <h3 className="mb-4 font-bold">💪 Was du gut kannst (Stärken)</h3>
+            <h3 className="mb-4 flex items-center gap-2"><Dumbbell size={18} strokeWidth={1.75} className="text-brand-600" /> Was du gut kannst (Stärken)</h3>
             <ProfileBars values={result.kPct} />
           </div>
 
-          <div className="rounded-xl border-l-4 border-violet-500 bg-violet-50 p-4 dark:bg-violet-950/40">
-            <b>💎 Hier passt beides zusammen:</b>{" "}
-            {result.both.length
-              ? result.both.map((d) => `${getDimension(d as DimensionKey)?.emoji} ${getDimension(d as DimensionKey)?.name}`).join(", ") +
-                " – das machst du gern und kannst es gut. Hier kannst du richtig aufblühen!"
-              : "Noch keine klare Überschneidung – probiere in einer Schnupperlehre aus, was dir liegt."}
+          <div className="flex gap-3 rounded-xl border-l-4 border-violet-500 bg-violet-50 p-4 dark:bg-violet-950/40">
+            <Gem size={18} strokeWidth={1.75} className="mt-0.5 shrink-0 text-violet-500" />
+            <p>
+              <b>Hier passt beides zusammen:</b>{" "}
+              {result.both.length
+                ? result.both.map((d) => getDimension(d as DimensionKey)?.name).join(", ") +
+                  " – das machst du gern und kannst es gut. Hier kannst du richtig aufblühen!"
+                : "Noch keine klare Überschneidung – probiere in einer Schnupperlehre aus, was dir liegt."}
+            </p>
           </div>
-          <div className="rounded-xl border-l-4 border-emerald-500 bg-emerald-50 p-4 dark:bg-emerald-950/40">
-            <b>🌟 Deine grössten Stärken:</b>{" "}
-            {topI.map((d) => `${getDimension(d as DimensionKey)?.emoji} ${getDimension(d as DimensionKey)?.name}`).join(" und ")}.
+          <div className="flex gap-3 rounded-xl border-l-4 border-emerald-500 bg-emerald-50 p-4 dark:bg-emerald-950/40">
+            <Star size={18} strokeWidth={1.75} className="mt-0.5 shrink-0 text-emerald-500" />
+            <p>
+              <b>Deine grössten Stärken:</b>{" "}
+              {topI.map((d) => getDimension(d as DimensionKey)?.name).join(" und ")}.
+            </p>
           </div>
 
           <h3 className="pt-2 text-xl font-bold">Berufe, die zu dir passen könnten</h3>

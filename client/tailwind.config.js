@@ -6,17 +6,17 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: "#fff1f3",
-          100: "#ffe4e8",
-          200: "#fecdd6",
-          300: "#fda4b4",
-          400: "#fb7189",
-          500: "#f43f5e",
-          600: "#e11d48",
-          700: "#be123c",
-          800: "#9f1239",
-          900: "#881337",
-          950: "#4c0519",
+          50: "#fff0f7",
+          100: "#ffe3f1",
+          200: "#ffc6e3",
+          300: "#ff97cb",
+          400: "#fb56a8",
+          500: "#ec0f83",
+          600: "#d10071",
+          700: "#ac005d",
+          800: "#8d014d",
+          900: "#750641",
+          950: "#450022",
         },
         // Youth-Centre-Palette: tiefes "Ink", warmes Papier + kräftige Akzente
         ink: {

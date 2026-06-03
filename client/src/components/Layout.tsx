@@ -30,14 +30,14 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
           {meta && (
             <p className="mt-4 text-xs text-slate-500">
-              📊 {meta.total} Berufe in der Datenbank ({meta.lehre} Lehre, {meta.weiterfuehrend} weiterführend)
+              {meta.total} Berufe in der Datenbank ({meta.lehre} Lehre, {meta.weiterfuehrend} weiterführend)
             </p>
           )}
           <p className="mt-3 border-t border-slate-800 pt-3 text-xs text-slate-500">
             Privates, kostenloses Hilfsmittel für die Berufswahl – ersetzt keine professionelle
             Berufsberatung. Für eine persönliche Beratung wende dich an die Berufsberatung deines
             Kantons (z.B. ask! im Aargau).{" "}
-            <Link to="/admin" className="text-slate-500 hover:text-sky-300">⚙️ Admin</Link>
+            <Link to="/admin" className="text-slate-500 hover:text-sky-300">Admin</Link>
           </p>
         </div>
       </footer>
