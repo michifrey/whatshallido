@@ -93,24 +93,30 @@ const SEED = {
     "Multimediaelektroniker/in EFZ","Gebäudeinformatiker/in EFZ",
     "Chemie- und Pharmatechnologe/-login EFZ","Laborant/in EFZ","Physiklaborant/in EFZ",
     "Textiltechnologe/-login EFZ","Bootbauer/in EFZ","Hufschmied/in EFZ",
-    "Feinwerkoptiker/in EFZ","Kunststoffverarbeiter/in EBA"
+    "Feinwerkoptiker/in EFZ","Kunststoffverarbeiter/in EBA",
+    "Telematiker/in EFZ","Industrielackierer/in EFZ","Verpackungstechnologe/-login EFZ",
+    "Textilpraktiker/in EBA","Uhrenarbeiter/in EBA","Land- und Baumaschinenmechaniker/in EFZ",
+    "Motorgerätemechaniker/in EFZ","Bootfachwart/in EFZ","Gussformer/in EFZ",
+    "Industriekeramiker/in EFZ","Elektronikproduktionstechniker/in EFZ",
+    "Solarinstallateur/in EFZ","Galvaniker/in EFZ"
   ],
   it: [
     "Informatiker/in EFZ Applikationsentwicklung","Informatiker/in EFZ Plattformentwicklung",
     "Informatiker/in EFZ Betriebsinformatik","ICT-Fachmann/-frau EFZ","Mediamatiker/in EFZ",
-    "Entwickler/in digitales Business EFZ"
+    "Entwickler/in digitales Business EFZ","Informatikpraktiker/in EBA"
   ],
   gesundheit: [
     "Fachmann/-frau Gesundheit EFZ","Assistent/in Gesundheit und Soziales EBA",
     "Medizinische/r Praxisassistent/in EFZ","Dentalassistent/in EFZ","Pharma-Assistent/in EFZ",
     "Drogist/in EFZ","Augenoptiker/in EFZ","Hörsystem-Akustiker/in EFZ","Podologe/-login EFZ",
     "Orthopädieschuhmacher/in EFZ","Zahntechniker/in EFZ",
-    "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ","Orthopädist/in EFZ"
+    "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ","Orthopädist/in EFZ",
+    "Augenoptiker/in EBA","Zahntechnikpraktiker/in EBA"
   ],
   soziales: [
     "Fachmann/-frau Betreuung EFZ","Fachmann/-frau Betreuung EFZ Kinderbetreuung",
     "Fachmann/-frau Betreuung EFZ Behindertenbetreuung","Fachmann/-frau Betreuung EFZ Betagtenbetreuung",
-    "Assistent/in Gesundheit und Soziales EBA "
+    "Assistent/in Gesundheit und Soziales EBA"
   ],
   gestaltung: [
     "Grafiker/in EFZ","Polygraf/in EFZ","Drucktechnologe/-login EFZ","Printmedienverarbeiter/in EFZ",
@@ -119,14 +125,20 @@ const SEED = {
     "Goldschmied/in EFZ","Keramiker/in EFZ","Geigenbauer/in EFZ","Bühnentänzer/in EFZ",
     "Veranstaltungsfachmann/-frau EFZ","Theatermaler/in EFZ","Holzbildhauer/in EFZ",
     "Vergolder/in-Einrahmer/in EFZ","Buchbinder/in EFZ","Sattler/in EFZ",
-    "Schuhmacher/in EFZ","Textilgestalter/in EFZ"
+    "Schuhmacher/in EFZ","Textilgestalter/in EFZ",
+    "Orgelbauer/in EFZ","Klavierbauer/in EFZ","Blasinstrumentenbauer/in EFZ",
+    "Modist/in EFZ","Steinbildhauer/in EFZ","Glasapparatebauer/in EFZ",
+    "Korb- und Flechtwerkgestalter/in EFZ","Drechsler/in EFZ","Schmuckgestalter/in"
   ],
   wirtschaft: [
     "Kaufmann/-frau EFZ","Büroassistent/in EBA","Detailhandelsfachmann/-frau EFZ",
     "Detailhandelsassistent/in EBA","Fachmann/-frau Kundendialog EFZ","Logistiker/in EFZ",
     "Logistiker/in EBA","Strassentransportfachmann/-frau EFZ","Buchhändler/in EFZ",
     "Fachmann/-frau öffentlicher Verkehr EFZ","Kaufmann/-frau EFZ Bank",
-    "Kaufmann/-frau EFZ öffentliche Verwaltung","Kaufmann/-frau EFZ Reisebüro"
+    "Kaufmann/-frau EFZ öffentliche Verwaltung","Kaufmann/-frau EFZ Reisebüro",
+    "Pharma-Betriebsassistent/in EFZ","Strassentransportpraktiker/in EBA",
+    "Kaufmann/-frau EFZ Versicherung","Kaufmann/-frau EFZ Treuhand/Immobilien",
+    "Detailhandelsfachmann/-frau EFZ Lebensmittel","Detailhandelsfachmann/-frau EFZ Mode und Sport"
   ],
   natur: [
     "Landwirt/in EFZ","Agrarpraktiker/in EBA","Winzer/in EFZ","Weintechnologe/-login EFZ",
@@ -134,7 +146,10 @@ const SEED = {
     "Gärtner/in EFZ Zierpflanzen","Gärtner/in EFZ Baumschule","Florist/in EFZ","Forstwart/in EFZ",
     "Tierpfleger/in EFZ","Pferdefachmann/-frau EFZ","Tiermedizinische/r Praxisassistent/in EFZ",
     "Recyclist/in EFZ","Pferdewart/in EBA","Gärtner/in EBA","Weinküfer/in EFZ",
-    "Milchpraktiker/in EBA","Gärtner/in EFZ Stauden","Gärtner/in EFZ Friedhofgärtnerei"
+    "Milchpraktiker/in EBA","Gärtner/in EFZ Stauden","Gärtner/in EFZ Friedhofgärtnerei",
+    "Tierpfleger/in EFZ Heimtiere","Tierpfleger/in EFZ Wildtiere","Tierpfleger/in EFZ Versuchstiere",
+    "Gemüsegärtner/in EBA","Obstfachfrau/-mann EBA","Geflügelfachmann/-frau EFZ",
+    "Weintechnologe/-login EFZ Weinbereitung","Forstwart-Praktiker/in EBA"
   ],
   gastro: [
     "Koch/Köchin EFZ","Küchenangestellte/r EBA","Systemgastronomiefachmann/-frau EFZ",
@@ -143,7 +158,10 @@ const SEED = {
     "Bäcker/in-Konditor/in-Confiseur/in EFZ","Konditor/in-Confiseur/in EFZ",
     "Fleischfachmann/-frau EFZ","Fleischfachassistent/in EBA","Lebensmitteltechnologe/-login EFZ",
     "Milchtechnologe/-login EFZ","Bäckerei-Konditorei-Confiserie-Praktiker/in EBA",
-    "Getränketechnologe/-login EFZ"
+    "Getränketechnologe/-login EFZ","Bäcker/in-Konditor/in-Confiseur/in EFZ Bäckerei-Konditorei",
+    "Bäcker/in-Konditor/in-Confiseur/in EFZ Konditorei-Confiserie","Müller/in EFZ",
+    "Gastronomiefachmann/-frau EBA","Fleischfachmann/-frau EFZ Gewinnung",
+    "Fleischfachmann/-frau EFZ Verarbeitung","Fleischfachmann/-frau EFZ Veredelung"
   ],
   bau: [
     "Zeichner/in EFZ Architektur","Zeichner/in EFZ Ingenieurbau","Zeichner/in EFZ Innenarchitektur",
@@ -155,28 +173,91 @@ const SEED = {
     "Spengler/in EFZ","Gebäudetechnikplaner/in EFZ","Steinmetz/in EFZ",
     "Flachglastechnologe/-login EFZ","Fachmann/-frau Betriebsunterhalt EFZ",
     "Industrie- und Unterlagsbodenbauer/in EFZ","Storenmonteur/in EFZ","Hafner/in EFZ",
-    "Gebäudereiniger/in EFZ","Abdichter/in EFZ","Bauwerktrenner/in EFZ"
+    "Gebäudereiniger/in EFZ","Abdichter/in EFZ","Bauwerktrenner/in EFZ",
+    "Grundbauer/in EFZ","Gebäudetechnikplaner/in EFZ Heizung","Gebäudetechnikplaner/in EFZ Lüftung",
+    "Gebäudetechnikplaner/in EFZ Sanitär","Kaminfeger/in EFZ","Parkettleger/in EFZ",
+    "Isolierspengler/in EFZ","Unterhaltspraktiker/in EBA","Steinwerker/in EBA",
+    "Strassenbaupraktiker/in EBA","Malerpraktiker/in EBA","Maurerpraktiker/in EBA",
+    "Plattenlegerpraktiker/in EBA","Zimmer-Praktiker/in EBA","Holzbau-Fachmann/-frau EFZ"
   ],
   koerper: [
     "Coiffeur/-euse EFZ","Coiffeur/-euse EBA","Kosmetiker/in EFZ"
   ]
 };
 
-/* Weiterführende Berufe (typ: "weiterfuehrend") – Auswahl HF/FH/PH */
+/* Weiterführende Berufe (typ: "weiterfuehrend") – höhere Berufsbildung & Hochschulen
+   (HF, FH, PH, eidg. Fachausweis BP, eidg. Diplom HFP) */
 const WEITERFUEHREND = {
-  gesundheit: ["Pflegefachmann/-frau HF","Dipl. Rettungssanitäter/in HF",
+  gesundheit: ["Pflegefachmann/-frau HF","Pflegefachmann/-frau FH","Dipl. Rettungssanitäter/in HF",
                "Biomedizinische/r Analytiker/in HF","Fachmann/-frau Operationstechnik HF",
-               "Physiotherapeut/in FH","Ergotherapeut/in FH","Hebamme FH","Ernährungsberater/in FH",
                "Fachmann/-frau für medizinisch-technische Radiologie HF","Dentalhygieniker/in HF",
-               "Optometrist/in FH"],
-  soziales:   ["Sozialpädagoge/-gin HF","Kindheitspädagoge/-gin HF","Primarlehrer/in PH",
-               "Sekundarlehrer/in PH","Kindergartenlehrperson PH"],
-  technik:    ["Maschineningenieur/in FH","Elektroingenieur/in FH"],
-  it:         ["Informatik-Ingenieur/in FH","Wirtschaftsinformatiker/in FH"],
-  wirtschaft: ["Betriebsökonom/in FH","Immobilienbewirtschafter/in mit eidg. FA"],
-  bau:        ["Architekt/in FH","Bauingenieur/in FH"],
-  gestaltung: ["Kommunikationsdesigner/in FH"],
-  natur:      ["Förster/in HF","Umweltingenieur/in FH"]
+               "Aktivierungsfachmann/-frau HF","Podologe/-login HF","Orthoptist/in HF",
+               "Physiotherapeut/in FH","Ergotherapeut/in FH","Hebamme FH","Ernährungsberater/in FH",
+               "Osteopath/in FH","Optometrist/in FH","Drogist/in HF",
+               "Naturheilpraktiker/in mit eidg. Diplom","Medizinische/r Masseur/in mit eidg. FA",
+               "Fachfrau/-mann Langzeitpflege und -betreuung mit eidg. FA",
+               "Expertin/Experte Anästhesiepflege NDS HF","Expertin/Experte Intensivpflege NDS HF",
+               "Expertin/Experte Notfallpflege NDS HF","Praxiskoordinator/in mit eidg. FA"],
+  soziales:   ["Sozialpädagoge/-gin HF","Kindheitspädagoge/-gin HF","Gemeindeanimator/in HF",
+               "Arbeitsagoge/-gin HF","Sozialarbeiter/in FH","Soziokultureller Animator/in FH",
+               "Primarlehrer/in PH","Sekundarlehrer/in PH","Kindergartenlehrperson PH",
+               "Heilpädagoge/-gin MA","Logopäde/-pädin","Psychomotoriktherapeut/in",
+               "Fachfrau/-mann Betreuung mit eidg. FA","Berufsbildner/in mit eidg. FA"],
+  technik:    ["Maschineningenieur/in FH","Elektroingenieur/in FH","Techniker/in HF Maschinenbau",
+               "Techniker/in HF Elektrotechnik","Techniker/in HF Systemtechnik",
+               "Techniker/in HF Konstruktionstechnik","Techniker/in HF Kunststofftechnik",
+               "Mikrotechniker/in HF","Elektro-Projektleiter/in mit eidg. FA",
+               "Elektro-Sicherheitsberater/in mit eidg. FA","Automatikfachmann/-frau mit eidg. FA",
+               "Prozessfachmann/-frau mit eidg. FA","Industriemeister/in mit eidg. Diplom",
+               "Konstrukteur/in mit eidg. FA","Instandhaltungsfachmann/-frau mit eidg. FA",
+               "Chemieingenieur/in FH","Biotechnologe/-login FH","Mikro- und Medizintechniker/in HF",
+               "Elektrotechniker/in HF","Kunststofftechnologe/-login HF"],
+  it:         ["Informatik-Ingenieur/in FH","Wirtschaftsinformatiker/in FH","Techniker/in HF Informatik",
+               "ICT-Manager/in mit eidg. Diplom","Cyber Security Spezialist/in mit eidg. FA",
+               "ICT-Applikationsentwickler/in mit eidg. FA","ICT System- und Netzwerktechniker/in mit eidg. FA",
+               "Wirtschaftsinformatiker/in mit eidg. FA"],
+  wirtschaft: ["Betriebsökonom/in FH","Wirtschaftsingenieur/in FH","Immobilienbewirtschafter/in mit eidg. FA",
+               "Technische/r Kaufmann/-frau mit eidg. FA","Marketingfachmann/-frau mit eidg. FA",
+               "Verkaufsfachmann/-frau mit eidg. FA","HR-Fachmann/-frau mit eidg. FA",
+               "Fachmann/-frau im Finanz- und Rechnungswesen mit eidg. FA","Treuhänder/in mit eidg. FA",
+               "Sozialversicherungsfachmann/-frau mit eidg. FA","Logistikfachmann/-frau mit eidg. FA",
+               "Aussenhandelsfachmann/-frau mit eidg. FA","Versicherungsfachmann/-frau mit eidg. FA",
+               "Zollfachmann/-frau mit eidg. FA","Direktionsassistent/in mit eidg. FA",
+               "Bankwirtschafter/in HF","Betriebswirtschafter/in HF","Tourismusfachmann/-frau HF",
+               "Marketingmanager/in HF","Detailhandelsmanager/in HF",
+               "Wirtschaftsprüfer/in mit eidg. Diplom","Verkaufsleiter/in mit eidg. Diplom",
+               "Marketingleiter/in mit eidg. Diplom","Detailhandelsspezialist/in mit eidg. FA",
+               "Ausbilder/in mit eidg. FA","Lokführer/in mit eidg. FA","Zugverkehrsleiter/in mit eidg. FA",
+               "Steuerexperte/-expertin mit eidg. Diplom","Fachmann/-frau für Finanzberatung mit eidg. FA",
+               "Organisator/in mit eidg. FA","Leiter/in Finanzen und Dienste mit eidg. Diplom"],
+  bau:        ["Architekt/in FH","Bauingenieur/in FH","Innenarchitekt/in FH","Landschaftsarchitekt/in FH",
+               "Geomatikingenieur/in FH","Raumplaner/in FH","Bautechniker/in HF Hochbau",
+               "Bautechniker/in HF Tiefbau","Techniker/in HF Gebäudetechnik","Geomatiktechniker/in HF",
+               "Holztechniker/in HF","Bauführer/in mit eidg. FA","Polier/in mit eidg. FA",
+               "Holzbau-Polier/in mit eidg. FA","Schreinermeister/in mit eidg. Diplom",
+               "Malermeister/in mit eidg. Diplom","Elektroinstallateur/in mit eidg. Diplom",
+               "Spenglermeister/in mit eidg. Diplom","Sanitärinstallateur/in mit eidg. Diplom",
+               "Heizungsinstallateur/in mit eidg. Diplom","Energieberater/in Gebäude mit eidg. FA",
+               "Maurerpolier/in mit eidg. FA","Bauleiter/in Hochbau mit eidg. FA",
+               "Bauleiter/in Tiefbau mit eidg. FA","Chefmonteur/in Heizung mit eidg. FA",
+               "Chefmonteur/in Sanitär mit eidg. FA","Chefmonteur/in Lüftung mit eidg. FA",
+               "Hauswart/in mit eidg. FA","Brandschutzfachmann/-frau mit eidg. FA"],
+  gestaltung: ["Kommunikationsdesigner/in FH","Produktdesigner/in FH","Grafikdesigner/in HF",
+               "Gestalter/in HF Visuelle Gestaltung","Drucktechniker/in HF",
+               "Technische/r Redaktor/in mit eidg. FA","Fotograf/in mit eidg. FA",
+               "Gestalter/in im Handwerk mit eidg. FA"],
+  natur:      ["Förster/in HF","Umweltingenieur/in FH","Agronom/in FH","Agrotechniker/in HF",
+               "Weinbautechniker/in HF","Lebensmitteltechnologe/-login FH","Önologe/-login FH",
+               "Baumpfleger/in mit eidg. FA","Wildhüter/in mit eidg. FA","Bäuerin/Bauer mit eidg. FA",
+               "Lebensmittelingenieur/in FH","Hufschmied/in mit eidg. FA","Gärtnermeister/in mit eidg. Diplom"],
+  gastro:     ["Hotelier/in-Restaurateur/in HF","Küchenchef/in mit eidg. FA",
+               "Chef/in de Réception mit eidg. FA","Bereichsleiter/in Restauration mit eidg. FA",
+               "Bäcker/in-Konditor/in-Confiseur/in mit eidg. FA","Metzger/in mit eidg. FA",
+               "Diätkoch/-köchin mit eidg. FA","Sommelier/ère mit eidg. FA",
+               "Lebensmitteltechnologe/-login HF","Bereichsleiter/in Hotellerie-Hauswirtschaft mit eidg. FA",
+               "Restaurationsleiter/in mit eidg. Diplom"],
+  koerper:    ["Coiffeur/-euse mit eidg. FA","Coiffeur/-euse mit eidg. Diplom",
+               "Kosmetiker/in mit eidg. FA","Podologe/-login mit eidg. FA"]
 };
 
 /* Kuratierte Beschreibungen/Tags für die wichtigsten Berufe (bessere Qualität) */

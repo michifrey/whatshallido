@@ -1,7 +1,7 @@
 # 🧭 Berufs-Kompass Schweiz
 
 Interaktive Berufswahl-Plattform für Jugendliche in der Schweiz – als **professionelle
-Full-Stack-App**: Berufs-Explorer, Berufsentdecker und Stärken-Test mit ~200 echten
+Full-Stack-App**: Berufs-Explorer, Berufsentdecker und Stärken-Test mit ~400 echten
 Schweizer Berufen, Videos, Bildern und Lehrstellen-Links.
 
 ## 🧱 Tech-Stack
@@ -41,7 +41,7 @@ Voraussetzung: **Node.js ≥ 20**.
 # 1. Abhängigkeiten installieren (alle Workspaces)
 npm install
 
-# 2. Datenbank befüllen (importiert die ~200 Berufe in SQLite)
+# 2. Datenbank befüllen (importiert die ~400 Berufe in SQLite)
 npm run seed
 
 # 3. Entwicklung starten (API auf :3000, Frontend auf :5173)
@@ -161,7 +161,7 @@ Benötigt `UNSPLASH_ACCESS_KEY`; das Script schont das Unsplash-Rate-Limit.
 ## 🗄️ Datenbank & Seed
 
 - Schema: `server/src/db/schema.ts` (Drizzle, Tabelle `professions`).
-- Seed-Quelle: `server/src/data/berufe.seed.json` (Snapshot der 200 Berufe).
+- Seed-Quelle: `server/src/data/berufe.seed.json` (Snapshot der ~400 Berufe).
 - Migrationen: `npm run db:generate --workspace server` (drizzle-kit).
 
 Die Seed-Daten stammen aus dem Crawler im Prototyp (`legacy/tools/crawler.mjs`),

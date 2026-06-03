@@ -1,21 +1,21 @@
 {
   "meta": {
-    "generatedAt": "2026-06-02T20:39:06.701Z",
-    "total": 200,
-    "lehre": 173,
-    "weiterfuehrend": 27,
+    "generatedAt": "2026-06-03T05:07:28.914Z",
+    "total": 396,
+    "lehre": 234,
+    "weiterfuehrend": 162,
     "neuVomLiveAbgleich": 0,
     "proKategorie": {
-      "technik": 44,
-      "it": 8,
-      "gesundheit": 23,
-      "soziales": 10,
-      "gestaltung": 23,
-      "wirtschaft": 15,
-      "natur": 23,
-      "gastro": 16,
-      "bau": 35,
-      "koerper": 3
+      "technik": 75,
+      "it": 15,
+      "gesundheit": 38,
+      "soziales": 19,
+      "gestaltung": 39,
+      "wirtschaft": 50,
+      "natur": 42,
+      "gastro": 34,
+      "bau": 77,
+      "koerper": 7
     },
     "quelle": "Basisliste + berufsberatung.ch"
   },
@@ -51,6 +51,51 @@
       "quelle": "seed"
     },
     {
+      "id": "agronom-in-fh",
+      "name": "Agronom/in FH",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Agronom%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Agronom%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "agrotechniker-in-hf",
+      "name": "Agrotechniker/in HF",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Agrotechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Agrotechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "aktivierungsfachmann-frau-hf",
+      "name": "Aktivierungsfachmann/-frau HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Aktivierungsfachmann%2F-frau%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Aktivierungsfachmann%2F-frau%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "anlagen-und-apparatebauer-in-efz",
       "name": "Anlagen- und Apparatebauer/in EFZ",
       "kat": "technik",
@@ -78,6 +123,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Anlagenf%C3%BChrer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Anlagenf%C3%BChrer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "arbeitsagoge-gin-hf",
+      "name": "Arbeitsagoge/-gin HF",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Arbeitsagoge%2F-gin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Arbeitsagoge%2F-gin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -111,6 +171,21 @@
       "quelle": "seed"
     },
     {
+      "id": "augenoptiker-in-eba",
+      "name": "Augenoptiker/in EBA",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Augenoptiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Augenoptiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "augenoptiker-in-efz",
       "name": "Augenoptiker/in EFZ",
       "kat": "gesundheit",
@@ -123,6 +198,36 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Augenoptiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Augenoptiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "ausbilder-in-mit-eidg-fa",
+      "name": "Ausbilder/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ausbilder%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Ausbilder%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "aussenhandelsfachmann-frau-mit-eidg-fa",
+      "name": "Aussenhandelsfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Aussenhandelsfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Aussenhandelsfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -139,6 +244,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Automatiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Automatiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "automatikfachmann-frau-mit-eidg-fa",
+      "name": "Automatikfachmann/-frau mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Automatikfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Automatikfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "automatikmonteur-in-efz",
@@ -216,6 +336,51 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "baecker-in-konditor-in-confiseur-in-efz-baeckerei-konditorei",
+      "name": "Bäcker/in-Konditor/in-Confiseur/in EFZ Bäckerei-Konditorei",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ%20B%C3%A4ckerei-Konditorei",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ%20B%C3%A4ckerei-Konditorei%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "baecker-in-konditor-in-confiseur-in-efz-konditorei-confiserie",
+      "name": "Bäcker/in-Konditor/in-Confiseur/in EFZ Konditorei-Confiserie",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ%20Konditorei-Confiserie",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ%20Konditorei-Confiserie%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "baecker-in-konditor-in-confiseur-in-mit-eidg-fa",
+      "name": "Bäcker/in-Konditor/in-Confiseur/in mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4cker%2Fin-Konditor%2Fin-Confiseur%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "baeckerei-konditorei-confiserie-praktiker-in-eba",
       "name": "Bäckerei-Konditorei-Confiserie-Praktiker/in EBA",
       "kat": "gastro",
@@ -228,6 +393,51 @@
       "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4ckerei-Konditorei-Confiserie-Praktiker%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4ckerei-Konditorei-Confiserie-Praktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bankwirtschafter-in-hf",
+      "name": "Bankwirtschafter/in HF",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bankwirtschafter%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bankwirtschafter%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "baeuerin-bauer-mit-eidg-fa",
+      "name": "Bäuerin/Bauer mit eidg. FA",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%C3%A4uerin%2FBauer%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%C3%A4uerin%2FBauer%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "baufuehrer-in-mit-eidg-fa",
+      "name": "Bauführer/in mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bauf%C3%BChrer%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bauf%C3%BChrer%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -246,6 +456,36 @@
       "quelle": "seed"
     },
     {
+      "id": "bauleiter-in-hochbau-mit-eidg-fa",
+      "name": "Bauleiter/in Hochbau mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bauleiter%2Fin%20Hochbau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bauleiter%2Fin%20Hochbau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bauleiter-in-tiefbau-mit-eidg-fa",
+      "name": "Bauleiter/in Tiefbau mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bauleiter%2Fin%20Tiefbau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bauleiter%2Fin%20Tiefbau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "baumaschinenmechaniker-in-efz",
       "name": "Baumaschinenmechaniker/in EFZ",
       "kat": "technik",
@@ -261,6 +501,22 @@
       "quelle": "seed"
     },
     {
+      "id": "baumpfleger-in-mit-eidg-fa",
+      "name": "Baumpfleger/in mit eidg. FA",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "sozial"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Baumpfleger%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Baumpfleger%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "baupraktiker-in-eba",
       "name": "Baupraktiker/in EBA",
       "kat": "bau",
@@ -273,6 +529,36 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Baupraktiker%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Baupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bautechniker-in-hf-hochbau",
+      "name": "Bautechniker/in HF Hochbau",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bautechniker%2Fin%20HF%20Hochbau",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bautechniker%2Fin%20HF%20Hochbau%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bautechniker-in-hf-tiefbau",
+      "name": "Bautechniker/in HF Tiefbau",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bautechniker%2Fin%20HF%20Tiefbau",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bautechniker%2Fin%20HF%20Tiefbau%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -321,6 +607,52 @@
       "quelle": "seed"
     },
     {
+      "id": "bereichsleiter-in-hotellerie-hauswirtschaft-mit-eidg-fa",
+      "name": "Bereichsleiter/in Hotellerie-Hauswirtschaft mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bereichsleiter%2Fin%20Hotellerie-Hauswirtschaft%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bereichsleiter%2Fin%20Hotellerie-Hauswirtschaft%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bereichsleiter-in-restauration-mit-eidg-fa",
+      "name": "Bereichsleiter/in Restauration mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bereichsleiter%2Fin%20Restauration%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bereichsleiter%2Fin%20Restauration%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "berufsbildner-in-mit-eidg-fa",
+      "name": "Berufsbildner/in mit eidg. FA",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Berufsbildner%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Berufsbildner%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "betriebsoekonom-in-fh",
       "name": "Betriebsökonom/in FH",
       "kat": "wirtschaft",
@@ -333,6 +665,21 @@
       "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Betriebs%C3%B6konom%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Betriebs%C3%B6konom%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "betriebswirtschafter-in-hf",
+      "name": "Betriebswirtschafter/in HF",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Betriebswirtschafter%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Betriebswirtschafter%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -349,6 +696,37 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Biomedizinische%2Fr%20Analytiker%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Biomedizinische%2Fr%20Analytiker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "biotechnologe-login-fh",
+      "name": "Biotechnologe/-login FH",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Biotechnologe%2F-login%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Biotechnologe%2F-login%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "blasinstrumentenbauer-in-efz",
+      "name": "Blasinstrumentenbauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Blasinstrumentenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Blasinstrumentenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -379,6 +757,36 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bootbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Bootbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "bootfachwart-in-efz",
+      "name": "Bootfachwart/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bootfachwart%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bootfachwart%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "brandschutzfachmann-frau-mit-eidg-fa",
+      "name": "Brandschutzfachmann/-frau mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Brandschutzfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Brandschutzfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -472,6 +880,66 @@
       "quelle": "seed"
     },
     {
+      "id": "chef-in-de-r-ception-mit-eidg-fa",
+      "name": "Chef/in de Réception mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chef%2Fin%20de%20R%C3%A9ception%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chef%2Fin%20de%20R%C3%A9ception%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "chefmonteur-in-heizung-mit-eidg-fa",
+      "name": "Chefmonteur/in Heizung mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chefmonteur%2Fin%20Heizung%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chefmonteur%2Fin%20Heizung%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "chefmonteur-in-lueftung-mit-eidg-fa",
+      "name": "Chefmonteur/in Lüftung mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chefmonteur%2Fin%20L%C3%BCftung%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chefmonteur%2Fin%20L%C3%BCftung%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "chefmonteur-in-sanitaer-mit-eidg-fa",
+      "name": "Chefmonteur/in Sanitär mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chefmonteur%2Fin%20Sanit%C3%A4r%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chefmonteur%2Fin%20Sanit%C3%A4r%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "chemie-und-pharmatechnologe-login-efz",
       "name": "Chemie- und Pharmatechnologe/-login EFZ",
       "kat": "technik",
@@ -484,6 +952,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chemie-%20und%20Pharmatechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Chemie-%20und%20Pharmatechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "chemieingenieur-in-fh",
+      "name": "Chemieingenieur/in FH",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chemieingenieur%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chemieingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -515,6 +998,51 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Coiffeur%2F-euse%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Coiffeur%2F-euse%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "coiffeur-euse-mit-eidg-diplom",
+      "name": "Coiffeur/-euse mit eidg. Diplom",
+      "kat": "koerper",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Schönheit, Pflege und Wohlbefinden.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Coiffeur%2F-euse%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Coiffeur%2F-euse%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "coiffeur-euse-mit-eidg-fa",
+      "name": "Coiffeur/-euse mit eidg. FA",
+      "kat": "koerper",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Schönheit, Pflege und Wohlbefinden.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Coiffeur%2F-euse%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Coiffeur%2F-euse%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "cyber-security-spezialist-in-mit-eidg-fa",
+      "name": "Cyber Security Spezialist/in mit eidg. FA",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Cyber%20Security%20Spezialist%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Cyber%20Security%20Spezialist%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "dentalassistent-in-efz",
@@ -578,6 +1106,85 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "detailhandelsfachmann-frau-efz-lebensmittel",
+      "name": "Detailhandelsfachmann/-frau EFZ Lebensmittel",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Detailhandelsfachmann%2F-frau%20EFZ%20Lebensmittel",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Detailhandelsfachmann%2F-frau%20EFZ%20Lebensmittel%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "detailhandelsfachmann-frau-efz-mode-und-sport",
+      "name": "Detailhandelsfachmann/-frau EFZ Mode und Sport",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Detailhandelsfachmann%2F-frau%20EFZ%20Mode%20und%20Sport",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Detailhandelsfachmann%2F-frau%20EFZ%20Mode%20und%20Sport%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "detailhandelsmanager-in-hf",
+      "name": "Detailhandelsmanager/in HF",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Detailhandelsmanager%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Detailhandelsmanager%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "detailhandelsspezialist-in-mit-eidg-fa",
+      "name": "Detailhandelsspezialist/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Detailhandelsspezialist%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Detailhandelsspezialist%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "diaetkoch-koechin-mit-eidg-fa",
+      "name": "Diätkoch/-köchin mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Di%C3%A4tkoch%2F-k%C3%B6chin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Di%C3%A4tkoch%2F-k%C3%B6chin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "dipl-rettungssanitaeter-in-hf",
       "name": "Dipl. Rettungssanitäter/in HF",
       "kat": "gesundheit",
@@ -590,6 +1197,36 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dipl.%20Rettungssanit%C3%A4ter%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Dipl.%20Rettungssanit%C3%A4ter%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "direktionsassistent-in-mit-eidg-fa",
+      "name": "Direktionsassistent/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Direktionsassistent%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Direktionsassistent%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "drechsler-in-efz",
+      "name": "Drechsler/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Drechsler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Drechsler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -608,6 +1245,36 @@
       "quelle": "seed"
     },
     {
+      "id": "drogist-in-hf",
+      "name": "Drogist/in HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Drogist%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Drogist%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "drucktechniker-in-hf",
+      "name": "Drucktechniker/in HF",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Drucktechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Drucktechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "drucktechnologe-login-efz",
       "name": "Drucktechnologe/-login EFZ",
       "kat": "gestaltung",
@@ -620,6 +1287,36 @@
       "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Drucktechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Drucktechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "elektro-projektleiter-in-mit-eidg-fa",
+      "name": "Elektro-Projektleiter/in mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektro-Projektleiter%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Elektro-Projektleiter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "elektro-sicherheitsberater-in-mit-eidg-fa",
+      "name": "Elektro-Sicherheitsberater/in mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektro-Sicherheitsberater%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Elektro-Sicherheitsberater%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -653,6 +1350,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "elektroinstallateur-in-mit-eidg-diplom",
+      "name": "Elektroinstallateur/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektroinstallateur%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Elektroinstallateur%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "elektroniker-in-efz",
       "name": "Elektroniker/in EFZ",
       "kat": "technik",
@@ -668,6 +1380,21 @@
       "quelle": "seed"
     },
     {
+      "id": "elektronikproduktionstechniker-in-efz",
+      "name": "Elektronikproduktionstechniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektronikproduktionstechniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Elektronikproduktionstechniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "elektroplaner-in-efz",
       "name": "Elektroplaner/in EFZ",
       "kat": "technik",
@@ -680,6 +1407,36 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektroplaner%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Elektroplaner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "elektrotechniker-in-hf",
+      "name": "Elektrotechniker/in HF",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Elektrotechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Elektrotechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "energieberater-in-gebaeude-mit-eidg-fa",
+      "name": "Energieberater/in Gebäude mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Energieberater%2Fin%20Geb%C3%A4ude%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Energieberater%2Fin%20Geb%C3%A4ude%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -725,6 +1482,81 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ern%C3%A4hrungsberater%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Ern%C3%A4hrungsberater%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "expertin-experte-anaesthesiepflege-nds-hf",
+      "name": "Expertin/Experte Anästhesiepflege NDS HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Expertin%2FExperte%20An%C3%A4sthesiepflege%20NDS%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Expertin%2FExperte%20An%C3%A4sthesiepflege%20NDS%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "expertin-experte-intensivpflege-nds-hf",
+      "name": "Expertin/Experte Intensivpflege NDS HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Expertin%2FExperte%20Intensivpflege%20NDS%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Expertin%2FExperte%20Intensivpflege%20NDS%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "expertin-experte-notfallpflege-nds-hf",
+      "name": "Expertin/Experte Notfallpflege NDS HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Expertin%2FExperte%20Notfallpflege%20NDS%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Expertin%2FExperte%20Notfallpflege%20NDS%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "fachfrau-mann-betreuung-mit-eidg-fa",
+      "name": "Fachfrau/-mann Betreuung mit eidg. FA",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachfrau%2F-mann%20Betreuung%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachfrau%2F-mann%20Betreuung%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "fachfrau-mann-langzeitpflege-und-betreuung-mit-eidg-fa",
+      "name": "Fachfrau/-mann Langzeitpflege und -betreuung mit eidg. FA",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachfrau%2F-mann%20Langzeitpflege%20und%20-betreuung%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachfrau%2F-mann%20Langzeitpflege%20und%20-betreuung%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -819,6 +1651,21 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-fuer-finanzberatung-mit-eidg-fa",
+      "name": "Fachmann/-frau für Finanzberatung mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20f%C3%BCr%20Finanzberatung%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20f%C3%BCr%20Finanzberatung%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "fachmann-frau-fuer-medizinisch-technische-radiologie-hf",
       "name": "Fachmann/-frau für medizinisch-technische Radiologie HF",
       "kat": "gesundheit",
@@ -847,6 +1694,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Gesundheit%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Gesundheit%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "fachmann-frau-im-finanz-und-rechnungswesen-mit-eidg-fa",
+      "name": "Fachmann/-frau im Finanz- und Rechnungswesen mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20im%20Finanz-%20und%20Rechnungswesen%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20im%20Finanz-%20und%20Rechnungswesen%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "fachmann-frau-kundendialog-efz",
@@ -969,6 +1831,51 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "fleischfachmann-frau-efz-gewinnung",
+      "name": "Fleischfachmann/-frau EFZ Gewinnung",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fleischfachmann%2F-frau%20EFZ%20Gewinnung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fleischfachmann%2F-frau%20EFZ%20Gewinnung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "fleischfachmann-frau-efz-verarbeitung",
+      "name": "Fleischfachmann/-frau EFZ Verarbeitung",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fleischfachmann%2F-frau%20EFZ%20Verarbeitung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fleischfachmann%2F-frau%20EFZ%20Verarbeitung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "fleischfachmann-frau-efz-veredelung",
+      "name": "Fleischfachmann/-frau EFZ Veredelung",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fleischfachmann%2F-frau%20EFZ%20Veredelung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fleischfachmann%2F-frau%20EFZ%20Veredelung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "florist-in-efz",
       "name": "Florist/in EFZ",
       "kat": "natur",
@@ -997,6 +1904,21 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=F%C3%B6rster%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20F%C3%B6rster%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "forstwart-praktiker-in-eba",
+      "name": "Forstwart-Praktiker/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Forstwart-Praktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Forstwart-Praktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1043,6 +1965,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fotograf%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fotograf%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "fotograf-in-mit-eidg-fa",
+      "name": "Fotograf/in mit eidg. FA",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fotograf%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fotograf%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "galvaniker-in-efz",
+      "name": "Galvaniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Galvaniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Galvaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "gaertner-in-eba",
@@ -1135,6 +2087,36 @@
       "quelle": "seed"
     },
     {
+      "id": "gaertnermeister-in-mit-eidg-diplom",
+      "name": "Gärtnermeister/in mit eidg. Diplom",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%C3%A4rtnermeister%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%C3%A4rtnermeister%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gastronomiefachmann-frau-eba",
+      "name": "Gastronomiefachmann/-frau EBA",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gastronomiefachmann%2F-frau%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gastronomiefachmann%2F-frau%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "gebaeudeinformatiker-in-efz",
       "name": "Gebäudeinformatiker/in EFZ",
       "kat": "technik",
@@ -1180,6 +2162,66 @@
       "quelle": "seed"
     },
     {
+      "id": "gebaeudetechnikplaner-in-efz-heizung",
+      "name": "Gebäudetechnikplaner/in EFZ Heizung",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20Heizung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20Heizung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gebaeudetechnikplaner-in-efz-lueftung",
+      "name": "Gebäudetechnikplaner/in EFZ Lüftung",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20L%C3%BCftung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20L%C3%BCftung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gebaeudetechnikplaner-in-efz-sanitaer",
+      "name": "Gebäudetechnikplaner/in EFZ Sanitär",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20Sanit%C3%A4r",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%C3%A4udetechnikplaner%2Fin%20EFZ%20Sanit%C3%A4r%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gefluegelfachmann-frau-efz",
+      "name": "Geflügelfachmann/-frau EFZ",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gefl%C3%BCgelfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gefl%C3%BCgelfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "geigenbauer-in-efz",
       "name": "Geigenbauer/in EFZ",
       "kat": "gestaltung",
@@ -1193,6 +2235,36 @@
       "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geigenbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Geigenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gemeindeanimator-in-hf",
+      "name": "Gemeindeanimator/in HF",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gemeindeanimator%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gemeindeanimator%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gemuesegaertner-in-eba",
+      "name": "Gemüsegärtner/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gem%C3%BCseg%C3%A4rtner%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gem%C3%BCseg%C3%A4rtner%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1226,6 +2298,36 @@
       "quelle": "seed"
     },
     {
+      "id": "geomatikingenieur-in-fh",
+      "name": "Geomatikingenieur/in FH",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geomatikingenieur%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geomatikingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "geomatiktechniker-in-hf",
+      "name": "Geomatiktechniker/in HF",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geomatiktechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geomatiktechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "geruestbauer-in-efz",
       "name": "Gerüstbauer/in EFZ",
       "kat": "bau",
@@ -1238,6 +2340,36 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ger%C3%BCstbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Ger%C3%BCstbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gestalter-in-hf-visuelle-gestaltung",
+      "name": "Gestalter/in HF Visuelle Gestaltung",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gestalter%2Fin%20HF%20Visuelle%20Gestaltung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gestalter%2Fin%20HF%20Visuelle%20Gestaltung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gestalter-in-im-handwerk-mit-eidg-fa",
+      "name": "Gestalter/in im Handwerk mit eidg. FA",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gestalter%2Fin%20im%20Handwerk%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gestalter%2Fin%20im%20Handwerk%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1287,6 +2419,22 @@
       "quelle": "seed"
     },
     {
+      "id": "glasapparatebauer-in-efz",
+      "name": "Glasapparatebauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Glasapparatebauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Glasapparatebauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "gleisbauer-in-efz",
       "name": "Gleisbauer/in EFZ",
       "kat": "bau",
@@ -1317,6 +2465,21 @@
       "quelle": "seed"
     },
     {
+      "id": "grafikdesigner-in-hf",
+      "name": "Grafikdesigner/in HF",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Grafikdesigner%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Grafikdesigner%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "grafiker-in-efz",
       "name": "Grafiker/in EFZ",
       "kat": "gestaltung",
@@ -1330,6 +2493,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Grafiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Grafiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "grundbauer-in-efz",
+      "name": "Grundbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Grundbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Grundbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "gussformer-in-efz",
+      "name": "Gussformer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gussformer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gussformer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "gusstechnologe-login-efz",
@@ -1362,6 +2555,21 @@
       "quelle": "seed"
     },
     {
+      "id": "hauswart-in-mit-eidg-fa",
+      "name": "Hauswart/in mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hauswart%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Hauswart%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "hebamme-fh",
       "name": "Hebamme FH",
       "kat": "gesundheit",
@@ -1377,6 +2585,22 @@
       "quelle": "seed"
     },
     {
+      "id": "heilpaedagoge-gin-ma",
+      "name": "Heilpädagoge/-gin MA",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend",
+        "kreativ"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Heilp%C3%A4dagoge%2F-gin%20MA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Heilp%C3%A4dagoge%2F-gin%20MA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "heizungsinstallateur-in-efz",
       "name": "Heizungsinstallateur/in EFZ",
       "kat": "bau",
@@ -1389,6 +2613,51 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Heizungsinstallateur%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Heizungsinstallateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "heizungsinstallateur-in-mit-eidg-diplom",
+      "name": "Heizungsinstallateur/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Heizungsinstallateur%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Heizungsinstallateur%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "holzbau-fachmann-frau-efz",
+      "name": "Holzbau-Fachmann/-frau EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbau-Fachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbau-Fachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "holzbau-polier-in-mit-eidg-fa",
+      "name": "Holzbau-Polier/in mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbau-Polier%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbau-Polier%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1419,6 +2688,21 @@
       "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbildhauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbildhauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "holztechniker-in-hf",
+      "name": "Holztechniker/in HF",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holztechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holztechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1469,6 +2753,22 @@
       "quelle": "seed"
     },
     {
+      "id": "hotelier-in-restaurateur-in-hf",
+      "name": "Hotelier/in-Restaurateur/in HF",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hotelier%2Fin-Restaurateur%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Hotelier%2Fin-Restaurateur%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "hotellerieangestellte-r-eba",
       "name": "Hotellerieangestellte/r EBA",
       "kat": "gastro",
@@ -1482,6 +2782,21 @@
       "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hotellerieangestellte%2Fr%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Hotellerieangestellte%2Fr%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "hr-fachmann-frau-mit-eidg-fa",
+      "name": "HR-Fachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=HR-Fachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20HR-Fachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1500,6 +2815,51 @@
       "quelle": "seed"
     },
     {
+      "id": "hufschmied-in-mit-eidg-fa",
+      "name": "Hufschmied/in mit eidg. FA",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Hufschmied%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Hufschmied%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "ict-system-und-netzwerktechniker-in-mit-eidg-fa",
+      "name": "ICT System- und Netzwerktechniker/in mit eidg. FA",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=ICT%20System-%20und%20Netzwerktechniker%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20ICT%20System-%20und%20Netzwerktechniker%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "ict-applikationsentwickler-in-mit-eidg-fa",
+      "name": "ICT-Applikationsentwickler/in mit eidg. FA",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=ICT-Applikationsentwickler%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20ICT-Applikationsentwickler%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "ict-fachmann-frau-efz",
       "name": "ICT-Fachmann/-frau EFZ",
       "kat": "it",
@@ -1513,6 +2873,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=ICT-Fachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20ICT-Fachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "ict-manager-in-mit-eidg-diplom",
+      "name": "ICT-Manager/in mit eidg. Diplom",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=ICT-Manager%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20ICT-Manager%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "immobilienbewirtschafter-in-mit-eidg-fa",
@@ -1542,6 +2917,52 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industrie-%20und%20Unterlagsbodenbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Industrie-%20und%20Unterlagsbodenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "industriekeramiker-in-efz",
+      "name": "Industriekeramiker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industriekeramiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industriekeramiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "industrielackierer-in-efz",
+      "name": "Industrielackierer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industrielackierer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industrielackierer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "industriemeister-in-mit-eidg-diplom",
+      "name": "Industriemeister/in mit eidg. Diplom",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industriemeister%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industriemeister%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1605,6 +3026,51 @@
       "quelle": "seed"
     },
     {
+      "id": "informatikpraktiker-in-eba",
+      "name": "Informatikpraktiker/in EBA",
+      "kat": "it",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Informatikpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Informatikpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "innenarchitekt-in-fh",
+      "name": "Innenarchitekt/in FH",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Innenarchitekt%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Innenarchitekt%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "instandhaltungsfachmann-frau-mit-eidg-fa",
+      "name": "Instandhaltungsfachmann/-frau mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Instandhaltungsfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Instandhaltungsfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "interactive-media-designer-efz",
       "name": "Interactive Media Designer EFZ",
       "kat": "gestaltung",
@@ -1620,6 +3086,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "isolierspengler-in-efz",
+      "name": "Isolierspengler/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Isolierspengler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Isolierspengler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "kaeltesystem-monteur-in-efz",
       "name": "Kältesystem-Monteur/in EFZ",
       "kat": "technik",
@@ -1632,6 +3113,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%C3%A4ltesystem-Monteur%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20K%C3%A4ltesystem-Monteur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kaminfeger-in-efz",
+      "name": "Kaminfeger/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaminfeger%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaminfeger%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1696,6 +3192,36 @@
       "quelle": "seed"
     },
     {
+      "id": "kaufmann-frau-efz-treuhand-immobilien",
+      "name": "Kaufmann/-frau EFZ Treuhand/Immobilien",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EFZ%20Treuhand%2FImmobilien",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EFZ%20Treuhand%2FImmobilien%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kaufmann-frau-efz-versicherung",
+      "name": "Kaufmann/-frau EFZ Versicherung",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EFZ%20Versicherung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EFZ%20Versicherung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "keramiker-in-efz",
       "name": "Keramiker/in EFZ",
       "kat": "gestaltung",
@@ -1740,6 +3266,22 @@
       "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kindheitsp%C3%A4dagoge%2F-gin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Kindheitsp%C3%A4dagoge%2F-gin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "klavierbauer-in-efz",
+      "name": "Klavierbauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Klavierbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Klavierbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1803,6 +3345,36 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "konstrukteur-in-mit-eidg-fa",
+      "name": "Konstrukteur/in mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Konstrukteur%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Konstrukteur%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "korb-und-flechtwerkgestalter-in-efz",
+      "name": "Korb- und Flechtwerkgestalter/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Korb-%20und%20Flechtwerkgestalter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Korb-%20und%20Flechtwerkgestalter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "kosmetiker-in-efz",
       "name": "Kosmetiker/in EFZ",
       "kat": "koerper",
@@ -1816,6 +3388,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kosmetiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Kosmetiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "kosmetiker-in-mit-eidg-fa",
+      "name": "Kosmetiker/in mit eidg. FA",
+      "kat": "koerper",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Schönheit, Pflege und Wohlbefinden.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kosmetiker%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kosmetiker%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "kuechenangestellte-r-eba",
@@ -1833,6 +3420,21 @@
       "quelle": "seed"
     },
     {
+      "id": "kuechenchef-in-mit-eidg-fa",
+      "name": "Küchenchef/in mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%C3%BCchenchef%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%C3%BCchenchef%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "kunststofftechnologe-login-efz",
       "name": "Kunststofftechnologe/-login EFZ",
       "kat": "technik",
@@ -1845,6 +3447,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kunststofftechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Kunststofftechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "kunststofftechnologe-login-hf",
+      "name": "Kunststofftechnologe/-login HF",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kunststofftechnologe%2F-login%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kunststofftechnologe%2F-login%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1878,6 +3495,21 @@
       "quelle": "seed"
     },
     {
+      "id": "land-und-baumaschinenmechaniker-in-efz",
+      "name": "Land- und Baumaschinenmechaniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Land-%20und%20Baumaschinenmechaniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Land-%20und%20Baumaschinenmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "landmaschinenmechaniker-in-efz",
       "name": "Landmaschinenmechaniker/in EFZ",
       "kat": "technik",
@@ -1890,6 +3522,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Landmaschinenmechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Landmaschinenmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "landschaftsarchitekt-in-fh",
+      "name": "Landschaftsarchitekt/in FH",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Landschaftsarchitekt%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Landschaftsarchitekt%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1908,6 +3555,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "lebensmittelingenieur-in-fh",
+      "name": "Lebensmittelingenieur/in FH",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmittelingenieur%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmittelingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "lebensmitteltechnologe-login-efz",
       "name": "Lebensmitteltechnologe/-login EFZ",
       "kat": "gastro",
@@ -1921,6 +3583,52 @@
       "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmitteltechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmitteltechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "lebensmitteltechnologe-login-fh",
+      "name": "Lebensmitteltechnologe/-login FH",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmitteltechnologe%2F-login%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmitteltechnologe%2F-login%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "lebensmitteltechnologe-login-hf",
+      "name": "Lebensmitteltechnologe/-login HF",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmitteltechnologe%2F-login%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmitteltechnologe%2F-login%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "leiter-in-finanzen-und-dienste-mit-eidg-diplom",
+      "name": "Leiter/in Finanzen und Dienste mit eidg. Diplom",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Leiter%2Fin%20Finanzen%20und%20Dienste%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Leiter%2Fin%20Finanzen%20und%20Dienste%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -1955,6 +3663,52 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "logistikfachmann-frau-mit-eidg-fa",
+      "name": "Logistikfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend",
+        "praktisch"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Logistikfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Logistikfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "logopaede-paedin",
+      "name": "Logopäde/-pädin",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Logop%C3%A4de%2F-p%C3%A4din",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Logop%C3%A4de%2F-p%C3%A4din%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "lokfuehrer-in-mit-eidg-fa",
+      "name": "Lokführer/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lokf%C3%BChrer%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lokf%C3%BChrer%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "lueftungsanlagenbauer-in-efz",
       "name": "Lüftungsanlagenbauer/in EFZ",
       "kat": "bau",
@@ -1983,6 +3737,83 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Maler%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Maler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "malermeister-in-mit-eidg-diplom",
+      "name": "Malermeister/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Malermeister%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Malermeister%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "malerpraktiker-in-eba",
+      "name": "Malerpraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Malerpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Malerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "marketingfachmann-frau-mit-eidg-fa",
+      "name": "Marketingfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Marketingfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Marketingfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "marketingleiter-in-mit-eidg-diplom",
+      "name": "Marketingleiter/in mit eidg. Diplom",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Marketingleiter%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Marketingleiter%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "marketingmanager-in-hf",
+      "name": "Marketingmanager/in HF",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Marketingmanager%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Marketingmanager%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "maschineningenieur-in-fh",
@@ -2015,6 +3846,36 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "maurerpolier-in-mit-eidg-fa",
+      "name": "Maurerpolier/in mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Maurerpolier%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Maurerpolier%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "maurerpraktiker-in-eba",
+      "name": "Maurerpraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Maurerpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Maurerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "mechanikpraktiker-in-eba",
       "name": "Mechanikpraktiker/in EBA",
       "kat": "technik",
@@ -2043,6 +3904,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Mediamatiker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Mediamatiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "medizinische-r-masseur-in-mit-eidg-fa",
+      "name": "Medizinische/r Masseur/in mit eidg. FA",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Medizinische%2Fr%20Masseur%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Medizinische%2Fr%20Masseur%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "medizinische-r-praxisassistent-in-efz",
@@ -2090,6 +3966,36 @@
       "quelle": "seed"
     },
     {
+      "id": "metzger-in-mit-eidg-fa",
+      "name": "Metzger/in mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Metzger%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Metzger%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "mikro-und-medizintechniker-in-hf",
+      "name": "Mikro- und Medizintechniker/in HF",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Mikro-%20und%20Medizintechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Mikro-%20und%20Medizintechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "mikromechaniker-in-efz",
       "name": "Mikromechaniker/in EFZ",
       "kat": "technik",
@@ -2102,6 +4008,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Mikromechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Mikromechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "mikrotechniker-in-hf",
+      "name": "Mikrotechniker/in HF",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Mikrotechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Mikrotechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2136,6 +4057,21 @@
       "quelle": "seed"
     },
     {
+      "id": "modist-in-efz",
+      "name": "Modist/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Modist%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Modist%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "montage-elektriker-in-efz",
       "name": "Montage-Elektriker/in EFZ",
       "kat": "technik",
@@ -2148,6 +4084,21 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Montage-Elektriker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Montage-Elektriker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "motorgeraetemechaniker-in-efz",
+      "name": "Motorgerätemechaniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Motorger%C3%A4temechaniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Motorger%C3%A4temechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2166,6 +4117,21 @@
       "quelle": "seed"
     },
     {
+      "id": "mueller-in-efz",
+      "name": "Müller/in EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=M%C3%BCller%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20M%C3%BCller%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "multimediaelektroniker-in-efz",
       "name": "Multimediaelektroniker/in EFZ",
       "kat": "technik",
@@ -2179,6 +4145,22 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Multimediaelektroniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Multimediaelektroniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "naturheilpraktiker-in-mit-eidg-diplom",
+      "name": "Naturheilpraktiker/in mit eidg. Diplom",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "sozial",
+        "forschend"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Naturheilpraktiker%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Naturheilpraktiker%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2212,6 +4194,21 @@
       "quelle": "seed"
     },
     {
+      "id": "obstfachfrau-mann-eba",
+      "name": "Obstfachfrau/-mann EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Obstfachfrau%2F-mann%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Obstfachfrau%2F-mann%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "obstfachmann-frau-efz",
       "name": "Obstfachmann/-frau EFZ",
       "kat": "natur",
@@ -2227,6 +4224,21 @@
       "quelle": "seed"
     },
     {
+      "id": "oenologe-login-fh",
+      "name": "Önologe/-login FH",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=%C3%96nologe%2F-login%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20%C3%96nologe%2F-login%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "optometrist-in-fh",
       "name": "Optometrist/in FH",
       "kat": "gesundheit",
@@ -2239,6 +4251,37 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Optometrist%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Optometrist%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "organisator-in-mit-eidg-fa",
+      "name": "Organisator/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Organisator%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Organisator%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "orgelbauer-in-efz",
+      "name": "Orgelbauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orgelbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Orgelbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2269,6 +4312,51 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orthop%C3%A4dist%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Orthop%C3%A4dist%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "orthoptist-in-hf",
+      "name": "Orthoptist/in HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orthoptist%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Orthoptist%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "osteopath-in-fh",
+      "name": "Osteopath/in FH",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Osteopath%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Osteopath%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "parkettleger-in-efz",
+      "name": "Parkettleger/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Parkettleger%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Parkettleger%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2317,6 +4405,21 @@
       "quelle": "seed"
     },
     {
+      "id": "pflegefachmann-frau-fh",
+      "name": "Pflegefachmann/-frau FH",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pflegefachmann%2F-frau%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Pflegefachmann%2F-frau%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "pflegefachmann-frau-hf",
       "name": "Pflegefachmann/-frau HF",
       "kat": "gesundheit",
@@ -2345,6 +4448,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pharma-Assistent%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Pharma-Assistent%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "pharma-betriebsassistent-in-efz",
+      "name": "Pharma-Betriebsassistent/in EFZ",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pharma-Betriebsassistent%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Pharma-Betriebsassistent%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "physiklaborant-in-efz",
@@ -2392,6 +4510,21 @@
       "quelle": "seed"
     },
     {
+      "id": "plattenlegerpraktiker-in-eba",
+      "name": "Plattenlegerpraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Plattenlegerpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Plattenlegerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "podologe-login-efz",
       "name": "Podologe/-login EFZ",
       "kat": "gesundheit",
@@ -2404,6 +4537,51 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Podologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Podologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "podologe-login-hf",
+      "name": "Podologe/-login HF",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Podologe%2F-login%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Podologe%2F-login%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "podologe-login-mit-eidg-fa",
+      "name": "Podologe/-login mit eidg. FA",
+      "kat": "koerper",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Schönheit, Pflege und Wohlbefinden.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Podologe%2F-login%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Podologe%2F-login%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "polier-in-mit-eidg-fa",
+      "name": "Polier/in mit eidg. FA",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Polier%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Polier%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2452,6 +4630,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "praxiskoordinator-in-mit-eidg-fa",
+      "name": "Praxiskoordinator/in mit eidg. FA",
+      "kat": "gesundheit",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Praxiskoordinator%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Praxiskoordinator%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "primarlehrer-in-ph",
       "name": "Primarlehrer/in PH",
       "kat": "soziales",
@@ -2483,6 +4676,21 @@
       "quelle": "seed"
     },
     {
+      "id": "produktdesigner-in-fh",
+      "name": "Produktdesigner/in FH",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Produktdesigner%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Produktdesigner%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "produktionsmechaniker-in-efz",
       "name": "Produktionsmechaniker/in EFZ",
       "kat": "technik",
@@ -2495,6 +4703,51 @@
       "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Produktionsmechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Produktionsmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "prozessfachmann-frau-mit-eidg-fa",
+      "name": "Prozessfachmann/-frau mit eidg. FA",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Prozessfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Prozessfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "psychomotoriktherapeut-in",
+      "name": "Psychomotoriktherapeut/in",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Psychomotoriktherapeut%2Fin",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Psychomotoriktherapeut%2Fin%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "raumplaner-in-fh",
+      "name": "Raumplaner/in FH",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Raumplaner%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Raumplaner%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2544,6 +4797,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "restaurationsleiter-in-mit-eidg-diplom",
+      "name": "Restaurationsleiter/in mit eidg. Diplom",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Restaurationsleiter%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Restaurationsleiter%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "sanitaerinstallateur-in-efz",
       "name": "Sanitärinstallateur/in EFZ",
       "kat": "bau",
@@ -2557,6 +4825,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sanit%C3%A4rinstallateur%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Sanit%C3%A4rinstallateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "sanitaerinstallateur-in-mit-eidg-diplom",
+      "name": "Sanitärinstallateur/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sanit%C3%A4rinstallateur%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sanit%C3%A4rinstallateur%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "sattler-in-efz",
@@ -2589,6 +4872,21 @@
       "quelle": "seed"
     },
     {
+      "id": "schmuckgestalter-in",
+      "name": "Schmuckgestalter/in",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schmuckgestalter%2Fin",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Schmuckgestalter%2Fin%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "schreiner-in-efz",
       "name": "Schreiner/in EFZ",
       "kat": "bau",
@@ -2602,6 +4900,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schreiner%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Schreiner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "schreinermeister-in-mit-eidg-diplom",
+      "name": "Schreinermeister/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Schreinermeister%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Schreinermeister%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
     },
     {
       "id": "schreinerpraktiker-in-eba",
@@ -2665,6 +4978,51 @@
       "quelle": "seed"
     },
     {
+      "id": "solarinstallateur-in-efz",
+      "name": "Solarinstallateur/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Solarinstallateur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Solarinstallateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "sommelier-re-mit-eidg-fa",
+      "name": "Sommelier/ère mit eidg. FA",
+      "kat": "gastro",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sommelier%2F%C3%A8re%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sommelier%2F%C3%A8re%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "sozialarbeiter-in-fh",
+      "name": "Sozialarbeiter/in FH",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sozialarbeiter%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sozialarbeiter%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "sozialpaedagoge-gin-hf",
       "name": "Sozialpädagoge/-gin HF",
       "kat": "soziales",
@@ -2678,6 +5036,36 @@
       "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sozialp%C3%A4dagoge%2F-gin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Sozialp%C3%A4dagoge%2F-gin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "sozialversicherungsfachmann-frau-mit-eidg-fa",
+      "name": "Sozialversicherungsfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sozialversicherungsfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sozialversicherungsfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "soziokultureller-animator-in-fh",
+      "name": "Soziokultureller Animator/in FH",
+      "kat": "soziales",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "sozial",
+        "fuehrend"
+      ],
+      "desc": "Sozialer Beruf – Menschen begleiten, fördern und ihnen helfen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Soziokultureller%20Animator%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Soziokultureller%20Animator%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2696,6 +5084,36 @@
       "quelle": "seed"
     },
     {
+      "id": "spenglermeister-in-mit-eidg-diplom",
+      "name": "Spenglermeister/in mit eidg. Diplom",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Spenglermeister%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Spenglermeister%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "steinbildhauer-in-efz",
+      "name": "Steinbildhauer/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steinbildhauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Steinbildhauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "steinmetz-in-efz",
       "name": "Steinmetz/in EFZ",
       "kat": "bau",
@@ -2708,6 +5126,36 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steinmetz%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Steinmetz%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "steinwerker-in-eba",
+      "name": "Steinwerker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steinwerker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Steinwerker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "steuerexperte-expertin-mit-eidg-diplom",
+      "name": "Steuerexperte/-expertin mit eidg. Diplom",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steuerexperte%2F-expertin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Steuerexperte%2F-expertin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2741,6 +5189,21 @@
       "quelle": "seed"
     },
     {
+      "id": "strassenbaupraktiker-in-eba",
+      "name": "Strassenbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Strassenbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Strassenbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "strassentransportfachmann-frau-efz",
       "name": "Strassentransportfachmann/-frau EFZ",
       "kat": "wirtschaft",
@@ -2754,6 +5217,22 @@
       "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Strassentransportfachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Strassentransportfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "strassentransportpraktiker-in-eba",
+      "name": "Strassentransportpraktiker/in EBA",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "ordnend",
+        "praktisch",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Strassentransportpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Strassentransportpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2772,6 +5251,156 @@
       "quelle": "seed"
     },
     {
+      "id": "techniker-in-hf-elektrotechnik",
+      "name": "Techniker/in HF Elektrotechnik",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Elektrotechnik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Elektrotechnik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-gebaeudetechnik",
+      "name": "Techniker/in HF Gebäudetechnik",
+      "kat": "bau",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Geb%C3%A4udetechnik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Geb%C3%A4udetechnik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-informatik",
+      "name": "Techniker/in HF Informatik",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Informatik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Informatik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-konstruktionstechnik",
+      "name": "Techniker/in HF Konstruktionstechnik",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Konstruktionstechnik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Konstruktionstechnik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-kunststofftechnik",
+      "name": "Techniker/in HF Kunststofftechnik",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Kunststofftechnik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Kunststofftechnik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-maschinenbau",
+      "name": "Techniker/in HF Maschinenbau",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Maschinenbau",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Maschinenbau%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "techniker-in-hf-systemtechnik",
+      "name": "Techniker/in HF Systemtechnik",
+      "kat": "technik",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Techniker%2Fin%20HF%20Systemtechnik",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Techniker%2Fin%20HF%20Systemtechnik%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "technische-r-kaufmann-frau-mit-eidg-fa",
+      "name": "Technische/r Kaufmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Technische%2Fr%20Kaufmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Technische%2Fr%20Kaufmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "technische-r-redaktor-in-mit-eidg-fa",
+      "name": "Technische/r Redaktor/in mit eidg. FA",
+      "kat": "gestaltung",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Technische%2Fr%20Redaktor%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Technische%2Fr%20Redaktor%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "telematiker-in-efz",
+      "name": "Telematiker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Telematiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Telematiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "textilgestalter-in-efz",
       "name": "Textilgestalter/in EFZ",
       "kat": "gestaltung",
@@ -2784,6 +5413,21 @@
       "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Textilgestalter%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Textilgestalter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "textilpraktiker-in-eba",
+      "name": "Textilpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Textilpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Textilpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2847,6 +5491,99 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "tierpfleger-in-efz-heimtiere",
+      "name": "Tierpfleger/in EFZ Heimtiere",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "sozial"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Tierpfleger%2Fin%20EFZ%20Heimtiere",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Tierpfleger%2Fin%20EFZ%20Heimtiere%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "tierpfleger-in-efz-versuchstiere",
+      "name": "Tierpfleger/in EFZ Versuchstiere",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "sozial"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Tierpfleger%2Fin%20EFZ%20Versuchstiere",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Tierpfleger%2Fin%20EFZ%20Versuchstiere%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "tierpfleger-in-efz-wildtiere",
+      "name": "Tierpfleger/in EFZ Wildtiere",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "sozial"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Tierpfleger%2Fin%20EFZ%20Wildtiere",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Tierpfleger%2Fin%20EFZ%20Wildtiere%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "tourismusfachmann-frau-hf",
+      "name": "Tourismusfachmann/-frau HF",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Tourismusfachmann%2F-frau%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Tourismusfachmann%2F-frau%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "treuhaender-in-mit-eidg-fa",
+      "name": "Treuhänder/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Treuh%C3%A4nder%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Treuh%C3%A4nder%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "uhrenarbeiter-in-eba",
+      "name": "Uhrenarbeiter/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Uhrenarbeiter%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Uhrenarbeiter%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "uhrmacher-in-efz",
       "name": "Uhrmacher/in EFZ",
       "kat": "technik",
@@ -2874,6 +5611,21 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Umweltingenieur%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Umweltingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "unterhaltspraktiker-in-eba",
+      "name": "Unterhaltspraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Unterhaltspraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Unterhaltspraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2907,6 +5659,83 @@
       "quelle": "seed"
     },
     {
+      "id": "verkaufsfachmann-frau-mit-eidg-fa",
+      "name": "Verkaufsfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Verkaufsfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Verkaufsfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "verkaufsleiter-in-mit-eidg-diplom",
+      "name": "Verkaufsleiter/in mit eidg. Diplom",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Verkaufsleiter%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Verkaufsleiter%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "verpackungstechnologe-login-efz",
+      "name": "Verpackungstechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Verpackungstechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Verpackungstechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "versicherungsfachmann-frau-mit-eidg-fa",
+      "name": "Versicherungsfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Versicherungsfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Versicherungsfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "weinbautechniker-in-hf",
+      "name": "Weinbautechniker/in HF",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weinbautechniker%2Fin%20HF",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Weinbautechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "weinkuefer-in-efz",
       "name": "Weinküfer/in EFZ",
       "kat": "natur",
@@ -2934,6 +5763,36 @@
       "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weintechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Weintechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "weintechnologe-login-efz-weinbereitung",
+      "name": "Weintechnologe/-login EFZ Weinbereitung",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weintechnologe%2F-login%20EFZ%20Weinbereitung",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Weintechnologe%2F-login%20EFZ%20Weinbereitung%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "wildhueter-in-mit-eidg-fa",
+      "name": "Wildhüter/in mit eidg. FA",
+      "kat": "natur",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Wildh%C3%BCter%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Wildh%C3%BCter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -2967,6 +5826,52 @@
       "quelle": "seed"
     },
     {
+      "id": "wirtschaftsinformatiker-in-mit-eidg-fa",
+      "name": "Wirtschaftsinformatiker/in mit eidg. FA",
+      "kat": "it",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Wirtschaftsinformatiker%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Wirtschaftsinformatiker%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "wirtschaftsingenieur-in-fh",
+      "name": "Wirtschaftsingenieur/in FH",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend",
+        "forschend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Wirtschaftsingenieur%2Fin%20FH",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Wirtschaftsingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "wirtschaftspruefer-in-mit-eidg-diplom",
+      "name": "Wirtschaftsprüfer/in mit eidg. Diplom",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Wirtschaftspr%C3%BCfer%2Fin%20mit%20eidg.%20Diplom",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Wirtschaftspr%C3%BCfer%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "zahntechniker-in-efz",
       "name": "Zahntechniker/in EFZ",
       "kat": "gesundheit",
@@ -2979,6 +5884,21 @@
       "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zahntechniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Zahntechniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "zahntechnikpraktiker-in-eba",
+      "name": "Zahntechnikpraktiker/in EBA",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zahntechnikpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zahntechnikpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     },
     {
@@ -3027,6 +5947,21 @@
       "quelle": "seed"
     },
     {
+      "id": "zimmer-praktiker-in-eba",
+      "name": "Zimmer-Praktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zimmer-Praktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zimmer-Praktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
       "id": "zimmermann-zimmerin-efz",
       "name": "Zimmermann/Zimmerin EFZ",
       "kat": "bau",
@@ -3039,6 +5974,36 @@
       "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zimmermann%2FZimmerin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Zimmermann%2FZimmerin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "zollfachmann-frau-mit-eidg-fa",
+      "name": "Zollfachmann/-frau mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zollfachmann%2F-frau%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zollfachmann%2F-frau%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "seed"
+    },
+    {
+      "id": "zugverkehrsleiter-in-mit-eidg-fa",
+      "name": "Zugverkehrsleiter/in mit eidg. FA",
+      "kat": "wirtschaft",
+      "typ": "weiterfuehrend",
+      "dauer": "weiterführend",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
     }
   ]
