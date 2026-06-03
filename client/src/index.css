@@ -4,45 +4,42 @@
 
 @layer base {
   body {
-    @apply bg-paper text-ink antialiased dark:bg-slate-950 dark:text-slate-100;
+    @apply bg-white text-ink antialiased dark:bg-slate-950 dark:text-slate-100;
     font-feature-settings: "cv11", "ss01";
   }
-  /* Kräftige, jugendliche Display-Typografie für alle Überschriften */
+  /* Klare, ruhige Display-Typografie für Überschriften (luftig, nicht wuchtig) */
   h1, h2, h3, h4 {
-    @apply font-display font-extrabold tracking-tight;
+    @apply font-display font-semibold tracking-tight;
   }
 }
 
 @layer components {
-  /* kleine Großbuchstaben-Labels ("eyebrow") im Editorial-/Youth-Stil */
+  /* dezentes Großbuchstaben-Label */
   .eyebrow {
-    @apply font-display text-xs font-extrabold uppercase tracking-[0.18em] text-brand-600 dark:text-brand-400;
+    @apply font-display text-xs font-semibold uppercase tracking-[0.16em] text-brand-600 dark:text-brand-400;
   }
 
+  /* schlanke, ruhige Bedienelemente – bewusst nicht in der fetten Display-Font */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-display font-bold transition active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
   }
   .btn-primary {
     @apply btn bg-brand-600 text-white hover:bg-brand-700;
   }
   .btn-ghost {
-    @apply btn border-2 border-ink text-ink hover:bg-ink hover:text-white dark:border-slate-200 dark:text-slate-100 dark:hover:bg-slate-100 dark:hover:text-ink;
+    @apply btn border border-ink/25 text-ink hover:border-ink hover:bg-ink/[0.03] dark:border-white/30 dark:text-slate-100 dark:hover:border-white dark:hover:bg-white/10;
   }
   .btn-soft {
     @apply btn bg-slate-100 text-ink hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
   }
-  /* Poster-Variante: harter, versetzter Schatten + Ink-Rahmen */
-  .btn-pop {
-    @apply btn border-2 border-ink bg-sun text-ink shadow-pop hover:-translate-x-px hover:-translate-y-px hover:shadow-[6px_6px_0_0_#17141b] active:translate-x-0 active:translate-y-0 active:shadow-popsm;
-  }
   .card {
-    @apply rounded-3xl border border-ink/10 bg-white shadow-card dark:border-white/10 dark:bg-slate-900;
+    @apply rounded-2xl border border-slate-200 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900;
   }
   .chip {
-    @apply cursor-pointer rounded-full border-2 border-ink/15 bg-white px-3.5 py-1.5 text-sm font-display font-bold text-ink transition hover:border-ink hover:-translate-y-px dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200;
+    @apply cursor-pointer rounded-full border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-slate-600 transition hover:border-ink hover:text-ink dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300;
   }
   .chip-active {
-    @apply border-ink bg-ink text-white shadow-popsm hover:border-ink dark:border-white dark:bg-white dark:text-ink;
+    @apply border-brand-600 bg-brand-600 text-white hover:border-brand-600 hover:text-white;
   }
 }
 

@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import { Search, Sparkles, Puzzle } from "lucide-react";
+import { ArrowRight, type LucideIcon, Puzzle, Search, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
 
-const features = [
-  { to: "/explorer", emoji: "🔎", title: "Berufs-Explorer", text: "Stöbere durch alle Berufe von A–Z, suche und filtere nach Bereichen – mit Video zu jedem Beruf.", icon: Search },
-  { to: "/entdecker", emoji: "✨", title: "Berufsentdecker", text: "Klick an, was dir Spass macht – und bekomme sofort passende Berufe vorgeschlagen.", icon: Sparkles },
-  { to: "/test", emoji: "🧩", title: "Stärken-Test", text: "«Was mache ich gern? Was kann ich gut?» Finde es heraus – mit Profil und Berufstipps.", icon: Puzzle },
+const features: { to: string; title: string; text: string; icon: LucideIcon }[] = [
+  { to: "/explorer", title: "Berufs-Explorer", text: "Stöbere durch alle Berufe von A–Z, suche und filtere nach Bereichen – mit Video zu jedem Beruf.", icon: Search },
+  { to: "/entdecker", title: "Berufsentdecker", text: "Klick an, was dir Spass macht – und bekomme sofort passende Berufe vorgeschlagen.", icon: Sparkles },
+  { to: "/test", title: "Stärken-Test", text: "«Was mache ich gern? Was kann ich gut?» Finde es heraus – mit Profil und Berufstipps.", icon: Puzzle },
 ];
 
 const steps = [
@@ -20,40 +20,38 @@ export function Home() {
   const { data: meta } = useQuery({ queryKey: ["meta"], queryFn: api.meta });
 
   return (
-    <div className="animate-fade space-y-10">
-      <section className="relative overflow-hidden rounded-3xl border-2 border-ink bg-ink p-8 text-white shadow-pop sm:p-12">
-        <div className="pointer-events-none absolute -right-12 -top-12 h-48 w-48 rounded-full bg-brand-500/30 blur-2xl" />
-        <div className="pointer-events-none absolute -bottom-16 right-28 h-52 w-52 rounded-full bg-accent/20 blur-3xl" />
-        <span className="eyebrow text-sun">Für Jugendliche in der Schweiz 🇨🇭</span>
-        <h1 className="mt-4 max-w-3xl text-4xl leading-[1.02] sm:text-6xl">
-          Welcher Beruf <span className="text-brand-500">passt zu dir?</span>
+    <div className="animate-fade space-y-12">
+      <section className="overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white p-8 dark:border-slate-800 dark:from-slate-900 dark:to-slate-950 sm:p-14">
+        <span className="eyebrow">Für Jugendliche in der Schweiz</span>
+        <h1 className="mt-4 max-w-3xl text-4xl leading-[1.08] sm:text-5xl">
+          Welcher Beruf passt zu dir?
         </h1>
-        <p className="mt-5 max-w-2xl text-lg text-slate-300">
+        <p className="mt-5 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
           Über 500 Lehrberufe gibt es in der Schweiz. Hier kannst du{" "}
-          <b className="text-sun">{meta?.total ?? "viele"} Berufe</b> entdecken – der
-          Berufs-Kompass hilft dir, deine Stärken zu finden und Berufe zu entdecken, die wirklich zu
-          dir passen. Mit Videos und Infos zum Weiterklicken.
+          <b className="font-semibold text-brand-600">{meta?.total ?? "viele"} Berufe</b> entdecken –
+          der Berufs-Kompass hilft dir, deine Stärken zu finden und Berufe zu entdecken, die wirklich
+          zu dir passen. Mit Videos und Infos zum Weiterklicken.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
-          <Link to="/test" className="btn-pop">🧩 Stärken-Test starten</Link>
-          <Link to="/explorer" className="btn-ghost border-white text-white hover:bg-white hover:text-ink">
-            🔎 Berufe durchstöbern
+          <Link to="/test" className="btn-primary">
+            <Puzzle size={16} /> Stärken-Test starten
+          </Link>
+          <Link to="/explorer" className="btn-ghost">
+            <Search size={16} /> Berufe durchstöbern
           </Link>
         </div>
       </section>
 
       <section className="grid gap-5 sm:grid-cols-3">
         {features.map((f) => (
-          <Link
-            key={f.to}
-            to={f.to}
-            className="group card p-6 transition hover:-translate-y-1 hover:border-ink hover:shadow-pop dark:hover:border-white"
-          >
-            <span className="text-4xl">{f.emoji}</span>
-            <h3 className="mt-3 text-xl">{f.title}</h3>
-            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{f.text}</p>
-            <span className="mt-3 inline-block font-display font-bold text-brand-600 transition group-hover:translate-x-1">
-              Los geht's →
+          <Link key={f.to} to={f.to} className="group card p-6 transition hover:-translate-y-0.5 hover:shadow-cardlg">
+            <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-600 dark:bg-brand-950/40 dark:text-brand-400">
+              <f.icon size={22} strokeWidth={1.75} />
+            </span>
+            <h3 className="mt-4 text-xl">{f.title}</h3>
+            <p className="mt-1.5 text-sm leading-relaxed text-slate-500 dark:text-slate-400">{f.text}</p>
+            <span className="mt-4 inline-flex items-center gap-1.5 font-display text-sm font-semibold text-brand-600 transition-all group-hover:gap-2.5">
+              Los geht's <ArrowRight size={16} />
             </span>
           </Link>
         ))}
@@ -61,17 +59,14 @@ export function Home() {
 
       <section>
         <span className="eyebrow">So gehst du vor</span>
-        <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((s, i) => (
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {steps.map((s) => (
             <div key={s.n} className="card p-5">
-              <div
-                className="grid h-9 w-9 place-items-center rounded-full font-display text-base font-extrabold"
-                style={{ background: ["#e11d48", "#2f6df6", "#13c296", "#f7c948"][i], color: i === 3 ? "#17141b" : "#fff" }}
-              >
+              <div className="grid h-9 w-9 place-items-center rounded-full bg-brand-50 font-display text-sm font-bold text-brand-600 dark:bg-brand-950/40 dark:text-brand-400">
                 {s.n}
               </div>
-              <p className="mt-3 font-display font-bold">{s.t}</p>
-              <p className="text-sm text-slate-500 dark:text-slate-400">{s.d}</p>
+              <p className="mt-3 font-display font-semibold">{s.t}</p>
+              <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">{s.d}</p>
             </div>
           ))}
         </div>

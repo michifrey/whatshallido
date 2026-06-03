@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { CalendarPlus, Download, ExternalLink, MapPin } from "lucide-react";
+import { CalendarDays, CalendarPlus, Download, ExternalLink, MapPin } from "lucide-react";
 import { useMemo, useState } from "react";
 import { api } from "../api";
 import type { Messe } from "../types";
@@ -57,25 +57,22 @@ export function Messen() {
 
   return (
     <div className="animate-fade space-y-6">
-      <section className="relative overflow-hidden rounded-3xl border-2 border-ink bg-ink p-8 text-white shadow-pop">
-        <div className="pointer-events-none absolute -right-12 -top-12 h-48 w-48 rounded-full bg-brand-500/30 blur-2xl" />
-        <span className="eyebrow text-sun">Termine in der ganzen Schweiz</span>
-        <h1 className="mt-3 max-w-3xl text-3xl leading-tight sm:text-5xl">
-          Berufsmessen <span className="text-brand-500">live erleben</span>
-        </h1>
-        <p className="mt-4 max-w-2xl text-slate-300">
+      <section className="overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white p-8 dark:border-slate-800 dark:from-slate-900 dark:to-slate-950 sm:p-12">
+        <span className="eyebrow">Termine in der ganzen Schweiz</span>
+        <h1 className="mt-4 max-w-3xl text-3xl leading-tight sm:text-5xl">Berufsmessen live erleben</h1>
+        <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
           An einer Berufsmesse triffst du echte Berufsleute, kannst Dinge ausprobieren und Fragen
           stellen. Such dir eine Messe in deiner Nähe – und leg sie dir gleich in den Kalender.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <a href={icsWebcal} className="btn-pop">
+          <a href={icsWebcal} className="btn-primary">
             <CalendarPlus size={16} /> Kalender abonnieren
           </a>
-          <button onClick={() => downloadIcs("berufsmessen-schweiz.ics", filtered)} className="btn-ghost border-white text-white hover:bg-white hover:text-ink">
+          <button onClick={() => downloadIcs("berufsmessen-schweiz.ics", filtered)} className="btn-ghost">
             <Download size={16} /> Auswahl als .ics
           </button>
         </div>
-        <p className="mt-3 text-xs text-slate-400">
+        <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
           „Abonnieren" fügt den Kalender einmalig hinzu – er aktualisiert sich dann automatisch, wenn
           neue Messen dazukommen. Funktioniert mit Apple Kalender, Google Kalender & Outlook.
         </p>
@@ -109,18 +106,21 @@ export function Messen() {
               {items.map((m) => {
                 const c = colorFor(m.region);
                 return (
-                  <article key={m.id} className="card flex flex-col gap-4 p-5 sm:flex-row sm:items-center">
-                    <div
-                      className="grid shrink-0 place-items-center rounded-2xl px-4 py-3 text-center text-white sm:w-40"
-                      style={{ background: c }}
-                    >
-                      <span className="font-display text-sm font-extrabold leading-tight">{formatRange(m.start, m.end)}</span>
+                  <article
+                    key={m.id}
+                    className="card flex flex-col gap-4 border-l-4 p-5 sm:flex-row sm:items-center"
+                    style={{ borderLeftColor: c }}
+                  >
+                    <div className="flex items-center gap-1.5 font-display font-semibold sm:w-44 sm:shrink-0">
+                      <CalendarDays size={16} style={{ color: c }} /> {formatRange(m.start, m.end)}
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="text-lg leading-tight">{m.name}</h3>
-                      <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
-                        <MapPin size={14} /> {m.venue}, {m.city}
-                        <span className="rounded-full px-2 py-0.5 text-xs font-bold text-white" style={{ background: c }}>
+                      <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+                        <span className="inline-flex items-center gap-1">
+                          <MapPin size={14} /> {m.venue}, {m.city}
+                        </span>
+                        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
                           {m.region}
                         </span>
                       </p>
