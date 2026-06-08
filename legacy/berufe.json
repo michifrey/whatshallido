@@ -1,20 +1,20 @@
 {
   "meta": {
-    "generatedAt": "2026-06-03T05:07:28.914Z",
-    "total": 396,
-    "lehre": 234,
+    "generatedAt": "2026-06-08T08:58:43.409Z",
+    "total": 525,
+    "lehre": 363,
     "weiterfuehrend": 162,
-    "neuVomLiveAbgleich": 0,
+    "neuVomLiveAbgleich": 129,
     "proKategorie": {
-      "technik": 75,
-      "it": 15,
-      "gesundheit": 38,
+      "technik": 158,
+      "it": 17,
+      "gesundheit": 41,
       "soziales": 19,
-      "gestaltung": 39,
-      "wirtschaft": 50,
-      "natur": 42,
-      "gastro": 34,
-      "bau": 77,
+      "gestaltung": 43,
+      "wirtschaft": 52,
+      "natur": 44,
+      "gastro": 43,
+      "bau": 101,
       "koerper": 7
     },
     "quelle": "Basisliste + berufsberatung.ch"
@@ -34,6 +34,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Abdichter%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Abdichter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "abdichtungspraktiker-in-eba",
+      "name": "Abdichtungspraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Abdichtungspraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Abdichtungspraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "agrarpraktiker-in-eba",
@@ -111,6 +126,21 @@
       "quelle": "seed"
     },
     {
+      "id": "anlagenf-252-hrer-in-efz",
+      "name": "Anlagenf&#252;hrer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Anlagenf%26%23252%3Bhrer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Anlagenf%26%23252%3Bhrer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "anlagenfuehrer-in-efz",
       "name": "Anlagenführer/in EFZ",
       "kat": "technik",
@@ -124,6 +154,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Anlagenf%C3%BChrer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Anlagenf%C3%BChrer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "apparateglasbl-228-ser-in-efz",
+      "name": "Apparateglasbl&#228;ser/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Apparateglasbl%26%23228%3Bser%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Apparateglasbl%26%23228%3Bser%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "arbeitsagoge-gin-hf",
@@ -154,6 +199,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Architekt%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Architekt%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "architekturmodellbauer-in-efz",
+      "name": "Architekturmodellbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Architekturmodellbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Architekturmodellbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "assistent-in-gesundheit-und-soziales-eba",
@@ -319,6 +379,66 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Automobil-Mechatroniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Automobil-Mechatroniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "b-228-cker-in-konditor-in-confiseur-in-eba",
+      "name": "B&#228;cker/in-Konditor/in-Confiseur/in EBA",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%26%23228%3Bcker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%26%23228%3Bcker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "b-228-cker-in-konditor-in-confiseur-in-efz",
+      "name": "B&#228;cker/in-Konditor/in-Confiseur/in EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%26%23228%3Bcker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%26%23228%3Bcker%2Fin-Konditor%2Fin-Confiseur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "b-252-chsenmacher-in-efz",
+      "name": "B&#252;chsenmacher/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%26%23252%3Bchsenmacher%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%26%23252%3Bchsenmacher%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "b-252-hnent-228-nzer-in-efz",
+      "name": "B&#252;hnent&#228;nzer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=B%26%23252%3Bhnent%26%23228%3Bnzer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20B%26%23252%3Bhnent%26%23228%3Bnzer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "baecker-in-konditor-in-confiseur-in-efz",
@@ -592,6 +712,21 @@
       "quelle": "seed"
     },
     {
+      "id": "bekleidungsn-228-her-in-eba",
+      "name": "Bekleidungsn&#228;her/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bekleidungsn%26%23228%3Bher%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bekleidungsn%26%23228%3Bher%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "bekleidungsnaeher-in-eba",
       "name": "Bekleidungsnäher/in EBA",
       "kat": "gestaltung",
@@ -653,6 +788,21 @@
       "quelle": "seed"
     },
     {
+      "id": "betonwerker-in-efz",
+      "name": "Betonwerker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Betonwerker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Betonwerker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "betriebsoekonom-in-fh",
       "name": "Betriebsökonom/in FH",
       "kat": "wirtschaft",
@@ -681,6 +831,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Betriebswirtschafter%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Betriebswirtschafter%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "bindetechnologe-login-efz",
+      "name": "Bindetechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Bindetechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Bindetechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "biomedizinische-r-analytiker-in-hf",
@@ -728,6 +893,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Blasinstrumentenbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Blasinstrumentenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "boden-parkettleger-in-efz",
+      "name": "Boden-Parkettleger/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Boden-Parkettleger%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Boden-Parkettleger%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "bodenleger-in-efz",
@@ -790,6 +970,21 @@
       "quelle": "seed"
     },
     {
+      "id": "brau-und-getr-228-nketechnologe-login-efz",
+      "name": "Brau- und Getr&#228;nketechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Brau-%20und%20Getr%26%23228%3Bnketechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Brau-%20und%20Getr%26%23228%3Bnketechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "buchbinder-in-efz",
       "name": "Buchbinder/in EFZ",
       "kat": "gestaltung",
@@ -803,6 +998,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Buchbinder%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Buchbinder%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "buchh-228-ndler-in-efz",
+      "name": "Buchh&#228;ndler/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Buchh%26%23228%3Bndler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Buchh%26%23228%3Bndler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "buchhaendler-in-efz",
@@ -863,6 +1073,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Carrosserielackierer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Carrosserielackierer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "carrosseriereparateur-in-efz",
+      "name": "Carrosseriereparateur/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Carrosseriereparateur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Carrosseriereparateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "carrosseriespengler-in-efz",
@@ -938,6 +1163,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chefmonteur%2Fin%20Sanit%C3%A4r%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Chefmonteur%2Fin%20Sanit%C3%A4r%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "chemie-und-pharmapraktiker-in-eba",
+      "name": "Chemie- und Pharmapraktiker/in EBA",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Chemie-%20und%20Pharmapraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Chemie-%20und%20Pharmapraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "chemie-und-pharmatechnologe-login-efz",
@@ -1043,6 +1283,51 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Cyber%20Security%20Spezialist%2Fin%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Cyber%20Security%20Spezialist%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "dachdecker-in-efz",
+      "name": "Dachdecker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dachdecker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Dachdecker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "dachdeckerpraktiker-in-eba",
+      "name": "Dachdeckerpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dachdeckerpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Dachdeckerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "dekorationsn-228-her-in-eba",
+      "name": "Dekorationsn&#228;her/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Dekorationsn%26%23228%3Bher%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Dekorationsn%26%23228%3Bher%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "dentalassistent-in-efz",
@@ -1260,6 +1545,21 @@
       "quelle": "seed"
     },
     {
+      "id": "druckausr-252-ster-in-efz",
+      "name": "Druckausr&#252;ster/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Druckausr%26%23252%3Bster%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Druckausr%26%23252%3Bster%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "drucktechniker-in-hf",
       "name": "Drucktechniker/in HF",
       "kat": "gestaltung",
@@ -1288,6 +1588,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Drucktechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Drucktechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "edelsteinfasser-in-efz",
+      "name": "Edelsteinfasser/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Edelsteinfasser%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Edelsteinfasser%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "elektro-projektleiter-in-mit-eidg-fa",
@@ -1440,6 +1755,189 @@
       "quelle": "seed"
     },
     {
+      "id": "entspricht-dem-beruf-anlagen-und-apparatebauer-in-efz",
+      "name": "Entspricht dem Beruf: Anlagen- und Apparatebauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Anlagen-%20und%20Apparatebauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Anlagen-%20und%20Apparatebauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-automobil-fachmann-frau-efz",
+      "name": "Entspricht dem Beruf: Automobil-Fachmann/-frau EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Automobil-Fachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Automobil-Fachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-automobil-mechatroniker-in-efz",
+      "name": "Entspricht dem Beruf: Automobil-Mechatroniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Automobil-Mechatroniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Automobil-Mechatroniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-detailhandelsfachmann-frau-efz",
+      "name": "Entspricht dem Beruf: Detailhandelsfachmann/-frau EFZ",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "fuehrend",
+        "ordnend",
+        "sozial"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Detailhandelsfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Detailhandelsfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-fachmann-frau-leder-und-textil-efz",
+      "name": "Entspricht dem Beruf: Fachmann/-frau Leder und Textil EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Fachmann%2F-frau%20Leder%20und%20Textil%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Fachmann%2F-frau%20Leder%20und%20Textil%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-fleischfachmann-frau-efz",
+      "name": "Entspricht dem Beruf: Fleischfachmann/-frau EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Fleischfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Fleischfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-formenbauer-in-efz",
+      "name": "Entspricht dem Beruf: Formenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Formenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Formenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-lebensmitteltechnologe-login-efz",
+      "name": "Entspricht dem Beruf: Lebensmitteltechnologe/-login EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Lebensmitteltechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Lebensmitteltechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-metallbauer-in-efz",
+      "name": "Entspricht dem Beruf: Metallbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Metallbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Metallbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entspricht-dem-beruf-milchtechnologe-login-efz",
+      "name": "Entspricht dem Beruf: Milchtechnologe/-login EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entspricht%20dem%20Beruf%3A%20Milchtechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entspricht%20dem%20Beruf%3A%20Milchtechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entw-228-sserungspraktiker-in-eba",
+      "name": "Entw&#228;sserungspraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entw%26%23228%3Bsserungspraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entw%26%23228%3Bsserungspraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "entw-228-sserungstechnologe-login-efz",
+      "name": "Entw&#228;sserungstechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Entw%26%23228%3Bsserungstechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Entw%26%23228%3Bsserungstechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "entwickler-in-digitales-business-efz",
       "name": "Entwickler/in digitales Business EFZ",
       "kat": "it",
@@ -1560,6 +2058,52 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-246-ffentlicher-verkehr-efz",
+      "name": "Fachmann/-frau &#246;ffentlicher Verkehr EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20%26%23246%3Bffentlicher%20Verkehr%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20%26%23246%3Bffentlicher%20Verkehr%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fachmann-frau-apotheke-efz",
+      "name": "Fachmann/-frau Apotheke EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Apotheke%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Apotheke%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fachmann-frau-bahntransport-efz",
+      "name": "Fachmann/-frau Bahntransport EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "ordnend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Bahntransport%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Bahntransport%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "fachmann-frau-betreuung-efz",
       "name": "Fachmann/-frau Betreuung EFZ",
       "kat": "soziales",
@@ -1636,6 +2180,21 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-bewegungs-und-gesundheitsf-246-rderung-efz",
+      "name": "Fachmann/-frau Bewegungs- und Gesundheitsf&#246;rderung EFZ",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Bewegungs-%20und%20Gesundheitsf%26%23246%3Brderung%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Bewegungs-%20und%20Gesundheitsf%26%23246%3Brderung%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "fachmann-frau-bewegungs-und-gesundheitsfoerderung-efz",
       "name": "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ",
       "kat": "gesundheit",
@@ -1696,6 +2255,22 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "fachmann-frau-hotellerie-hauswirtschaft-efz",
+      "name": "Fachmann/-frau Hotellerie-Hauswirtschaft EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Hotellerie-Hauswirtschaft%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Hotellerie-Hauswirtschaft%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "fachmann-frau-im-finanz-und-rechnungswesen-mit-eidg-fa",
       "name": "Fachmann/-frau im Finanz- und Rechnungswesen mit eidg. FA",
       "kat": "wirtschaft",
@@ -1711,6 +2286,21 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-information-und-dokumentation-efz",
+      "name": "Fachmann/-frau Information und Dokumentation EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Information%20und%20Dokumentation%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Information%20und%20Dokumentation%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "fachmann-frau-kundendialog-efz",
       "name": "Fachmann/-frau Kundendialog EFZ",
       "kat": "wirtschaft",
@@ -1724,6 +2314,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Kundendialog%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Kundendialog%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "fachmann-frau-leder-und-textil-efz",
+      "name": "Fachmann/-frau Leder und Textil EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Leder%20und%20Textil%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Leder%20und%20Textil%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "fachmann-frau-oeffentlicher-verkehr-efz",
@@ -1756,6 +2361,51 @@
       "quelle": "seed"
     },
     {
+      "id": "fachmann-frau-reinigungstechnik-efz",
+      "name": "Fachmann/-frau Reinigungstechnik EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Reinigungstechnik%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Reinigungstechnik%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fachmann-frau-sonnenschutz-und-storentechnik-efz",
+      "name": "Fachmann/-frau Sonnenschutz und Storentechnik EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Sonnenschutz%20und%20Storentechnik%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Sonnenschutz%20und%20Storentechnik%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fachmann-frau-textilpflege-efz",
+      "name": "Fachmann/-frau Textilpflege EFZ",
+      "kat": "gesundheit",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "sozial",
+        "praktisch"
+      ],
+      "desc": "Beruf im Gesundheitswesen – Menschen pflegen, betreuen, unterstützen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fachmann%2F-frau%20Textilpflege%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fachmann%2F-frau%20Textilpflege%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "fahrradmechaniker-in-efz",
       "name": "Fahrradmechaniker/in EFZ",
       "kat": "technik",
@@ -1769,6 +2419,51 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fahrradmechaniker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fahrradmechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "fahrzeugschlosser-in-efz",
+      "name": "Fahrzeugschlosser/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fahrzeugschlosser%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fahrzeugschlosser%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fassadenbauer-in-efz",
+      "name": "Fassadenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fassadenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fassadenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "fassadenbaupraktiker-in-eba",
+      "name": "Fassadenbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fassadenbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fassadenbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "feinwerkoptiker-in-efz",
@@ -1876,6 +2571,22 @@
       "quelle": "seed"
     },
     {
+      "id": "florist-in-eba",
+      "name": "Florist/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Florist%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Florist%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "florist-in-efz",
       "name": "Florist/in EFZ",
       "kat": "natur",
@@ -1892,6 +2603,36 @@
       "quelle": "seed"
     },
     {
+      "id": "formenbauer-in-efz",
+      "name": "Formenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Formenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Formenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "formenpraktiker-in-eba",
+      "name": "Formenpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Formenpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Formenpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "foerster-in-hf",
       "name": "Förster/in HF",
       "kat": "natur",
@@ -1905,6 +2646,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=F%C3%B6rster%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20F%C3%B6rster%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "forstpraktiker-in-eba",
+      "name": "Forstpraktiker/in EBA",
+      "kat": "natur",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf in der Natur, mit Pflanzen, Tieren oder Lebensmitteln.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Forstpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Forstpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "forstwart-praktiker-in-eba",
@@ -1980,6 +2736,51 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fotograf%2Fin%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Fotograf%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "fotomedienfachmann-frau-efz",
+      "name": "Fotomedienfachmann/-frau EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Fotomedienfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Fotomedienfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "g-228-rtner-in-eba",
+      "name": "G&#228;rtner/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%26%23228%3Brtner%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%26%23228%3Brtner%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "g-228-rtner-in-efz",
+      "name": "G&#228;rtner/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=G%26%23228%3Brtner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20G%26%23228%3Brtner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "galvaniker-in-efz",
@@ -2117,6 +2918,66 @@
       "quelle": "seed"
     },
     {
+      "id": "geb-228-udeinformatiker-in-efz",
+      "name": "Geb&#228;udeinformatiker/in EFZ",
+      "kat": "it",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%26%23228%3Budeinformatiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%26%23228%3Budeinformatiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "geb-228-udetechnikplaner-in-heizung-efz",
+      "name": "Geb&#228;udetechnikplaner/in Heizung EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%26%23228%3Budetechnikplaner%2Fin%20Heizung%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%26%23228%3Budetechnikplaner%2Fin%20Heizung%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "geb-228-udetechnikplaner-in-l-252-ftung-efz",
+      "name": "Geb&#228;udetechnikplaner/in L&#252;ftung EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%26%23228%3Budetechnikplaner%2Fin%20L%26%23252%3Bftung%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%26%23228%3Budetechnikplaner%2Fin%20L%26%23252%3Bftung%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "geb-228-udetechnikplaner-in-sanit-228-r-efz",
+      "name": "Geb&#228;udetechnikplaner/in Sanit&#228;r EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Geb%26%23228%3Budetechnikplaner%2Fin%20Sanit%26%23228%3Br%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Geb%26%23228%3Budetechnikplaner%2Fin%20Sanit%26%23228%3Br%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "gebaeudeinformatiker-in-efz",
       "name": "Gebäudeinformatiker/in EFZ",
       "kat": "technik",
@@ -2238,6 +3099,21 @@
       "quelle": "seed"
     },
     {
+      "id": "gem-252-seg-228-rtner-in-efz",
+      "name": "Gem&#252;seg&#228;rtner/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gem%26%23252%3Bseg%26%23228%3Brtner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gem%26%23252%3Bseg%26%23228%3Brtner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "gemeindeanimator-in-hf",
       "name": "Gemeindeanimator/in HF",
       "kat": "soziales",
@@ -2328,6 +3204,36 @@
       "quelle": "seed"
     },
     {
+      "id": "ger-252-stbauer-in-efz",
+      "name": "Ger&#252;stbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ger%26%23252%3Bstbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Ger%26%23252%3Bstbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "ger-252-stbaupraktiker-in-eba",
+      "name": "Ger&#252;stbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ger%26%23252%3Bstbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Ger%26%23252%3Bstbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "geruestbauer-in-efz",
       "name": "Gerüstbauer/in EFZ",
       "kat": "bau",
@@ -2404,6 +3310,21 @@
       "quelle": "seed"
     },
     {
+      "id": "gewebegestalter-in-efz",
+      "name": "Gewebegestalter/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gewebegestalter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gewebegestalter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "gipser-in-trockenbauer-in-efz",
       "name": "Gipser/in-Trockenbauer/in EFZ",
       "kat": "bau",
@@ -2417,6 +3338,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gipser%2Fin-Trockenbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Gipser%2Fin-Trockenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "gipserpraktiker-in-eba",
+      "name": "Gipserpraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gipserpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gipserpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "glasapparatebauer-in-efz",
@@ -2435,6 +3371,37 @@
       "quelle": "seed"
     },
     {
+      "id": "glaser-in-efz",
+      "name": "Glaser/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Glaser%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Glaser%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "glasmaler-in-efz",
+      "name": "Glasmaler/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Glasmaler%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Glasmaler%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "gleisbauer-in-efz",
       "name": "Gleisbauer/in EFZ",
       "kat": "bau",
@@ -2448,6 +3415,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gleisbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Gleisbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "gleisbaupraktiker-in-eba",
+      "name": "Gleisbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gleisbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Gleisbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "goldschmied-in-efz",
@@ -2495,6 +3477,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "graveur-in-efz",
+      "name": "Graveur/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Graveur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Graveur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "grundbauer-in-efz",
       "name": "Grundbauer/in EFZ",
       "kat": "bau",
@@ -2508,6 +3505,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Grundbauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Grundbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "grundbaupraktiker-in-eba",
+      "name": "Grundbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Grundbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Grundbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "gussformer-in-efz",
@@ -2538,6 +3550,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Gusstechnologe%2F-login%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Gusstechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "h-246-rsystemakustiker-in-efz",
+      "name": "H&#246;rsystemakustiker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=H%26%23246%3Brsystemakustiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20H%26%23246%3Brsystemakustiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "hafner-in-efz",
@@ -2631,6 +3658,21 @@
       "quelle": "seed"
     },
     {
+      "id": "heizungspraktiker-in-eba",
+      "name": "Heizungspraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Heizungspraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Heizungspraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "holzbau-fachmann-frau-efz",
       "name": "Holzbau-Fachmann/-frau EFZ",
       "kat": "bau",
@@ -2689,6 +3731,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzbildhauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Holzbildhauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "holzhandwerker-in-efz",
+      "name": "Holzhandwerker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzhandwerker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holzhandwerker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "holzindustriefachmann-frau-efz",
+      "name": "Holzindustriefachmann/-frau EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Holzindustriefachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Holzindustriefachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "holztechniker-in-hf",
@@ -2920,6 +3992,21 @@
       "quelle": "seed"
     },
     {
+      "id": "industrie-und-unterlagsbodenbaupraktiker-in-eba",
+      "name": "Industrie- und Unterlagsbodenbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industrie-%20und%20Unterlagsbodenbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industrie-%20und%20Unterlagsbodenbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "industriekeramiker-in-efz",
       "name": "Industriekeramiker/in EFZ",
       "kat": "technik",
@@ -2966,6 +4053,21 @@
       "quelle": "seed"
     },
     {
+      "id": "industriepolsterer-polsterin-efz",
+      "name": "Industriepolsterer/-polsterin EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Industriepolsterer%2F-polsterin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Industriepolsterer%2F-polsterin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "informatik-ingenieur-in-fh",
       "name": "Informatik-Ingenieur/in FH",
       "kat": "it",
@@ -2979,6 +4081,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Informatik-Ingenieur%2Fin%20FH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Informatik-Ingenieur%2Fin%20FH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "informatiker-in-efz",
+      "name": "Informatiker/in EFZ",
+      "kat": "it",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Digitaler Beruf rund um Computer, Software, Daten und Technik.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Informatiker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Informatiker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "informatiker-in-efz-applikationsentwicklung",
@@ -3101,6 +4218,81 @@
       "quelle": "seed"
     },
     {
+      "id": "k-228-ltemontage-praktiker-in-eba",
+      "name": "K&#228;ltemontage-Praktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%26%23228%3Bltemontage-Praktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%26%23228%3Bltemontage-Praktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "k-228-ltesystem-monteur-in-efz",
+      "name": "K&#228;ltesystem-Monteur/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%26%23228%3Bltesystem-Monteur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%26%23228%3Bltesystem-Monteur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "k-228-ltesystem-planer-in-efz",
+      "name": "K&#228;ltesystem-Planer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%26%23228%3Bltesystem-Planer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%26%23228%3Bltesystem-Planer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "k-252-chenangestellte-r-eba",
+      "name": "K&#252;chenangestellte/r EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%26%23252%3Bchenangestellte%2Fr%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%26%23252%3Bchenangestellte%2Fr%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "k-252-fer-in-efz",
+      "name": "K&#252;fer/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=K%26%23252%3Bfer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20K%26%23252%3Bfer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "kaeltesystem-monteur-in-efz",
       "name": "Kältesystem-Monteur/in EFZ",
       "kat": "technik",
@@ -3129,6 +4321,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaminfeger%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Kaminfeger%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "kapit-228-n-in-der-binnenschifffahrt-efz",
+      "name": "Kapit&#228;n/in der Binnenschifffahrt EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kapit%26%23228%3Bn%2Fin%20der%20Binnenschifffahrt%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kapit%26%23228%3Bn%2Fin%20der%20Binnenschifffahrt%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "kaufmann-frau-eba",
+      "name": "Kaufmann/-frau EBA",
+      "kat": "wirtschaft",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "ordnend",
+        "fuehrend"
+      ],
+      "desc": "Beruf in Büro, Handel oder Verkauf – mit Organisation und Kontakt.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kaufmann%2F-frau%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kaufmann%2F-frau%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "kaufmann-frau-efz",
@@ -3285,6 +4507,21 @@
       "quelle": "seed"
     },
     {
+      "id": "koch-k-246-chin-efz",
+      "name": "Koch/K&#246;chin EFZ",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Koch%2FK%26%23246%3Bchin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Koch%2FK%26%23246%3Bchin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "koch-koechin-efz",
       "name": "Koch/Köchin EFZ",
       "kat": "gastro",
@@ -3435,6 +4672,21 @@
       "quelle": "seed"
     },
     {
+      "id": "kunststoffpraktiker-in-eba",
+      "name": "Kunststoffpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Kunststoffpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Kunststoffpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "kunststofftechnologe-login-efz",
       "name": "Kunststofftechnologe/-login EFZ",
       "kat": "technik",
@@ -3480,6 +4732,36 @@
       "quelle": "seed"
     },
     {
+      "id": "l-252-ftungsanlagenbauer-in-efz",
+      "name": "L&#252;ftungsanlagenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=L%26%23252%3Bftungsanlagenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20L%26%23252%3Bftungsanlagenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "l-252-ftungsanlagenpraktiker-in-eba",
+      "name": "L&#252;ftungsanlagenpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=L%26%23252%3Bftungsanlagenpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20L%26%23252%3Bftungsanlagenpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "laborant-in-efz",
       "name": "Laborant/in EFZ",
       "kat": "technik",
@@ -3493,6 +4775,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Laborant%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Laborant%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "lackierassistent-in-eba",
+      "name": "Lackierassistent/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lackierassistent%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lackierassistent%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "land-und-baumaschinenmechaniker-in-efz",
@@ -3570,6 +4867,21 @@
       "quelle": "seed"
     },
     {
+      "id": "lebensmittelpraktiker-in-eba",
+      "name": "Lebensmittelpraktiker/in EBA",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmittelpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmittelpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "lebensmitteltechnologe-login-efz",
       "name": "Lebensmitteltechnologe/-login EFZ",
       "kat": "gastro",
@@ -3615,6 +4927,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lebensmitteltechnologe%2F-login%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Lebensmitteltechnologe%2F-login%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "lehrberufe-efz-und-eba",
+      "name": "Lehrberufe: EFZ und EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Lehrberufe%3A%20EFZ%20und%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Lehrberufe%3A%20EFZ%20und%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "leiter-in-finanzen-und-dienste-mit-eidg-diplom",
@@ -3724,6 +5051,21 @@
       "quelle": "seed"
     },
     {
+      "id": "m-252-ller-in-efz",
+      "name": "M&#252;ller/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=M%26%23252%3Bller%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20M%26%23252%3Bller%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "maler-in-efz",
       "name": "Maler/in EFZ",
       "kat": "bau",
@@ -3831,6 +5173,21 @@
       "quelle": "seed"
     },
     {
+      "id": "maurer-in-eba",
+      "name": "Maurer/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Maurer%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Maurer%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "maurer-in-efz",
       "name": "Maurer/in EFZ",
       "kat": "bau",
@@ -3906,6 +5263,21 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "medientechnologe-login-efz",
+      "name": "Medientechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Medientechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Medientechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "medizinische-r-masseur-in-mit-eidg-fa",
       "name": "Medizinische/r Masseur/in mit eidg. FA",
       "kat": "gesundheit",
@@ -3936,6 +5308,36 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "medizinproduktetechnologe-login-efz",
+      "name": "Medizinproduktetechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Medizinproduktetechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Medizinproduktetechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "messerschmied-in-efz",
+      "name": "Messerschmied/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Messerschmied%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Messerschmied%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "metallbauer-in-efz",
       "name": "Metallbauer/in EFZ",
       "kat": "technik",
@@ -3964,6 +5366,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Metallbaukonstrukteur%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Metallbaukonstrukteur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "metallbaupraktiker-in-eba",
+      "name": "Metallbaupraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Metallbaupraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Metallbaupraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "metzger-in-mit-eidg-fa",
@@ -4026,6 +5443,21 @@
       "quelle": "seed"
     },
     {
+      "id": "mikrozeichner-in-efz",
+      "name": "Mikrozeichner/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Mikrozeichner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Mikrozeichner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "milchpraktiker-in-eba",
       "name": "Milchpraktiker/in EBA",
       "kat": "natur",
@@ -4085,6 +5517,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Montage-Elektriker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Montage-Elektriker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "montagepraktiker-in-sonnenschutz-und-storentechnik-eba",
+      "name": "Montagepraktiker/in Sonnenschutz und Storentechnik EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Montagepraktiker%2Fin%20Sonnenschutz%20und%20Storentechnik%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Montagepraktiker%2Fin%20Sonnenschutz%20und%20Storentechnik%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "motorger-228-temechaniker-in-efz",
+      "name": "Motorger&#228;temechaniker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Motorger%26%23228%3Btemechaniker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Motorger%26%23228%3Btemechaniker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "motorgeraetemechaniker-in-efz",
@@ -4164,6 +5626,21 @@
       "quelle": "seed"
     },
     {
+      "id": "nautische-r-fachmann-frau-efz",
+      "name": "Nautische/r Fachmann/-frau EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Nautische%2Fr%20Fachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Nautische%2Fr%20Fachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "netzelektriker-in-efz",
       "name": "Netzelektriker/in EFZ",
       "kat": "technik",
@@ -4177,6 +5654,51 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Netzelektriker%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Netzelektriker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "oberfl-228-chenbeschichter-in-efz",
+      "name": "Oberfl&#228;chenbeschichter/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Oberfl%26%23228%3Bchenbeschichter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Oberfl%26%23228%3Bchenbeschichter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "oberfl-228-chenpraktiker-in-eba",
+      "name": "Oberfl&#228;chenpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Oberfl%26%23228%3Bchenpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Oberfl%26%23228%3Bchenpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "oberfl-228-chenveredler-in-uhren-und-schmuck-efz",
+      "name": "Oberfl&#228;chenveredler/in Uhren und Schmuck EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Oberfl%26%23228%3Bchenveredler%2Fin%20Uhren%20und%20Schmuck%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Oberfl%26%23228%3Bchenveredler%2Fin%20Uhren%20und%20Schmuck%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "oberflaechenbeschichter-in-efz",
@@ -4222,6 +5744,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Obstfachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Obstfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "ofenbauer-in-efz",
+      "name": "Ofenbauer/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Ofenbauer%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Ofenbauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "oenologe-login-fh",
@@ -4285,6 +5822,36 @@
       "quelle": "seed"
     },
     {
+      "id": "orthop-228-dieschuhmacher-in-efz",
+      "name": "Orthop&#228;dieschuhmacher/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orthop%26%23228%3Bdieschuhmacher%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Orthop%26%23228%3Bdieschuhmacher%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "orthop-228-dist-in-efz",
+      "name": "Orthop&#228;dist/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Orthop%26%23228%3Bdist%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Orthop%26%23228%3Bdist%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "orthopaedieschuhmacher-in-efz",
       "name": "Orthopädieschuhmacher/in EFZ",
       "kat": "gesundheit",
@@ -4345,6 +5912,21 @@
       "quelle": "seed"
     },
     {
+      "id": "papiertechnologe-login-efz",
+      "name": "Papiertechnologe/-login EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Papiertechnologe%2F-login%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Papiertechnologe%2F-login%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "parkettleger-in-efz",
       "name": "Parkettleger/in EFZ",
       "kat": "bau",
@@ -4388,6 +5970,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pferdewart%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Pferdewart%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "pfl-228-sterer-pfl-228-sterin-efz",
+      "name": "Pfl&#228;sterer/Pfl&#228;sterin EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Pfl%26%23228%3Bsterer%2FPfl%26%23228%3Bsterin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Pfl%26%23228%3Bsterer%2FPfl%26%23228%3Bsterin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "pflaesterer-in-efz",
@@ -4585,6 +6182,21 @@
       "quelle": "seed"
     },
     {
+      "id": "polisseur-euse-eba",
+      "name": "Polisseur/-euse EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Polisseur%2F-euse%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Polisseur%2F-euse%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "polybauer-in-efz",
       "name": "Polybauer/in EFZ",
       "kat": "bau",
@@ -4598,6 +6210,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Polybauer%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Polybauer%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "polydesigner-in-3d-efz",
+      "name": "Polydesigner/in 3D EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Polydesigner%2Fin%203D%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Polydesigner%2Fin%203D%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "polygraf-in-efz",
@@ -4630,6 +6257,37 @@
       "quelle": "kuratiert"
     },
     {
+      "id": "praktiker-in-hotellerie-hauswirtschaft-eba",
+      "name": "Praktiker/in Hotellerie-Hauswirtschaft EBA",
+      "kat": "gastro",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "kreativ",
+        "praktisch",
+        "sozial"
+      ],
+      "desc": "Beruf rund um Essen, Trinken und Gastfreundschaft.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Praktiker%2Fin%20Hotellerie-Hauswirtschaft%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Praktiker%2Fin%20Hotellerie-Hauswirtschaft%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "praktiker-in-reinigungstechnik-eba",
+      "name": "Praktiker/in Reinigungstechnik EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Praktiker%2Fin%20Reinigungstechnik%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Praktiker%2Fin%20Reinigungstechnik%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "praxiskoordinator-in-mit-eidg-fa",
       "name": "Praxiskoordinator/in mit eidg. FA",
       "kat": "gesundheit",
@@ -4659,6 +6317,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Primarlehrer%2Fin%20PH",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Primarlehrer%2Fin%20PH%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "printmedienpraktiker-in-eba",
+      "name": "Printmedienpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Printmedienpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Printmedienpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "printmedienverarbeiter-in-efz",
@@ -4736,6 +6409,36 @@
       "quelle": "seed"
     },
     {
+      "id": "qualit-228-tsfachmann-frau-in-mikrotechnik-efz",
+      "name": "Qualit&#228;tsfachmann/-frau in Mikrotechnik EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Qualit%26%23228%3Btsfachmann%2F-frau%20in%20Mikrotechnik%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Qualit%26%23228%3Btsfachmann%2F-frau%20in%20Mikrotechnik%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "raumausstatter-in-efz",
+      "name": "Raumausstatter/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Raumausstatter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Raumausstatter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "raumplaner-in-fh",
       "name": "Raumplaner/in FH",
       "kat": "bau",
@@ -4764,6 +6467,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Recyclist%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Recyclist%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "reifenpraktiker-in-eba",
+      "name": "Reifenpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Reifenpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Reifenpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "restaurantangestellte-r-eba",
@@ -4810,6 +6528,36 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Restaurationsleiter%2Fin%20mit%20eidg.%20Diplom",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Restaurationsleiter%2Fin%20mit%20eidg.%20Diplom%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "sanit-228-rinstallateur-in-efz",
+      "name": "Sanit&#228;rinstallateur/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sanit%26%23228%3Brinstallateur%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sanit%26%23228%3Brinstallateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
+      "id": "sanit-228-rpraktiker-in-eba",
+      "name": "Sanit&#228;rpraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Sanit%26%23228%3Brpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Sanit%26%23228%3Brpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "sanitaerinstallateur-in-efz",
@@ -4962,6 +6710,21 @@
       "quelle": "seed"
     },
     {
+      "id": "seilbahner-in-eba",
+      "name": "Seilbahner/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Seilbahner%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Seilbahner%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "sekundarlehrer-in-ph",
       "name": "Sekundarlehrer/in PH",
       "kat": "soziales",
@@ -4978,6 +6741,21 @@
       "quelle": "seed"
     },
     {
+      "id": "silberschmied-in-efz",
+      "name": "Silberschmied/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Silberschmied%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Silberschmied%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "solarinstallateur-in-efz",
       "name": "Solarinstallateur/in EFZ",
       "kat": "technik",
@@ -4991,6 +6769,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Solarinstallateur%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Solarinstallateur%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "solarmonteur-in-eba",
+      "name": "Solarmonteur/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Solarmonteur%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Solarmonteur%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "sommelier-re-mit-eidg-fa",
@@ -5099,6 +6892,21 @@
       "quelle": "seed"
     },
     {
+      "id": "spenglerpraktiker-in-eba",
+      "name": "Spenglerpraktiker/in EBA",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Spenglerpraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Spenglerpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "steinbildhauer-in-efz",
       "name": "Steinbildhauer/in EFZ",
       "kat": "gestaltung",
@@ -5127,6 +6935,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steinmetz%2Fin%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Steinmetz%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "steinsetzer-in-eba",
+      "name": "Steinsetzer/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Steinsetzer%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Steinsetzer%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "steinwerker-in-eba",
@@ -5249,6 +7072,22 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Systemgastronomiefachmann%2F-frau%20EFZ",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Systemgastronomiefachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "systemgastronomiepraktiker-in-eba",
+      "name": "Systemgastronomiepraktiker/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend",
+        "kreativ"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Systemgastronomiepraktiker%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Systemgastronomiepraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "techniker-in-hf-elektrotechnik",
@@ -5599,6 +7438,21 @@
       "quelle": "seed"
     },
     {
+      "id": "uhrmacher-in-produktion-efz",
+      "name": "Uhrmacher/in Produktion EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Uhrmacher%2Fin%20Produktion%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Uhrmacher%2Fin%20Produktion%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "umweltingenieur-in-fh",
       "name": "Umweltingenieur/in FH",
       "kat": "natur",
@@ -5691,6 +7545,21 @@
       "quelle": "seed"
     },
     {
+      "id": "verpackungsdrucker-in-efz",
+      "name": "Verpackungsdrucker/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Verpackungsdrucker%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Verpackungsdrucker%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "verpackungstechnologe-login-efz",
       "name": "Verpackungstechnologe/-login EFZ",
       "kat": "technik",
@@ -5734,6 +7603,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weinbautechniker%2Fin%20HF",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Weinbautechniker%2Fin%20HF%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "weinfachmann-frau-efz",
+      "name": "Weinfachmann/-frau EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Weinfachmann%2F-frau%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Weinfachmann%2F-frau%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "weinkuefer-in-efz",
@@ -5872,6 +7756,21 @@
       "quelle": "seed"
     },
     {
+      "id": "wohntextilgestalter-in-efz",
+      "name": "Wohntextilgestalter/in EFZ",
+      "kat": "gestaltung",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "kreativ",
+        "forschend"
+      ],
+      "desc": "Kreativer Beruf rund um Gestaltung, Medien und Design.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Wohntextilgestalter%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Wohntextilgestalter%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "zahntechniker-in-efz",
       "name": "Zahntechniker/in EFZ",
       "kat": "gesundheit",
@@ -5900,6 +7799,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zahntechnikpraktiker%2Fin%20EBA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Zahntechnikpraktiker%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "zeichner-in-efz",
+      "name": "Zeichner/in EFZ",
+      "kat": "bau",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "forschend",
+        "praktisch"
+      ],
+      "desc": "Beruf am Bau – planen, bauen und Dinge entstehen lassen.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zeichner%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zeichner%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     },
     {
       "id": "zeichner-in-efz-architektur",
@@ -5977,6 +7891,21 @@
       "quelle": "seed"
     },
     {
+      "id": "zinnpfeifenmacher-in-efz",
+      "name": "Zinnpfeifenmacher/in EFZ",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "3–4 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zinnpfeifenmacher%2Fin%20EFZ",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zinnpfeifenmacher%2Fin%20EFZ%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
+    },
+    {
       "id": "zollfachmann-frau-mit-eidg-fa",
       "name": "Zollfachmann/-frau mit eidg. FA",
       "kat": "wirtschaft",
@@ -6005,6 +7934,21 @@
       "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA",
       "video": "https://www.youtube.com/results?search_query=Beruf%20Zugverkehrsleiter%2Fin%20mit%20eidg.%20FA%20Lehre%20Schweiz%20Berufsfilm",
       "quelle": "seed"
+    },
+    {
+      "id": "zweirad-assistent-in-eba",
+      "name": "Zweirad-Assistent/in EBA",
+      "kat": "technik",
+      "typ": "lehre",
+      "dauer": "2 Jahre",
+      "tags": [
+        "praktisch",
+        "forschend"
+      ],
+      "desc": "Technischer Beruf mit Maschinen, Werkzeugen und viel Präzision.",
+      "info": "https://www.berufsberatung.ch/dyn/show/1893?search=Zweirad-Assistent%2Fin%20EBA",
+      "video": "https://www.youtube.com/results?search_query=Beruf%20Zweirad-Assistent%2Fin%20EBA%20Lehre%20Schweiz%20Berufsfilm",
+      "quelle": "live"
     }
   ]
 }
