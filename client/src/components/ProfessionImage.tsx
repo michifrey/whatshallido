@@ -1,3 +1,4 @@
+import { professionEmoji } from "../lib/professionEmoji";
 import type { Category } from "../types";
 
 interface Props {
@@ -23,15 +24,16 @@ export function ProfessionImage({ category, imageUrl, name, className = "" }: Pr
     );
   }
   const c = category.color;
+  const emoji = professionEmoji(name, category);
   return (
     <div
       className={`relative flex h-full w-full items-center justify-center overflow-hidden ${className}`}
       style={{ background: `linear-gradient(135deg, ${c}, color-mix(in srgb, ${c} 55%, #0f172a))` }}
-      aria-label={category.name}
+      aria-label={name}
     >
       <span className="absolute -right-3 -top-4 text-7xl opacity-20 blur-[1px]">{category.emoji}</span>
       <span className="absolute -bottom-5 -left-3 text-6xl opacity-10">{category.emoji}</span>
-      <span className="relative text-5xl drop-shadow-sm">{category.emoji}</span>
+      <span className="relative text-5xl drop-shadow-sm">{emoji}</span>
     </div>
   );
 }
