@@ -32,7 +32,30 @@ export interface ResumeExtras {
   kenntnisse: string;
   hobbys: string;
   referenzen: ReferenceEntry[];
+  /** Optionales Bewerbungsfoto als Data-URL (auf 5:6 zugeschnitten). */
+  foto: string;
 }
+
+/** Verfügbare Design-Vorlagen für den Lebenslauf. */
+export type TemplateId = "klassisch" | "modern" | "kreativ";
+
+export const TEMPLATES: { id: TemplateId; name: string; beschreibung: string }[] = [
+  { id: "modern", name: "Modern", beschreibung: "Farbige Akzente, einspaltig" },
+  { id: "kreativ", name: "Kreativ", beschreibung: "Farbige Seitenleiste, zweispaltig" },
+  { id: "klassisch", name: "Klassisch", beschreibung: "Schlicht, schwarz-weiss" },
+];
+
+/** Wählbare Akzentfarben (Hex ohne #). */
+export const ACCENTS: { id: string; name: string; hex: string }[] = [
+  { id: "blau", name: "Blau", hex: "2563EB" },
+  { id: "gruen", name: "Grün", hex: "059669" },
+  { id: "bordeaux", name: "Bordeaux", hex: "9F1239" },
+  { id: "anthrazit", name: "Anthrazit", hex: "334155" },
+  { id: "violett", name: "Violett", hex: "7C3AED" },
+];
+
+/** Abschnitte, die in der «Kreativ»-Vorlage in die Seitenleiste wandern. */
+export const SIDEBAR_SECTIONS = ["Sprachkenntnisse", "Weitere Kenntnisse", "Hobbys & Interessen"];
 
 export const emptyEntry: ResumeEntry = { von: "", bis: "", titel: "", ort: "", beschreibung: "" };
 export const emptyLanguage: LanguageEntry = { sprache: "", niveau: "" };
@@ -47,6 +70,7 @@ export const emptyResumeExtras: ResumeExtras = {
   kenntnisse: "",
   hobbys: "",
   referenzen: [],
+  foto: "",
 };
 
 /** Ein aufbereiteter Zeitraum-Eintrag: Zeitspanne links, Inhalt rechts. */
@@ -149,4 +173,12 @@ export function buildResume(person: LetterData, extras: ResumeExtras): RenderedR
   if (referenzen.length) sections.push({ titel: "Referenzen", eintraege: referenzen });
 
   return { name, kontaktzeilen, eckdaten, sections };
+}
+
+/** Teilt die Abschnitte für die zweispaltige «Kreativ»-Vorlage in Seitenleiste und Hauptspalte. */
+export function splitSections(sections: ResumeSection[]): { sidebar: ResumeSection[]; main: ResumeSection[] } {
+  return {
+    sidebar: sections.filter((s) => SIDEBAR_SECTIONS.includes(s.titel)),
+    main: sections.filter((s) => !SIDEBAR_SECTIONS.includes(s.titel)),
+  };
 }

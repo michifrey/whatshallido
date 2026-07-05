@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { LetterData } from "../src/lib/letter";
-import { buildResume, emptyResumeExtras, type ResumeExtras } from "../src/lib/resume";
+import { buildResume, emptyResumeExtras, splitSections, type ResumeExtras } from "../src/lib/resume";
 
 const person: LetterData = {
   vorname: "Lena", nachname: "Frey", strasse: "Musterweg 1", plz: "5000", ort: "Aarau",
@@ -54,5 +54,12 @@ describe("buildResume", () => {
   it("liefert für leere Eingaben keine Abschnitte", () => {
     const r = buildResume(person, emptyResumeExtras);
     expect(r.sections).toHaveLength(0);
+  });
+
+  it("splitSections trennt Seitenleiste (Sprachen/Kenntnisse/Hobbys) von der Hauptspalte", () => {
+    const r = buildResume(person, extras);
+    const { sidebar, main } = splitSections(r.sections);
+    expect(sidebar.map((s) => s.titel)).toEqual(["Sprachkenntnisse", "Weitere Kenntnisse", "Hobbys & Interessen"]);
+    expect(main.map((s) => s.titel)).toEqual(["Schulbildung", "Praktische Erfahrungen"]);
   });
 });
