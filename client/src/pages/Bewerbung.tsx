@@ -1,8 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
-import { BookmarkPlus, Building2, Check, Copy, Download, FileDown, FileText, Loader2, PenLine, Printer, RotateCcw, Sparkles, User } from "lucide-react";
+import { BookmarkPlus, Building2, Check, Copy, Download, FileDown, FileText, IdCard, Loader2, PenLine, Printer, RotateCcw, Sparkles, User } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api";
+import { Field } from "../components/Field";
+import { Lebenslauf } from "../components/Lebenslauf";
 import { useBewerbungen } from "../hooks/useBewerbungen";
 import { buildLetter, type LetterData, type LetterMode } from "../lib/letter";
 import { downloadLetterPdf } from "../lib/pdf";
@@ -13,40 +15,13 @@ const emptyData: LetterData = {
   beruf: "", zeitraum: "", motivation: "", staerken: "", schule: "", hobbys: "",
 };
 
-function Field({
-  label, value, onChange, placeholder, textarea, hint,
-}: {
-  label: string; value: string; onChange: (v: string) => void;
-  placeholder?: string; textarea?: boolean; hint?: string;
-}) {
-  return (
-    <label className="block">
-      <span className="text-sm font-semibold">{label}</span>
-      {textarea ? (
-        <textarea
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          placeholder={placeholder}
-          rows={2}
-          className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
-        />
-      ) : (
-        <input
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          placeholder={placeholder}
-          className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900"
-        />
-      )}
-      {hint && <span className="mt-0.5 block text-xs text-slate-400">{hint}</span>}
-    </label>
-  );
-}
+type View = "brief" | "lebenslauf";
 
 export function Bewerbung() {
   const [params] = useSearchParams();
   const { data: professions = [] } = useQuery({ queryKey: ["professions", "all"], queryFn: () => api.professions() });
 
+  const [view, setView] = useState<View>(params.get("ansicht") === "lebenslauf" ? "lebenslauf" : "brief");
   const [mode, setMode] = useState<LetterMode>(
     params.get("mode") === "schnupperlehre" ? "schnupperlehre" : "lehrstelle",
   );
@@ -120,11 +95,29 @@ export function Bewerbung() {
           <FileText size={24} strokeWidth={1.75} className="text-brand-600" /> Bewerbungs-Helfer
         </h2>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
-          Fülle die Felder aus – rechts entsteht dein Bewerbungsbrief live. Am Schluss kopieren,
-          als Datei speichern oder als PDF drucken.
+          Fülle die Felder aus – rechts entsteht dein Dokument live. Am Schluss kopieren,
+          als Datei speichern, als PDF drucken oder den Lebenslauf als Word herunterladen.
         </p>
       </div>
 
+      <div className="inline-flex flex-wrap gap-1 rounded-full bg-slate-200 p-1 no-print dark:bg-slate-800">
+        {([["brief", "Bewerbungsbrief", FileText], ["lebenslauf", "Lebenslauf", IdCard]] as const).map(([v, label, Icon]) => (
+          <button
+            key={v}
+            onClick={() => setView(v)}
+            className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-semibold transition ${
+              view === v ? "bg-white text-brand-600 shadow dark:bg-slate-900" : "text-slate-600 dark:text-slate-300"
+            }`}
+          >
+            <Icon size={15} strokeWidth={1.9} /> {label}
+          </button>
+        ))}
+      </div>
+
+      {view === "lebenslauf" ? (
+        <Lebenslauf person={data} />
+      ) : (
+      <>
       <div className="inline-flex flex-wrap gap-1 rounded-full bg-slate-200 p-1 no-print dark:bg-slate-800">
         {(["lehrstelle", "schnupperlehre"] as LetterMode[]).map((m) => (
           <button
@@ -222,6 +215,8 @@ export function Bewerbung() {
           </pre>
         </div>
       </div>
+      </>
+      )}
     </div>
   );
 }
